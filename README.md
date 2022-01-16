@@ -11,12 +11,12 @@ Problems:
 * often servers were under utilized
 * for safety in case of disaster e.g flood, fire company need two serverrooms in different part of the world
 
-then we switch to <b>virtualization<b>:
+then we switch to <b>virtualization</b>:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/virtualization.png?raw=true)
 
 it was cheaper, needed less space but still got some disadventages - high up-front cost, need space in datacenter, need to pay for electricity
 
-then we have <b>cloud computing<b> - Cloud computing enables companies to consume a compute resource rather than having tobuild and maintain computing infrastructures in house, it's like buying electricity, not building power station:
+then we have <b>cloud computing</b> - Cloud computing enables companies to consume a compute resource rather than having tobuild and maintain computing infrastructures in house, it's like buying electricity, not building power station:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/cloud_computing.png?raw=true)
 
 Cloud provider owns data center and manages servers, networking, virtualization etc.
