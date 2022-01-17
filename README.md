@@ -41,3 +41,14 @@ Infrastructure as a Service(IaaS), Platform as a Service(PaaS) and Software as a
 
 comparing to pizza:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/pizza_as_a_service.png?raw=true)
+
+
+Most popular cloud providers:
+* IaaS: Microsoft Azure, Amazon Web Services, Google Compute Engine
+* Paas: Azure Logic Apps, Heroku, Amazon Elastic Beanstalk
+* Saas: Office 365, Salesforce, Dropbox
+
+Cloud Computing Services by Microsoft:
+* IaaS: Azure Compute, Azure Storage
+* PaaS: Azure Logic Apps, Azure Functions, Azure Web Jobs, Azure Automation
+* SaaS: SharePoint, OneDrive for Business, Microsoft Teams, Power Platform
