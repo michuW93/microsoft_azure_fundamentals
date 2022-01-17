@@ -8,7 +8,7 @@ In past each company got tons of servers for different purposes. They could run 
 
 Problems: 
 * a lot of money 
-* often servers were under utilized
+* often servers were under utilized (e.g take only 20% of servers resources)
 * for safety in case of disaster e.g flood, fire company need two serverrooms in different part of the world
 
 then we switch to <b>virtualization</b>:
