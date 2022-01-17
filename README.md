@@ -34,3 +34,8 @@ Conclusion:
 * billed per second/minute/hour
 * reliability
 * economies of scale
+
+# Types of Cloud Computing Services
+Infrastructure as a Service(IaaS), Platform as a Service(PaaS) and Software as a Service(SaaS)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/on_premise_iaas_paas_saas.png?raw=true)
+
