@@ -52,3 +52,14 @@ Cloud Computing Services by Microsoft:
 * IaaS: Azure Compute, Azure Storage
 * PaaS: Azure Logic Apps, Azure Functions, Azure Web Jobs, Azure Automation
 * SaaS: SharePoint, OneDrive for Business, Microsoft Teams, Power Platform
+
+
+<b>Infrastructure as a service</b>:
+perfect for test and development scenarios because you can turn on and turn off dev machines only when needed so you dont need to pay all the time.
+Storage and backups as price is good. High performance computing and data analyzis - require very powerful computers for a short time.
+
+<b>Platform as a service:</b>
+analytics or business inteligence - alows company to analyze and mine data finding insights and patterns and predict outcomes to improve forecasting, product design decisions etc. it's also great for developers.
+
+<b>Software as a service:</b>
+getting access to sophisticated applications and no need to manage any infrastructure yourself. Imagine all of the work needed to install Skype for business, SharePoint servers on premises vs just using the same tools in a matter of minutes.
