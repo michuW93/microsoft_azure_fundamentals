@@ -39,3 +39,5 @@ Conclusion:
 Infrastructure as a Service(IaaS), Platform as a Service(PaaS) and Software as a Service(SaaS)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/on_premise_iaas_paas_saas.png?raw=true)
 
+comparing to pizza:
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/pizza_as_a_service.png?raw=true)
