@@ -63,3 +63,18 @@ analytics or business inteligence - alows company to analyze and mine data findi
 
 <b>Software as a service:</b>
 getting access to sophisticated applications and no need to manage any infrastructure yourself. Imagine all of the work needed to install Skype for business, SharePoint servers on premises vs just using the same tools in a matter of minutes.
+
+# Cloud computing deployment models
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/Cloud_Computing_Deployment_Models.png?raw=true)
+
+<b>Public Cloud</b>
+Multiple clients, shares hardware and backend. Most Azure customers are in public cloud.
+
+<b>Private cloud</b>
+Hardware used by a single company, usually (but not necesairly) who owns the datacenter. Close to traditional way. Azure Stack allows you to run cloud services on-premises. Later you can easily transfer to public cloud
+
+<b>Hybrid cloud</b>
+combination of public and private cloud with automation and orchestration betweeen them.Azure Stack allows you to run cloud services on-premises. Later you can easily transfer to public cloud
+
+<b>Community cloud</b>
+Infrastructure is shared between serveral organizations from a specific community with common concerns e.g security, compliance, jurisdiction. The most popular example is <b>Azure Goverment</b> - Azure offering specific to a government entities. To register for Azure Govenment you need to be validated as government organization. It's hosted in separate datacenters from public cloud.
