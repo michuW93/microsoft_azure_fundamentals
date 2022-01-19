@@ -78,3 +78,6 @@ combination of public and private cloud with automation and orchestration betwee
 
 <b>Community cloud</b>
 Infrastructure is shared between serveral organizations from a specific community with common concerns e.g security, compliance, jurisdiction. The most popular example is <b>Azure Goverment</b> - Azure offering specific to a government entities. To register for Azure Govenment you need to be validated as government organization. It's hosted in separate datacenters from public cloud.
+
+# Azure data centers
+Azure is just bunch of physical data centers full of physical servers. They locations are not public, often even Microsoft employees don't know locations. 
