@@ -35,6 +35,11 @@ Conclusion:
 * reliability
 * economies of scale
 
+# CAPEX vs OPEX
+Capital expenditures are depreciated over the useful life of the asset, you can't fully deduct the cost from the fiscal year the asset was paid for it. E.g buying servers for more than one year. 
+
+Operating Expenses are deducted in the same year they are made. Cloud computing - you know (more or less) how much you'll pay for cloud.
+
 # Types of Cloud Computing Services
 Infrastructure as a Service(IaaS), Platform as a Service(PaaS) and Software as a Service(SaaS)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/on_premise_iaas_paas_saas.png?raw=true)
