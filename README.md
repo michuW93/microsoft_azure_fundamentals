@@ -91,3 +91,9 @@ Azure is just bunch of physical data centers full of physical servers. They loca
 for some Azure services you don't choose location, they are global (non-regional) but for most of them you need to specify in which region your account/storage etc. should be created. When you e.g work in Rotterdam (where is the biggest seaport in Europe) then it's better to choose some place in Europe for server location than e.g some place on smallest continent on the world - Australia because all requests would go from Rotterdam to Canberra (capital of Australia) and responses from Canberra to Rotterdam and it takes time. We need to remember not all services are available in all locations. 
 
 Azure provide Regions Pairs - it means your data can be duplicated between two locations in case of failury of one data center or natural disaster. We don't decide what regions are paired, Microsoft do it.
+
+# Resources groups
+Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases.
+
+Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. Of course resources can communicate between different resource groups. Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database.
+You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in
