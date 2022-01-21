@@ -99,3 +99,4 @@ Resource group is container that hold related resources which share the same lif
 You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resource_group.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resources_in_resource_group.png?raw=true)
