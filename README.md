@@ -100,3 +100,5 @@ You can create accounts e.g for developers who can only check what resources are
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resource_group.png?raw=true)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resources_in_resource_group.png?raw=true)
+
+# Azure Resource Manager(ARM)
