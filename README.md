@@ -112,3 +112,17 @@ you can deploy automatically by CI/CD pipelines. Azure has Azure Resources Manag
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_resource_manager_template.png?raw=true)
 
 You can save such template into library and then you can find it in `Templates`.
+
+# Azure Service Health and Azure Monitor
+In `Service Health` you have:
+`Services issues` - if some services in any location are not down. You can also see if all services which you use are working correctly.
+`Planned maintenance` - to check if some maintenance actions can affect you
+`Health advisories` -  if Microsoft upgrade something or one of you features which you use are being deprecated and you need to upgrade
+`Security advisiories` - notification or violations that may affect the availability of your Azure services.
+
+You can also create alert when you want to be notified (by email/sms/push notification/mobile app) if there will be any changes to your services e.g planned maintenance.
+
+There is also `Monitor` which provide detailed information about resource (can't be applied for whole resource group).
+
+# Azure Mobile App
+you can use mobile app to check notifications, monitor status of your applications or even run commands using cloud shell. You can open all of your resources group, start virtual machines, connect to the VM etc.
