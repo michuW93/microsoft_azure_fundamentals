@@ -111,3 +111,4 @@ There are also another way to call ARM endpoint e.g Azure PowerShell, Azure CLI 
 you can deploy automatically by CI/CD pipelines. Azure has Azure Resources Manager Templates written in JSON, where you defines infrastructure and configuration for Azure resources. Significant point: it's declarative syntax. Example:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_resource_manager_template.png?raw=true)
 
+You can save such template into library and then you can find it in `Templates`.
