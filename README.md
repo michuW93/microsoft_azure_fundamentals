@@ -97,3 +97,5 @@ Resource is managable iteam in Azure: virtual machines, storage accounts , web a
 
 Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. Of course resources can communicate between different resource groups. Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database.
 You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resource_group.png?raw=true)
