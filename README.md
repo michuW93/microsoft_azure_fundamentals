@@ -126,3 +126,8 @@ There is also `Monitor` which provide detailed information about resource (can't
 
 # Azure Mobile App
 you can use mobile app to check notifications, monitor status of your applications or even run commands using cloud shell. You can open all of your resources group, start virtual machines, connect to the VM etc.
+
+# Azure Advisor for Optimizing your Azure Resources
+Azure Advisor is personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It's a tool which provides recommendations. It's even send recommendations how to optimize costs - pay less.
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_advisor.png?raw=true)
+
