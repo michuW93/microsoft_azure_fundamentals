@@ -133,3 +133,8 @@ Azure Advisor is personalized cloud consultant that helps you follow best practi
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/recomendation_example.png?raw=true)
 
+# Azure Compute
+Azure compute is a set of services that provide on-demand computing power. Compute isn't really a service in itself, it's logical grouping of several services in Azure related to running application workloads. 
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_compute.png?raw=true)
+
