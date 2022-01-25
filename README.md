@@ -138,3 +138,5 @@ Azure compute is a set of services that provide on-demand computing power. Compu
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_compute.png?raw=true)
 
+#Azure Virtual Machines
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_virtual_machines.png?raw=true)
