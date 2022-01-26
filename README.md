@@ -142,3 +142,11 @@ Azure compute is a set of services that provide on-demand computing power. Compu
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_virtual_machines.png?raw=true)
 
 while creating new virtual machine you can choose a lot of images so you can have preinstalled e.g Visual Studio, SQL, etc. You also choose how many CPUs, RAM should virtual machine has. If you choose two or more availability zones you need to configure load balancer by yourself. When you create virtual machine, presented cost is just for virtual machine but beside of that there are other resources that get created: virtual network, disc, azure storage account so that will be additional cost. After you create virtual machine you can still add disc to it, enable auto shutdown so at night you won't pay for it, you can configure backup system
+
+# Container options in Azure
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/vm_vs_containers.png?raw=true)
+
+Here we have <b>Docker</b> is open source. There is docker hub, it's library for images. Docker provides standard for container format, it's runtime process which you can install on vm. For smaller/easier infrastructure there is Azure Container Instances.
+
+You can deploy containers on VMs in Azure of course. For complex architecture there is Azure Kubernetes Service (container management system in Azure, scale out container-based applications, monitoring and deploying containers, nodes are virtual machine) so containers orchestrator. Pods are groups of containers.
+
