@@ -151,3 +151,5 @@ Here we have <b>Docker</b> is open source. There is docker hub, it's library for
 You can deploy containers on VMs in Azure of course. For complex architecture there is Azure Kubernetes Service (container management system in Azure, scale out container-based applications, monitoring and deploying containers, nodes are virtual machine) so containers orchestrator. Pods are groups of containers.
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/creating_container.png?raw=true)
+
+when creating container you can upload your own image, use image from docker hub. In the same way you can create kubernetes cluster.
