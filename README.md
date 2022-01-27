@@ -197,4 +197,6 @@ In hybrid cloud you need connection between your on-premises network with azure 
 or you can use ExpressRoute
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/expressroute.png?raw=true)
 
-
+# Windows virtual desktop
+You can access virtual desktop from any browser because many operating systems are supported: Windows, mac, android, ios.
+In past you got single virtual machine for single user, windows virtual desktop let to work people on the same machine, sharing resources, just with different discs so everyone feels like working on local computer.
