@@ -153,3 +153,21 @@ You can deploy containers on VMs in Azure of course. For complex architecture th
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/creating_container.png?raw=true)
 
 when creating container you can upload your own image, use image from docker hub. In the same way you can create kubernetes cluster.
+
+# Azure App Service
+Azure App Service is more like traditional web hosting where the frameworks are already installed on server like .NET, Java and you deploy your code onto those servers. The difference with traditional web hosting is that Azure App Service handles the management and patching for you but you still have lots of configuration options.
+
+Azure App Service can host:
+* web application, 
+* API apps, 
+* mobile apps, 
+* you can deploy containers if you want  
+* WebJob.
+
+When you deploy application then address will be `https:<your app service name>.azurewebsites.net`. Suffix `azurewebsites.net` is default, you can change it.
+
+You can try Azure App Service for free but then there are some limits e.g custom domain is not available, max number of apps is 10, you can't use auto scale.
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/example_app.png?raw=true)
+
+There is a lot of details from deployed app - how much time response from app took, how many request there were etc. You don't have to build the whole authentication subsystem into your app, you can just mark integration with Facebook, Twitter, etc. You can get console window to the virtual machine your app is deploy, you can check logs
