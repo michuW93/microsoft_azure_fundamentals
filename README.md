@@ -171,3 +171,11 @@ You can try Azure App Service for free but then there are some limits e.g custom
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/example_app.png?raw=true)
 
 There is a lot of details from deployed app - how much time response from app took, how many request there were etc. You don't have to build the whole authentication subsystem into your app, you can just mark integration with Facebook, Twitter, etc. You can get console window to the virtual machine your app is deploy, you can check logs
+
+# Serverless compute
+Azure functions - which developer write enable to develop serverless applications on Azure. You write small pieces of code without worrign about the whole application and infrastructure. You can write in .NET, C#, even Powershell. Functions have triggers e.g HTTP endpoint so it can be trigger by endpoint call, timer trigger, bus storage, blob etc.
+Azure Logic Apps - visual designer to model and automate process as steps/workflow. Pros+ (pre-buuld templates, easy to use design tools)
+Azure Event Grid - event routing service using publish-subscribe model. You can react on events, event sources, topics, event subscriptions and event handlers. Use Event Grid for reactive programming, as it is just an event distributor. Notify me when I need to do something or notify some other service when it needs to do something.
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/event_grid.png?raw=true)
+
