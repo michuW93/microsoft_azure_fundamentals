@@ -179,3 +179,14 @@ Azure Event Grid - event routing service using publish-subscribe model. You can 
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/event_grid.png?raw=true)
 
+# Azure Networking
+Azure Virtual Network is Azure virtual block in your private network. Vnet enables many types of Azure resources to communicate. Virtual network has an address space that you define in Azure, which is group of IP addresses that can be assigned to resources like Virtual Machines. VNet is segmented into one or more subnetworks called subnets, which are allocated a portion of the VNet's IP address space. Virtual Machine is assigned to a subnet and Virtual Machine can communicate with other VMs on the same network. By default, resources assigned to one virtual network can't communicate with resources in another virtual network. You can enable communication between VMs in other Virtual Network by feature called VNet peering. You can enable VNet peering even between virtual machines which are in other regions. 
+
+To communicate with the world VM need to has public IP address. IP address is a separate resource in Azure.
+
+When you have two Virtual Machines in the same subnet you can implement LoadBalancer. 
+
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/load_balancer.png?raw=true)
+
+You can use Application Gateway like in screenshot above. So traffic from internet can be encrypted but then behind Application Gateway it doesn't need to be encrypted.
