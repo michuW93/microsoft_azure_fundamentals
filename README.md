@@ -200,3 +200,10 @@ or you can use ExpressRoute
 # Windows virtual desktop
 You can access virtual desktop from any browser because many operating systems are supported: Windows, mac, android, ios.
 In past you got single virtual machine for single user, windows virtual desktop let to work people on the same machine, sharing resources, just with different discs so everyone feels like working on local computer.
+
+# Azure content delivery network
+Caching is a process of storing data locally so it can be provided quickly when it's requested again in future.
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_content_delivery_network.png?raw=true)
+
+AppService/WebApp from which we want to get data is called `Origin server`. CDN server can cache from Web app, blob service or any public web server in internet. CND server which get date from Origin server and provide to user is called `edge server`.
