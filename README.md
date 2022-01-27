@@ -190,3 +190,11 @@ When you have two Virtual Machines in the same subnet you can implement LoadBala
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/load_balancer.png?raw=true)
 
 You can use Application Gateway like in screenshot above. So traffic from internet can be encrypted but then behind Application Gateway it doesn't need to be encrypted.
+
+In hybrid cloud you need connection between your on-premises network with azure virtual network (VNet).
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/hybrid_cloud_connection.png?raw=true)
+
+or you can use ExpressRoute
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/express_route.png?raw=true)
+
+
