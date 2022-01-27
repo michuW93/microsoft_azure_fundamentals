@@ -195,6 +195,6 @@ In hybrid cloud you need connection between your on-premises network with azure 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/hybrid_cloud_connection.png?raw=true)
 
 or you can use ExpressRoute
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/express_route.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/expressroute.png?raw=true)
 
 
