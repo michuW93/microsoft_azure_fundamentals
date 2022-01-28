@@ -255,3 +255,36 @@ Use cases for Cosmos DB:
 * social media applications - comments, likes etc. (Flexible data schemas, needed for user generated content)
 
 Cosmos DB APIs: SQL API, Cassandra, Mongo DB, Gremlin, Azure Table Storage
+
+# Azure storage account
+BLOB is acronym for Binary Large Object. Like a file, a blob can be any type of file documents, video files, text files. Blob storage is optimized for storing massive amounts of unstructured data. 
+
+Azure storage Services:
+* Blob Storage (unstructured data: files and documents)
+* File Storage (supports SMB protocol (port 445 or call via Azure VNET))
+* Disk Storage (infra as a service)
+* Table storage (structured date in the form of NoSQL non relational data, similar data you can store using Cosmos DB)
+* queue store (asynchronous)
+
+Zone Redundant Storage (GRS) data is stored in three times in the primary data center by default and you can choose to copy data to another availability zone and other regions. Data from Azure Storage can be reached by https and each storage service within an Azure Storage has it's own REST endpoint. You can manage access to database by RBAC in Azure AD, storage account keys or shared access signature.
+
+Programatic access to storage accounts: REST APIs, SDKs, Powershell, Azure CLI, Azure Storage Explorer, AzCopy
+
+Blob types:
+* Block Blob, composed of blocks (optimize uploading)
+* Append Blob (optimized for appending only, good choose for logs)
+* Page Blob (8TB max, disk for Vm are stored as page blob, optimized for random and frequently read-write operations)
+
+Blob access tiers:
+* hot tier - for data which is access frequently so <b>highest storage cost, lowest data access cost</b>
+* cool tier - for storing infrequently accessed data so <b>lowest storage cost, highest data access cost</b>
+* archive tier - for data which you rarely access <b>lowest storage cost</b>
+
+
+
+
+
+
+
+# Example questions
+1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
