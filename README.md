@@ -218,3 +218,24 @@ In Azure there are different storage services for specific data types. Benefits 
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/categories_of_data.png?raw=true)
 
+# Database products in Azure
+SQL Server on Virtual Machines:
+* full control over the SQL server
+* can provision from the Azure Marketplace
+* Flexible pricing options
+* Automated updates scheduling
+* Manage backups to Microsoft Azure
+
+Azure SQL Database:
+* Fully managed platform-as-a-service
+* always running the latest version of SQL Server
+* Flexible pricing model (Vcores or DTU's)
+* Single database or Elastic Pool (many dbs with shared resources)
+* Automatic scaling
+* Service tiers for different workloads e.g hyper scale for huge databases
+
+Azure SQL Managed Instance:
+* Broadest set of SQL server capabilities
+* Benefits of managed platform
+* deploy VM onto your own VNET
+* List and shift with minimal changes
