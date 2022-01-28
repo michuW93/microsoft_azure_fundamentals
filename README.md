@@ -239,3 +239,19 @@ Azure SQL Managed Instance:
 * Benefits of managed platform
 * deploy VM onto your own VNET
 * List and shift with minimal changes
+
+# Azure Cosmos DB for semi structured data
+when there is data that don't fit perfectly to relational database as PostgreSQL, MySQL etc. then Azure Cosmos DB helps.
+Adventages:
+* fast repsonse times
+* multi-modal
+* ability to scale rapidly and globally, elastically scale throughput and storage across any number of Azure regions and you can add or remove regions easily
+* backed by SSD storage
+* consistency options to ensure distributed data is updated
+
+Use cases for Cosmos DB: 
+* Retail Application (Attributes can vary and change over time, flexible schema), 
+* gaming applications< e.g HALO 5, skype, office365 (millions of simultaneous updates, millisecond reads), 
+* social media applications - comments, likes etc. (Flexible data schemas, needed for user generated content)
+
+Cosmos DB APIs: SQL API, Cassandra, Mongo DB, Gremlin, Azure Table Storage
