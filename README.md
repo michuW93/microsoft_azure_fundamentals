@@ -207,3 +207,14 @@ Caching is a process of storing data locally so it can be provided quickly when 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_content_delivery_network.png?raw=true)
 
 AppService/WebApp from which we want to get data is called `Origin server`. CDN server can cache from Web app, blob service or any public web server in internet. CND server which get date from Origin server and provide to user is called `edge server`.
+
+# Data storage in Azure
+In Azure there are different storage services for specific data types. Benefits to Azure data storage solutions:
+* Automated backup and recovery
+* Replication across the world
+* encryption options
+* security and platform integration
+* development features and support
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/categories_of_data.png?raw=true)
+
