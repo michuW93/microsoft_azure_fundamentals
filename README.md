@@ -317,3 +317,4 @@ IoT services from Azure:
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
 3. In SaaS you are responsible for installing the SaaS solution. No, you are responsible only for configuring the SaaS solution. Provider cares about infrastructure, you just pay for renting application and users can connect to Web App with a web browser. 
+4. Using what kind of cloud can make company resign from it's own data center? Using Public Cloud, then everything is on provider. 
