@@ -298,6 +298,21 @@ Usually migration is:
 * migrate data
 * switchover production application
 
+# Azure Services for the Internet of Things
+The Internet of things (IoT) describes physical objects (or groups of such objects) that are embedded with sensors, processing ability, software, and other technologies that connect and exchange data with other devices and systems over the Internet or other communications networks. So basically 
+IoT are devices and sensors connected to each other and the internet. Examples: smart thermostat, motion sensors and security camers, sensors embedded in concrete, traffic sensors.
+They can send <b>alerts</b> in case of issue with a device or the environment the device is sensing or data can be stored in central location and used to generate <b>insights</b> that can improve business or a business process. We need to collect the data from different devices and sensors and <b>act</b> on the data or funnel the data into other systems that can perform deeper analysis.
+
+Problems with IoT:
+* lack of standars
+* security, IoT devices can be hacked
+
+IoT services from Azure:
+* Azure IoT Central - Managed App Platform allows faster to start developing solutions. 
+* Azure IoT Hub - platform which provide building blocks for connecting devices to the cloud, managing those devices and ingesting data into the service. Allows bidrectional secure communication with milions of devices. IoT hub is in the middle and all devices are connected to it, it can  get data from devices and send some request e.g device send to IoT Hub that temperature in room is 26 degrees, IoT Hub send request to fan to start working to cool down room. IoT Hub has SDKs and APIs for many languages to allow developer to build custom solution. IoT Hub provide authentication capabilities: X.509 certificates and Shared Access Signatures
+* Azure Sphere - it's intended to solve lack of standards and security. Application platform consist of Micro-controller unit (hardware), linux based operating system (software) and cloud based security service. IoT Central and IoT Hub are connected to Azure Sphere which does things like make sure the device boots up with only an authirized version of software. Microsoft takes care of OS updates and patching or any other security issues.
+
+
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
