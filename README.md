@@ -344,3 +344,4 @@ machine learning is about using existing data to forecast future behaviour, outc
 4. Using what kind of cloud can make company resign from it's own data center? Using Public Cloud, then everything is on provider. 
 5. Which statement accurately describes the Modern Lifecycle Policy for Azure services? Microsoft provides a minimum of <b>12 months</b> notice before ending support for a service.
 6. Which of the following terms refers to making a service available with no downtime for an extended period? <b>High Availability</b>
+7. Which of the following is optimized for storing massive amounts of unstructured data, such as videos and images? Blobs. Azure Blob storage is Microsoft’s object storage solution for the cloud. <b>Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data.</b>
