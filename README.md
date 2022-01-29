@@ -312,9 +312,33 @@ IoT services from Azure:
 * Azure IoT Hub - platform which provide building blocks for connecting devices to the cloud, managing those devices and ingesting data into the service. Allows bidrectional secure communication with milions of devices. IoT hub is in the middle and all devices are connected to it, it can  get data from devices and send some request e.g device send to IoT Hub that temperature in room is 26 degrees, IoT Hub send request to fan to start working to cool down room. IoT Hub has SDKs and APIs for many languages to allow developer to build custom solution. IoT Hub provide authentication capabilities: X.509 certificates and Shared Access Signatures
 * Azure Sphere - it's intended to solve lack of standards and security. Application platform consist of Micro-controller unit (hardware), linux based operating system (software) and cloud based security service. IoT Central and IoT Hub are connected to Azure Sphere which does things like make sure the device boots up with only an authirized version of software. Microsoft takes care of OS updates and patching or any other security issues.
 
+# Big Data
+Big Data is gather large datasets, organize the data, process the data and gather insights from the data.
+Before sophisticated tools for big data there was good, old excel which allow people to do manipulation, sorts etc. on data.
+
+Big data analytics - good example is Netflix. They collect a lot of data from all subcribers and suggest what should I watch next based on what I watched in past but also based on data from other subscribers but Big Data is also used for other purposes e.g risk management in bank after crash in 2008 when Lehman Brothers went bankrupt, helps to plan modernization in city.
+
+The 3 V's of Big Data: <b>Volume</b> - you have to store huge amount of data, <b>Velocity</b> - it's expected that data will be processed even in real time and <b>Variety</b> - date can come from anywhere, files, streams, IoT Hub, social media, etc.
+
+Categories of Big Data processing:
+* ingest
+* persist
+* analyze
+* visualize
+
+
+
+
+
+
+
+
+
+
 
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
 3. In SaaS you are responsible for installing the SaaS solution. No, you are responsible only for configuring the SaaS solution. Provider cares about infrastructure, you just pay for renting application and users can connect to Web App with a web browser. 
 4. Using what kind of cloud can make company resign from it's own data center? Using Public Cloud, then everything is on provider. 
+5. Which statement accurately describes the Modern Lifecycle Policy for Azure services? Microsoft provides a minimum of <b>12 months</b> notice before ending support for a service.
