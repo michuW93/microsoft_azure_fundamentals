@@ -329,7 +329,8 @@ Categories of Big Data processing:
 # Azure machine learning
 machine learning is about using existing data to forecast future behaviour, outcomes and trands. It's called machine learning because machine learn without being explicity programmed that means there are not specific set of instructions to produce specific output instead model is getting created. Then model is trained using real data so after learning model can take unknown data and make prediction base on what it already knows. In Azure there is Machine Learning Studio. There is also a Azure chat bot which is easy to integrate with your web service.
 
-
+# Azure DevOps
+Github is central repo while git is local repo on every developer machine. Microsoft purchased GitHUb in 2018. Azure provides <b>Azure DevOps boards</b> to monitor overall status (something similar to jira)
 
 
 
