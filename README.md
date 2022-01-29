@@ -1,5 +1,5 @@
 # microsoft_azure_fundamentals-AZ-900-
-Tutorial based on Vlad Catrinescu and Neil Morrissey tutorial
+Tutorial based on Vlad Catrinescu, Neil Morrissey, Michael Brown tutorial
 
 
 # Introduction to cloud computing
@@ -330,7 +330,9 @@ Categories of Big Data processing:
 machine learning is about using existing data to forecast future behaviour, outcomes and trands. It's called machine learning because machine learn without being explicity programmed that means there are not specific set of instructions to produce specific output instead model is getting created. Then model is trained using real data so after learning model can take unknown data and make prediction base on what it already knows. In Azure there is Machine Learning Studio. There is also a Azure chat bot which is easy to integrate with your web service.
 
 # Azure DevOps
-Github is central repo while git is local repo on every developer machine. Microsoft purchased GitHUb in 2018. Azure provides <b>Azure DevOps boards</b> to monitor overall status (something similar to jira)
+Github is central repo while git is local repo on every developer machine. Microsoft purchased GitHUb in 2018. Azure provides <b>Azure DevOps boards</b> to monitor overall status (something similar to jira). Migration from Azure DevOps pipelines to GitHub Actions is really easy, just minor changes are required. Pipeline actions are wrote in YAML.
+
+Azure provides DevTest Lab - pool of virtual machine to which admin has full access, can configure etc. and developers can claim one of this machine but just can use, install artifacts etc. Admin even decide what time there should be auto-shutdown to not pay when machine is not used.
 
 
 
