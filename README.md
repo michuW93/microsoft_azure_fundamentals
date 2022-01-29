@@ -342,3 +342,4 @@ Categories of Big Data processing:
 3. In SaaS you are responsible for installing the SaaS solution. No, you are responsible only for configuring the SaaS solution. Provider cares about infrastructure, you just pay for renting application and users can connect to Web App with a web browser. 
 4. Using what kind of cloud can make company resign from it's own data center? Using Public Cloud, then everything is on provider. 
 5. Which statement accurately describes the Modern Lifecycle Policy for Azure services? Microsoft provides a minimum of <b>12 months</b> notice before ending support for a service.
+6. Which of the following terms refers to making a service available with no downtime for an extended period? <b>High Availability</b>
