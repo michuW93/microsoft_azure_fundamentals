@@ -326,7 +326,8 @@ Categories of Big Data processing:
 * analyze
 * visualize
 
-
+# Azure machine learning
+machine learning is about using existing data to forecast future behaviour, outcomes and trands. It's called machine learning because machine learn without being explicity programmed that means there are not specific set of instructions to produce specific output instead model is getting created. Then model is trained using real data so after learning model can take unknown data and make prediction base on what it already knows. In Azure there is Machine Learning Studio.
 
 
 
