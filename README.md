@@ -334,6 +334,17 @@ Github is central repo while git is local repo on every developer machine. Micro
 
 Azure provides DevTest Lab - pool of virtual machine to which admin has full access, can configure etc. and developers can claim one of this machine but just can use, install artifacts etc. Admin even decide what time there should be auto-shutdown to not pay when machine is not used.
 
+# Azure security
+Authentication vs authorization. 
+<b>Authentication</b> is the process of ascertaining that somebody really is who they claim to be. Examples: user login with a password, user proves she is a member of your team
+<b>Authorization</b> refers to rules that determine who is allowed to do what. E.g. Adam may be authorized to create and delete databases, while Usama is only authorised to read. Examples: user can create a virtual machines, user is allowed access to the building.
+
+First you authenticate, then authorization can occur.
+
+# Azure Active Directory
+When you ever login to Office365, Azure subscriptions. If you used any of this products and you created a user, a group etc. you used Azure Active Directory. Azure AD is not only securing access to Microsoft product, it can also be used to secure on premise applications. It's single sign-on you have one user and password for many applications.
+
+
 
 
 
