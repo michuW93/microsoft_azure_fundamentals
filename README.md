@@ -361,3 +361,5 @@ When you ever login to Office365, Azure subscriptions. If you used any of this p
 7. Which of the following is optimized for storing massive amounts of unstructured data, such as videos and images? Blobs. Azure Blob storage is Microsoft’s object storage solution for the cloud. <b>Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data.</b>
 8. Azure Resource Manager templates use which format? Resource Manager templates are <b>JSON</b> files that define the resources you need to deploy for your solution. You can use the template to easily re-create multiple versions of your infrastructure, such as staging and production
 9. What can require two or more elements for full authentication. How it's called? Multi-Factor Authentication (MFA) can require two or more elements for full authentication.
+10. With Azure Site Recovery you can you can replicate data over VPN? No, <b>you can replicate data over public internet with ExpressRoute</b>
+11. What's the leagal agreement between Azure customer and Microsoft secure and process data? Data Protection Addendum (DPA)
