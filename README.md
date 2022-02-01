@@ -354,7 +354,20 @@ RBAC:
 
 There are many buildin roles but there are Three of the most important build-in roles: owner(lets you manage everything including access to resources), contributor(lets you manage everything except granting access to resources), reader(lets you view everything but not make a changes)
 
+# Azure tags
+Azure tags:
+* Key/value pairs
+* Organizations should have a tagging policy enforced by Azure policies
+* tags can be used: to control cost, to enforce security requirements, to deploy software 
 
+Azure policy:
+* is a collection of rules
+* each policy is assigned to a scope such as an Azure subscription
+* using Azure policy means that resources will remain compliant with corporate standards
+
+Intiatives:
+* are a collection of policies
+* initiatives are assigned to a scope such as a resource group
 
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
