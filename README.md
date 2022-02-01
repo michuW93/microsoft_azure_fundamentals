@@ -385,3 +385,4 @@ Intiatives:
 13. Can Azure subscription contain many administrator account? Yes, you can have many administrator account
 14. Do you need Microsoft account to manage subscription? No, you need Azure Active Directory account to manage subscription, not Microsoft account. An account is created in the Azure Active Directory when you create the subscription. Later additional accounts can be created in the AAD to manage the subscription
 15. Does Azure resource group contains subsriptions? No, Resource Groups are containers for resources. Subscriptions contain resource groups
+16. If you use free account (only one free account per Microsoft account) it gives you 12 months access to the most popular free services. After 12 months free acc are removed.
