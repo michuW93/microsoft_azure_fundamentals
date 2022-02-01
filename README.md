@@ -93,7 +93,7 @@ for some Azure services you don't choose location, they are global (non-regional
 Azure provide Regions Pairs - it means your data can be duplicated between two locations in case of failury of one data center or natural disaster. We don't decide what regions are paired, Microsoft do it.
 
 # Resources groups
-Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases.
+Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases. You can create as many resource groups as you want, <b>you don't pay for it</b>.
 
 Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. Of course resources can communicate between different resource groups. Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database.
 You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in
