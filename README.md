@@ -382,3 +382,4 @@ Intiatives:
 10. With Azure Site Recovery you can you can replicate data over VPN? No, <b>you can replicate data over public internet with ExpressRoute</b>
 11. What's the leagal agreement between Azure customer and Microsoft secure and process data? Data Protection Addendum (DPA)
 12. Let's assume you have 100 offices and you want to generate several billing reports from Azure. Each report will contain the Azure resource utilization for each office. You can use resource tags. Tags consist of pairs key/value. You can create 100 tags and tag every resource and later generate report based on tag.
+13. Can Azure subscription contain many administrator account? Yes, you can have many administrator account
