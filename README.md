@@ -372,7 +372,7 @@ Intiatives:
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
-3. In SaaS you are responsible for installing the SaaS solution. No, you are responsible only for configuring the SaaS solution. Provider cares about infrastructure, you just pay for renting application and users can connect to Web App with a web browser. 
+3. In SaaS you are responsible for installing the SaaS solution? No, you are responsible only for configuring the SaaS solution. Provider cares about infrastructure, you just pay for renting application and users can connect to Web App with a web browser. 
 4. Using what kind of cloud can make company resign from it's own data center? Using Public Cloud, then everything is on provider. 
 5. Which statement accurately describes the Modern Lifecycle Policy for Azure services? Microsoft provides a minimum of <b>12 months</b> notice before ending support for a service.
 6. Which of the following terms refers to making a service available with no downtime for an extended period? <b>High Availability</b>
@@ -384,3 +384,4 @@ Intiatives:
 12. Let's assume you have 100 offices and you want to generate several billing reports from Azure. Each report will contain the Azure resource utilization for each office. You can use resource tags. Tags consist of pairs key/value. You can create 100 tags and tag every resource and later generate report based on tag.
 13. Can Azure subscription contain many administrator account? Yes, you can have many administrator account
 14. Do you need Microsoft account to manage subscription? No, you need Azure Active Directory account to manage subscription, not Microsoft account. An account is created in the Azure Active Directory when you create the subscription. Later additional accounts can be created in the AAD to manage the subscription
+15. Does Azure resource group contains subsriptions? No, Resource Groups are containers for resources. Subscriptions contain resource groups
