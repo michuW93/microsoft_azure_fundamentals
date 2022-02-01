@@ -383,3 +383,4 @@ Intiatives:
 11. What's the leagal agreement between Azure customer and Microsoft secure and process data? Data Protection Addendum (DPA)
 12. Let's assume you have 100 offices and you want to generate several billing reports from Azure. Each report will contain the Azure resource utilization for each office. You can use resource tags. Tags consist of pairs key/value. You can create 100 tags and tag every resource and later generate report based on tag.
 13. Can Azure subscription contain many administrator account? Yes, you can have many administrator account
+14. Do you need Microsoft account to manage subscription? No, you need Azure Active Directory account to manage subscription, not Microsoft account. An account is created in the Azure Active Directory when you create the subscription. Later additional accounts can be created in the AAD to manage the subscription
