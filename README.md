@@ -344,8 +344,15 @@ First you authenticate, then authorization can occur.
 # Azure Active Directory
 When you ever login to Office365, Azure subscriptions. If you used any of this products and you created a user, a group etc. you used Azure Active Directory. Azure AD is not only securing access to Microsoft product, it can also be used to secure on premise applications. It's single sign-on you have one user and password for many applications.
 
+# Role based access control
+Some people should have admin role and do anything, some should have dev role and only be able to deploy.
+RBAC:
+* Roles allow you to group together sets of permissions
+* we can make user or groups members of roles
+* members of roles inherit all the permissions assigned to role
+* when using roles: choose or create a role, assign role memebrs, configure a scope for a role
 
-
+There are many buildin roles but there are Three of the most important build-in roles: owner(lets you manage everything including access to resources), contributor(lets you manage everything except granting access to resources), reader(lets you view everything but not make a changes)
 
 
 
