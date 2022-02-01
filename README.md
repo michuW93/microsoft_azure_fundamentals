@@ -356,8 +356,6 @@ There are many buildin roles but there are Three of the most important build-in 
 
 
 
-
-
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
@@ -370,3 +368,4 @@ There are many buildin roles but there are Three of the most important build-in 
 9. What can require two or more elements for full authentication. How it's called? Multi-Factor Authentication (MFA) can require two or more elements for full authentication.
 10. With Azure Site Recovery you can you can replicate data over VPN? No, <b>you can replicate data over public internet with ExpressRoute</b>
 11. What's the leagal agreement between Azure customer and Microsoft secure and process data? Data Protection Addendum (DPA)
+12. Let's assume you have 100 offices and you want to generate several billing reports from Azure. Each report will contain the Azure resource utilization for each office. You can use resource tags. Tags consist of pairs key/value. You can create 100 tags and tag every resource and later generate report based on tag.
