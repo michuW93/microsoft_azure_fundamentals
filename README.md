@@ -380,7 +380,8 @@ Security:
 * Network and application - network security groups, firewalls and gateways
 * compute and data - os security, access control and encryption
 
-
+# Azure firewall
+There are two options: basic and standard. In standard option which is not free you can contact Azure DDoS experts during an attack, you can have post atack report and everything what is in basic option.
 
 
 
