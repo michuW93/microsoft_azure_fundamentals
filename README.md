@@ -218,6 +218,8 @@ In Azure there are different storage services for specific data types. Benefits 
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/categories_of_data.png?raw=true)
 
+<b>We need to remember that cost of storage will depend of localization, it's not the same in different locations, also cost depends of how much you write and read. If you want to transfer data between storage accounts in different azure regions you have to pay.</b>
+
 # Database products in Azure
 SQL Server on Virtual Machines:
 * full control over the SQL server
