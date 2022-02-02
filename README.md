@@ -194,7 +194,7 @@ You can use Application Gateway like in screenshot above. So traffic from intern
 In hybrid cloud you need connection between your on-premises network with azure virtual network (VNet).
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/hybrid_cloud_connection.png?raw=true)
 
-or you can use ExpressRoute
+or you can use ExpressRoute (inbound traffic from on-premises to Azure is free, <b>outbound from Azure to on-premises is not free</b> and any data traffic between Azure services in the same region is also free)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/expressroute.png?raw=true)
 
 # Windows virtual desktop
