@@ -40,6 +40,8 @@ Conclusion:
 * The Developer support plan has only technical support for engineers via email.
 * The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
 
+When you have free subscription and it will expire you won't be able to start virtual machine.
+
 # CAPEX vs OPEX
 Capital expenditures are depreciated over the useful life of the asset, you can't fully deduct the cost from the fiscal year the asset was paid for it. E.g buying servers for more than one year. 
 
