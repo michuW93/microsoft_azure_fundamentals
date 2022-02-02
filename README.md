@@ -120,7 +120,7 @@ In `Service Health` you have:
 `Health advisories` -  if Microsoft upgrade something or one of you features which you use are being deprecated and you need to upgrade
 `Security advisiories` - notification or violations that may affect the availability of your Azure services.
 
-You can also create alert when you want to be notified (by email/sms/push notification/mobile app) if there will be any changes to your services e.g planned maintenance.
+You can also create alert when you want to be notified (by email/sms/push notification/mobile app) if there will be any changes to your services e.g planned maintenance. For example you can create `Budget alerts` when cost of the current billing period for an Azure subscription exceed a limit.
 
 There is also `Monitor` which provide detailed information about resource (can't be applied for whole resource group).
 
