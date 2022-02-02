@@ -371,6 +371,30 @@ Intiatives:
 * are a collection of policies
 * initiatives are assigned to a scope such as a resource group
 
+# Securing Azure Virtual Networks
+Security:
+* Physical security - managed by Microsoft 
+* Identity and access - managed by you using Azure Active Directory
+* Perimeter - standard DDoS protection enabled by default
+* Network and application - network security groups, firewalls and gateways
+* compute and data - os security, access control and encryption
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Example questions
 1. When Azure machine is stopped you still pay storage costs associated to this virtual machine? Yes, you still have to pay for storage but you don't pay for stopped virtual machine.
 2. Platform as a service allow you to control operating system? No, you don't control system in PaaS, you control application. You don't have access to operating system or virtual machine in PaaS. 
