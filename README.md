@@ -167,7 +167,7 @@ Azure App Service can host:
 
 When you deploy application then address will be `https:<your app service name>.azurewebsites.net`. Suffix `azurewebsites.net` is default, you can change it.
 
-You can try Azure App Service for free but then there are some limits e.g custom domain is not available, max number of apps is 10, you can't use auto scale.
+<b>You can try Azure App Service for free but then there are some limits e.g custom domain is not available, max number of apps is 10, you can't use auto scale. Azure free account has a 5 GB blob storage limit and a 5 GB file storage limit.</b>
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/example_app.png?raw=true)
 
