@@ -395,6 +395,17 @@ There are two options: basic and standard. In standard option which is not free 
 AIP is used to classify documents and emails, it applies labels to documents (secret, top secret, public etc.) then labeled documents can be protected.
 Azure Key Vault (it's resource) is for protect our secrets.
 
+# Azure Compliance
+Compliance is 
+* process of ensuring that you follow the standards or laws laid out by governing bodies
+* people and process monitor system to detect and prevent violations
+
+
+Complience monitoring can be complex and Azure provides serveral tools to help us asses and maintence our compliance posture
+
+
+
+
 
 
 
