@@ -100,6 +100,7 @@ Service Level Agreement (SLA) guarantee at least 99.9 percent of service being u
 for some Azure services you don't choose location, they are global (non-regional) but for most of them you need to specify in which region your account/storage etc. should be created. When you e.g work in Rotterdam (where is the biggest seaport in Europe) then it's better to choose some place in Europe for server location than e.g some place on smallest continent on the world - Australia because all requests would go from Rotterdam to Canberra (capital of Australia) and responses from Canberra to Rotterdam and it takes time. We need to remember not all services are available in all locations. 
 
 Azure provide Regions Pairs - it means your data can be duplicated between two locations in case of failury of one data center or natural disaster. We don't decide what regions are paired, Microsoft do it.
+There are also some special regions: US Gov, China and Germany. It's related to compliance
 
 # Resources groups
 Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases. You can create as many resource groups as you want, <b>you don't pay for it</b>.
