@@ -39,6 +39,7 @@ Conclusion:
 * The Basic support plan does not have any technical support for engineers.
 * The Developer support plan has only technical support for engineers via email.
 * The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
+* The Premier support plan provides customer specific architectural support such as design reviews, performance tuning config and implementation delivered by Microsoft Azure specialists
 
 When you have free subscription and it will expire you won't be able to start virtual machine.
 
@@ -390,8 +391,9 @@ Security:
 # Azure firewall
 There are two options: basic and standard. In standard option which is not free you can contact Azure DDoS experts during an attack, you can have post atack report and everything what is in basic option.
 
-
-
+# Azure Information Protection
+AIP is used to classify documents and emails, it applies labels to documents (secret, top secret, public etc.) then labeled documents can be protected.
+Azure Key Vault (it's resource) is for protect our secrets.
 
 
 
