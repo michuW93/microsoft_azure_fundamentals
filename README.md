@@ -398,7 +398,7 @@ Compliance is
 Complience monitoring can be complex and Azure provides serveral tools to help us asses and maintence our compliance posture
 
 # Adopting Azure
-You need to have subcription tied to your account. Subscriptions contains resource groups and resource group contains resources. Azure Active Directory can have many subscriptions but subscription can be connected to only one Azure Active Directory.
+You need to have subcription tied to your account. Management Group contains Subscriptions, subscription contains resource groups and resource group contains resources. Azure Active Directory can have many subscriptions but subscription can be connected to only one Azure Active Directory.
 Types of subscription:
 * The Basic support plan does not have any technical support for engineers.
 * The Developer support plan has only technical support for engineers via email.
