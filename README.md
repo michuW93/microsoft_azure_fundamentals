@@ -35,13 +35,6 @@ Conclusion:
 * reliability
 * economies of scale
 
-# Types of subscription
-* The Basic support plan does not have any technical support for engineers.
-* The Developer support plan has only technical support for engineers via email.
-* The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
-* The Premier support plan provides customer specific architectural support such as design reviews, performance tuning config and implementation delivered by Microsoft Azure specialists
-
-When you have free subscription and it will expire you won't be able to start virtual machine.
 
 # CAPEX vs OPEX
 Capital expenditures are depreciated over the useful life of the asset, you can't fully deduct the cost from the fiscal year the asset was paid for it. E.g buying servers for more than one year. 
@@ -404,7 +397,15 @@ Compliance is
 
 Complience monitoring can be complex and Azure provides serveral tools to help us asses and maintence our compliance posture
 
+# Adopting Azure
+You need to have subcription tied to your account. Subscriptions contains resource groups and resource group contains resources. Azure Active Directory can have many subscriptions but subscription can be connected to only one Azure Active Directory.
+Types of subscription:
+* The Basic support plan does not have any technical support for engineers.
+* The Developer support plan has only technical support for engineers via email.
+* The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
+* The Premier support plan provides customer specific architectural support such as design reviews, performance tuning config and implementation delivered by Microsoft Azure specialists
 
+When you have free subscription and it will expire you won't be able to start virtual machine. 
 
 
 
