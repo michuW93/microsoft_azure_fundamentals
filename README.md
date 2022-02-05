@@ -405,6 +405,9 @@ Types of subscription:
 * The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
 * The Premier support plan provides customer specific architectural support such as design reviews, performance tuning config and implementation delivered by Microsoft Azure specialists
 
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/cost_diffs.png?raw=true)
+
+
 When you have free subscription and it will expire you won't be able to start virtual machine. 
 
 
