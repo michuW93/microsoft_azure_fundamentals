@@ -414,7 +414,13 @@ When you have free subscription and it will expire you won't be able to start vi
 # Service Level Agreement
 SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet
 
+# Azure previews
+Microsoft has an Azure feature preview. These previews are for evaluation while features, product, services, regions are in beta or pre-release.
 
+* Public preview - available for every Azure customer for evaluation process. They may not be SLA about this service, no support etc.
+* Private preview - available for only specified Azure customers.
+
+General Availability(GA) - After Azure preview features have been succesfully evaluated they are released for Azure customers becoming part of Azure's default product set. It's basically moving to GA. Then you get SLA, support etc.
 
 
 
