@@ -411,7 +411,8 @@ Types of subscription:
 When you have free subscription and it will expire you won't be able to start virtual machine. 
 
 
-
+# Service Level Agreement
+SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet
 
 
 
