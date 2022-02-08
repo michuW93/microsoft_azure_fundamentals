@@ -43,7 +43,7 @@ Operating Expenses are deducted in the same year they are made. Cloud computing 
 In past IT expenses have been considered a Capital Expenditure.
 
 # Types of Cloud Computing Services
-Infrastructure as a Service(IaaS), Platform as a Service(PaaS) don't allow to configure OS but e.g provide ability to scale the platform automatically and Software as a Service(SaaS)
+Infrastructure as a Service(IaaS), Platform as a Service(PaaS) don't allow to configure OS but e.g provide ability to scale the platform automatically and Software as a Service(SaaS). In SaaS you are only responsible for configuring SaaS solution. Software as a service allows users to connect to and use cloud-based apps over the Internet. Common examples are email and calendaring.
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/on_premise_iaas_paas_saas.png?raw=true)
 
 comparing to pizza:
