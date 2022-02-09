@@ -388,7 +388,7 @@ There are two options: basic and standard. In standard option which is not free 
 
 # Azure Information Protection
 AIP is used to classify documents and emails, it applies labels to documents (secret, top secret, public etc.) then labeled documents can be protected.
-Azure Key Vault (it's resource) is for protect our secrets.
+Azure Key Vault (it's resource) is for protect our secrets. Backup of key taken in one Azure location can be restored to key vault in another Azure location if both key vaults belongs to the same subscription
 
 # Azure Compliance
 Compliance is 
