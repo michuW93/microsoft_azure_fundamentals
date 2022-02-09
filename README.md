@@ -16,7 +16,7 @@ then we switch to <b>virtualization</b>:
 
 it was cheaper, needed less space but still got some disadventages - high up-front cost, need space in datacenter, need to pay for electricity
 
-then we have <b>cloud computing</b> - Cloud computing enables companies to consume a compute resource rather than having tobuild and maintain computing infrastructures in house, it's like buying electricity, not building power station:
+then we have <b>cloud computing</b> - Cloud computing enables companies to consume a compute resource rather than having to build and maintain computing infrastructures in house, it's like buying electricity, not building power station:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/cloud_computing.png?raw=true)
 
 Cloud provider owns data center and manages servers, networking, virtualization etc.
@@ -449,3 +449,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 16. If you use free account (only one free account per Microsoft account) it gives you 12 months access to the most popular free services. After 12 months free acc are removed.
 17. Copying data via VPN from on-premises server to Azure don't generate cost, if you copy from Azure to on-premises you have to pay. Data ingress over a VPN is data ‘coming in’ to Azure over the VPN. You are not charged data transfer costs for data ingress. Data egress over a VPN is data ‘going out’ of Azure over the VPN. You are charged for data egress.
 18. All Azure services that are in public preview are excluded from the Service Level Aggrements (SLA). PREVIEWS ARE PROVIDED "AS-IS," "WITH ALL FAULTS," AND "AS AVAILABLE," AND ARE EXCLUDEDFROM THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY. For virtual machines uptime is guaranteed - VM connectivity at least 99.9%.
+19. <b>Azure Cost Management doesn't estimate up-front cost for cloud. Azure Pricing Calculator can do it.</b> 
