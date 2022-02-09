@@ -108,7 +108,7 @@ You can create accounts e.g for developers who can only check what resources are
 # Azure Resource Manager(ARM)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/azure_resource_manager.png?raw=true)
 
-If you are using e.g Azure Portal you send requests to the ARM endpoint. ARM handles authentication using Azure Active Directory (Azure AD) and authorizes that you can perform action. ARM then send request to Azure service that you try to create e.g Virtual machine, Machine learning workspace etc.
+If you are using e.g Azure Portal you send requests to the ARM endpoint. ARM handles authentication using Azure Active Directory (Azure AD) and authorizes that you can perform action. <b>Up to 5000 custom roles can be creater for each Azure Active Directory.</b> ARM then send request to Azure service that you try to create e.g Virtual machine, Machine learning workspace etc.
 There are also another way to call ARM endpoint e.g Azure PowerShell, Azure CLI (`az --version`, `az login`, `az group list`, `az resource list --resource-group resourcename`)
 
 # Infrastructure as code using Azure Resource Manger Templates
