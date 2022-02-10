@@ -338,7 +338,8 @@ machine learning is about using existing data to forecast future behaviour, outc
 # Azure DevOps
 Github is central repo while git is local repo on every developer machine. Microsoft purchased GitHUb in 2018. Azure provides <b>Azure DevOps boards</b> to monitor overall status (something similar to jira). Migration from Azure DevOps pipelines to GitHub Actions is really easy, just minor changes are required. Pipeline actions are wrote in YAML.
 
-Azure provides DevTest Lab - pool of virtual machine to which admin has full access, can configure etc. and developers can claim one of this machine but just can use, install artifacts etc. Admin even decide what time there should be auto-shutdown to not pay when machine is not used.
+Azure provides DevTest Lab - pool of virtual machine to which admin has full access, can configure etc. and developers can claim one of this machine but just can use, install artifacts etc. Admin even decide what time there should be auto-shutdown to not pay when machine is not used. DevTest Labs creates labs consisting of pre-configured bases or Azure Resource Manager templates.
+
 
 # Azure security
 Authentication vs authorization. 
