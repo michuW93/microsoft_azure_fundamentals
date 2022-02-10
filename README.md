@@ -204,6 +204,8 @@ In hybrid cloud you need connection between your on-premises network with azure 
 or you can use ExpressRoute (inbound traffic from on-premises to Azure is free, <b>outbound from Azure to on-premises is not free</b> and any data traffic between Azure services in the same region is also free)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/expressroute.png?raw=true)
 
+<b>The Azure VPN device is known as a Virtual Network Gateway</b>
+
 # Windows virtual desktop
 You can access virtual desktop from any browser because many operating systems are supported: Windows, mac, android, ios.
 In past you got single virtual machine for single user, windows virtual desktop let to work people on the same machine, sharing resources, just with different discs so everyone feels like working on local computer.
