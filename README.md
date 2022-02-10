@@ -99,8 +99,8 @@ There are also some special regions: US Gov, China and Germany. It's related to 
 # Resources groups
 Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases. You can create as many resource groups as you want, <b>you don't pay for it</b>.
 
-Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. Of course resources can communicate between different resource groups. Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database.
-You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in
+Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. <b>Of course resources can communicate between different resource groups.</b> Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database. <b>One resource group can contains resources from many Azure regions.</b>
+You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in. If you delete resource group all resources in this resource group will be also deleted.
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resource_group.png?raw=true)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals-AZ-900-/blob/master/resources_in_resource_group.png?raw=true)
