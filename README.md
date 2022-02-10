@@ -96,7 +96,8 @@ for some Azure services you don't choose location, they are global (non-regional
 Azure provide Regions Pairs - it means your data can be duplicated between two locations in case of failury of one data center or natural disaster. We don't decide what regions are paired, Microsoft do it.
 There are also some special regions: US Gov, China and Germany. It's related to compliance.
 
-<b>Data transfers between Azure services located in different Azure regions are not free. Every Azure region has multiple datacenters</b> 
+<b>Data transfers between Azure services located in different Azure regions are not free. Every Azure region has multiple datacenters. There are three Availability
+Zones per supported Azure region</b> 
 
 # Resources groups
 Resource is managable iteam in Azure: virtual machines, storage accounts , web apps, databases. You can create as many resource groups as you want, <b>you don't pay for it</b>.
