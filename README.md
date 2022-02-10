@@ -52,7 +52,7 @@ comparing to pizza:
 
 Most popular cloud providers:
 * IaaS: Microsoft Azure, Amazon Web Services, Google Compute Engine, <b>Azure Virtual Machine, Azure Storage</b>
-* Paas: Azure Logic Apps, Heroku, Amazon Elastic Beanstalk, <b>Azure SQL</b>
+* Paas: Azure Logic Apps, Heroku, Amazon Elastic Beanstalk, <b>Azure SQL, Azure Cosmos DB</b>
 * Saas: Office 365, Salesforce (Salesforce Platform (also known as Force.com) is a platform as a service (PaaS) that allows developers to create add-on applications that integrate into the main Salesforce.com application. These third-party applications are hosted on Salesforce.com's infrastructure.), Dropbox
 
 Cloud Computing Services by Microsoft:
