@@ -460,3 +460,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 19. <b>Azure Cost Management doesn't estimate up-front cost for cloud. Azure Pricing Calculator can do it.</b> 
 20. Azure Application Insights detects and diagnoses anomalies in web apps
 21. Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second.
+22. PowerApps lets you quickly build app with little or no code, that's all it can do.
