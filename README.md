@@ -381,6 +381,8 @@ Intiatives:
 * are a collection of policies
 * initiatives are assigned to a scope such as a resource group
 
+<b>If you have tag assigned to one resource group it doesn't mean all resources in this resource group have the same tag. It is not inherited by default</b>
+
 # Securing Azure Virtual Networks
 Security:
 * Physical security - managed by Microsoft 
