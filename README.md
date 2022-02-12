@@ -458,3 +458,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 17. Copying data via VPN from on-premises server to Azure don't generate cost, if you copy from Azure to on-premises you have to pay. Data ingress over a VPN is data ‘coming in’ to Azure over the VPN. You are not charged data transfer costs for data ingress. Data egress over a VPN is data ‘going out’ of Azure over the VPN. You are charged for data egress.
 18. All Azure services that are in public preview are excluded from the Service Level Aggrements (SLA). PREVIEWS ARE PROVIDED "AS-IS," "WITH ALL FAULTS," AND "AS AVAILABLE," AND ARE EXCLUDEDFROM THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY. For virtual machines uptime is guaranteed - VM connectivity at least 99.9%.
 19. <b>Azure Cost Management doesn't estimate up-front cost for cloud. Azure Pricing Calculator can do it.</b> 
+20. Azure Application Insights detects and diagnoses anomalies in web apps
