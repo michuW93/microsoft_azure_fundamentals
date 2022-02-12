@@ -291,6 +291,8 @@ Blob access tiers:
 * cool tier - for storing infrequently accessed data so <b>lowest storage cost, highest data access cost</b>
 * archive tier - for data which you rarely access <b>lowest storage cost</b>
 
+<b>Data stored in an Azure Storage account has at least 3 copies.</b>
+
 # Data migration options
 
 Azure database migration service (DMS) it's managed service to migrate database data to Azure data platforms:
