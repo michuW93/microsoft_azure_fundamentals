@@ -459,3 +459,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 18. All Azure services that are in public preview are excluded from the Service Level Aggrements (SLA). PREVIEWS ARE PROVIDED "AS-IS," "WITH ALL FAULTS," AND "AS AVAILABLE," AND ARE EXCLUDEDFROM THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY. For virtual machines uptime is guaranteed - VM connectivity at least 99.9%.
 19. <b>Azure Cost Management doesn't estimate up-front cost for cloud. Azure Pricing Calculator can do it.</b> 
 20. Azure Application Insights detects and diagnoses anomalies in web apps
+21. Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second.
