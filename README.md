@@ -390,7 +390,7 @@ Security:
 * Physical security - managed by Microsoft 
 * Identity and access - managed by you using Azure Active Directory
 * Perimeter - standard DDoS protection enabled by default
-* Network and application - network security groups, firewalls and gateways
+* Network and application - network security groups (NSG works like a firewall), firewalls and gateways
 * compute and data - os security, access control and encryption
 
 # Azure firewall
