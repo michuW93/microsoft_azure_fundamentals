@@ -397,8 +397,8 @@ Security:
 There are two options: basic and standard. In standard option which is not free you can contact Azure DDoS experts during an attack, you can have post atack report and everything what is in basic option.
 
 # Azure Information Protection
-AIP is used to classify documents and emails, it applies labels to documents (secret, top secret, public etc.) then labeled documents can be protected.
-Azure Key Vault (it's resource) is for protect our secrets. <b>Backup of key taken in one Azure location can be restored to key vault in another Azure location if both key vaults belongs to the same subscription. When Key Vault is accidentaly deleted it can't be recovered via Azure Portal, it can be recovered only via CLI or Powershell. All information stored in the Key Vault are encrypted.</b>
+<b>Azure Information Protection is used to classify documents and emails</b>, it applies labels to documents (secret, top secret, public etc.) then labeled documents can be protected.
+Azure Key Vault (it's resource) is for protect our secrets e.g passwords, certificates. <b>Backup of key taken in one Azure location can be restored to key vault in another Azure location if both key vaults belongs to the same subscription. When Key Vault is accidentaly deleted it can't be recovered via Azure Portal, it can be recovered only via CLI or Powershell. All information stored in the Key Vault are encrypted.</b>
 
 # Azure Compliance
 Compliance is 
