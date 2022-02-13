@@ -129,7 +129,7 @@ In `Service Health` you have:
 
 You can also create alert when you want to be notified (by email/sms/push notification/mobile app) if there will be any changes to your services e.g planned maintenance. For example you can create `Budget alerts` when cost of the current billing period for an Azure subscription exceed a limit.
 
-There is also `Monitor` which provide detailed information about resource (can't be applied for whole resource group). <b>Azure Monitor can be used even for monitor performance of on-premises computer</b>.
+There is also `Monitor` which provide detailed information about resource (can't be applied for whole resource group). <b>Azure Monitor can be used even for monitor performance of on-premises computer. You can also create alerts in Azure Monitor so of something goes wrong you will know</b>.
 
 # Azure Mobile App
 you can use mobile app to check notifications, monitor status of your applications or even run commands using cloud shell. You can open all of your resources group, start virtual machines, connect to the VM etc.
