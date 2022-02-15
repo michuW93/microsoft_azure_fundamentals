@@ -88,7 +88,6 @@ Infrastructure is shared between serveral organizations from a specific communit
 
 # Azure data centers
 Azure is just bunch of physical data centers full of physical servers. They locations are not public, often even Microsoft employees don't know locations. 
-Service Level Agreement (SLA) guarantee at least 99.9 percent of service being up, you can increase to 99.95% when adding Azure resources to multiple regions.
 
 # Azure regions
 for some Azure services you don't choose location, they are global (non-regional) but for most of them you need to specify in which region your account/storage etc. should be created. When you e.g work in Rotterdam (where is the biggest seaport in Europe) then it's better to choose some place in Europe for server location than e.g some place on smallest continent on the world - Australia because all requests would go from Rotterdam to Canberra (capital of Australia) and responses from Canberra to Rotterdam and it takes time. We need to remember not all services are available in all locations. 
@@ -425,7 +424,7 @@ When you have free subscription and it will expire you won't be able to start vi
 
 
 # Service Level Agreement
-SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet
+SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet. Service Level Agreement (SLA) guarantee at least 99.9 percent of service being up, you can increase to 99.95% when adding Azure resources to multiple regions. You can claim credit if the availability falls below the SLA. The amount of credit depends on the availability. For example: You can claim 25% credit if the availability is less than 99.9%, 50% credit for less than 99% and 100% for less than 95% availability.
 
 # Azure previews
 Microsoft has an Azure feature preview. These previews are for evaluation while features, product, services, regions are in beta or pre-release.
