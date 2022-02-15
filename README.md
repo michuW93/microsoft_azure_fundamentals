@@ -466,3 +466,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 21. Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second.
 22. PowerApps lets you quickly build app with little or no code, that's all it can do.
 23. Azure Databricks is an Apache Spark-based analytics service
+24. In <b>In compliance manager</b> you can track your company’s regulatory standards and regulations, such as ISO27001.
