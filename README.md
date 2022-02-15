@@ -394,6 +394,7 @@ Security:
 * compute and data - os security, access control and encryption
 
 # Azure firewall
+Azure firewall does not encrypt network traffic. It is used to block or allow traffic based on source/destination IP address, source/destination ports and protocols.
 There are two options: basic and standard. In standard option which is not free you can contact Azure DDoS experts during an attack, you can have post atack report and everything what is in basic option.
 
 # Azure Information Protection
