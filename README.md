@@ -424,7 +424,7 @@ When you have free subscription and it will expire you won't be able to start vi
 
 
 # Service Level Agreement
-SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet. Service Level Agreement (SLA) guarantee at least 99.9 percent of service being up, you can increase to 99.95% when adding Azure resources to multiple regions. You can claim credit if the availability falls below the SLA. The amount of credit depends on the availability. For example: You can claim 25% credit if the availability is less than 99.9%, 50% credit for less than 99% and 100% for less than 95% availability.
+SLA is a commitment between a service provider and its internal and external customers. An SLA outlines what the service provider will provide to its customers and the standards the provider will meet. Service Level Agreement (SLA) guarantee at least 99.9 percent of service being up, you can increase to 99.95% when adding Azure resources to multiple regions. You can claim credit if the availability falls below the SLA. The amount of credit depends on the availability. For example: You can claim 25% credit if the availability is less than 99.9%, 50% credit for less than 99% and 100% for less than 95% availability. <b>SLA is not provided for free tier</b>
 
 # Azure previews
 Microsoft has an Azure feature preview. These previews are for evaluation while features, product, services, regions are in beta or pre-release.
