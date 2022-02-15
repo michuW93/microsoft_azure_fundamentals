@@ -377,7 +377,7 @@ Azure tags:
 Azure policy:
 * is a collection of rules
 * each policy is assigned to a scope such as an Azure subscription
-* using Azure policy means that resources will remain compliant with corporate standards
+* using Azure policy means that resources will remain compliant with corporate standards e.g <b>A company policy states that administrators must only be allowed to create additional Azure resources in a region in the country where their office is located.</b>
 
 Intiatives:
 * are a collection of policies
