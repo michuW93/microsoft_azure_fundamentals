@@ -473,3 +473,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 26. <b>Network peering is only between two VNets</b>. It can't be implemented between VNet and on-premises. You set up network peering when you want to two network appear as one for connectivity purposes. When you set it up, they can easily communicate.
 27. The process of makeing archived Blob data online and reusable is known as <b>rehydration</b>. Deleting or rehydrating an Archive blob before 180 days invites an early deletion fee from Microsoft.
 28. In China Azure is not operated by Microsoft and governed by Microsoft's service level agreement.
+29. As an Azure administrator, you are required to enable multi-factor authentication(MFA) only for applications of the IT department - Azure Conditional Access policy
