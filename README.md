@@ -39,7 +39,7 @@ Conclusion:
 # CAPEX vs OPEX
 Capital expenditures are depreciated over the useful life of the asset, you can't fully deduct the cost from the fiscal year the asset was paid for it. E.g buying servers for more than one year. 
 
-Operating Expenses are deducted in the same year they are made. Cloud computing - you know (more or less) how much you'll pay for cloud so Cloud Computing is <b>OPEX</b>.
+Operating Expenses are deducted in the same year they are made. Cloud computing - you know (more or less) how much you'll pay for cloud so <b>Cloud Computing is OPEX</b>.
 In past IT expenses have been considered a Capital Expenditure.
 
 # Types of Cloud Computing Services
