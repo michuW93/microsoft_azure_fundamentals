@@ -468,3 +468,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 24. In <b>In compliance manager</b> you can track your company’s regulatory standards and regulations, such as ISO27001.
 25. <b>Azure security center</b> allows you to track and manage the compliance of Azure resources. You can use this service to measure how well your Azure resources are compliant with policies that affect your workload.
 26. <b>Network peering is only between two VNets</b>. It can't be implemented between VNet and on-premises. You set up network peering when you want to two network appear as one for connectivity purposes. When you set it up, they can easily communicate.
+27. The process of makeing archived Blob data online and reusable is known as <b>rehydration</b>. Deleting or rehydrating an Archive blob before 180 days invites an early deletion fee from Microsoft.
