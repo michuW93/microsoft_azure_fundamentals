@@ -466,3 +466,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 22. PowerApps lets you quickly build app with little or no code, that's all it can do.
 23. Azure Databricks is an Apache Spark-based analytics service
 24. In <b>In compliance manager</b> you can track your company’s regulatory standards and regulations, such as ISO27001.
+25. <b>Azure security center</b> allows you to track and manage the compliance of Azure resources. You can use this service to measure how well your Azure resources are compliant with policies that affect your workload.
