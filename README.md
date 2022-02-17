@@ -474,3 +474,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 27. The process of makeing archived Blob data online and reusable is known as <b>rehydration</b>. Deleting or rehydrating an Archive blob before 180 days invites an early deletion fee from Microsoft.
 28. In China Azure is not operated by Microsoft and governed by Microsoft's service level agreement.
 29. As an Azure administrator, you are required to enable multi-factor authentication(MFA) only for applications of the IT department - Azure Conditional Access policy
+30. Azure Firewall works at the Network and Application layers, whereas network security groups work only at the Network Layer
