@@ -476,3 +476,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 29. As an Azure administrator, you are required to enable multi-factor authentication(MFA) only for applications of the IT department - <b>Azure Conditional Access policy</b>
 30. Azure Firewall works at the Network and Application layers, whereas network security groups work only at the Network Layer
 31. <b>Conditional access</b> base on Azure AD to provide access to resources based on organisational policies.
+32. <b>Azure blueprints</b> - Just as a blueprint allows an engineer or an architect to sketch a project's design parameters, Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements.
