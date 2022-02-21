@@ -475,3 +475,4 @@ General Availability(GA) - After Azure preview features have been succesfully ev
 28. In China Azure is not operated by Microsoft and governed by Microsoft's service level agreement.
 29. As an Azure administrator, you are required to enable multi-factor authentication(MFA) only for applications of the IT department - <b>Azure Conditional Access policy</b>
 30. Azure Firewall works at the Network and Application layers, whereas network security groups work only at the Network Layer
+31. <b>Conditional access</b> base on Azure AD to provide access to resources based on organisational policies.
