@@ -6,7 +6,7 @@ Tutorial based on Vlad Catrinescu, Neil Morrissey, Michael Brown and Steve Bucha
 
 # Introduction to cloud computing
 In past each company got tons of servers for different purposes. They could run on different hardware, different operating systems. Each server got it's own RAM, CPU etc.
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/old_servers.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/old_servers.png?raw=true)
 
 Problems: 
 * a lot of money 
