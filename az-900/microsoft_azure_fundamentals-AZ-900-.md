@@ -14,12 +14,12 @@ Problems:
 * for safety in case of disaster e.g flood, fire company need two serverrooms in different part of the world
 
 then we switch to <b>virtualization</b>:
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/virtualization.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/virtualization.png?raw=true)
 
 it was cheaper, needed less space but still got some disadventages - high up-front cost, need space in datacenter, need to pay for electricity
 
 then we have <b>cloud computing</b> - Cloud computing enables companies to consume a compute resource rather than having to build and maintain computing infrastructures in house, it's like buying electricity, not building power station:
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/cloud_computing.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/cloud_computing.png?raw=true)
 
 Cloud provider owns data center and manages servers, networking, virtualization etc.
 All those resorces are shared between many clients, clients don't know which server is their, all they care is that they have enought resorces which cloud provider guarantee.
@@ -46,10 +46,10 @@ In past IT expenses have been considered a Capital Expenditure.
 
 # Types of Cloud Computing Services
 Infrastructure as a Service(IaaS), Platform as a Service(PaaS) don't allow to configure OS but e.g provide ability to scale the platform automatically and Software as a Service(SaaS). In SaaS you are only responsible for configuring SaaS solution. Software as a service allows users to connect to and use cloud-based apps over the Internet. Common examples are email and calendaring.
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/on_premise_iaas_paas_saas.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/on_premise_iaas_paas_saas.png?raw=true)
 
 comparing to pizza:
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/pizza_as_a_service.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/pizza_as_a_service.png?raw=true)
 
 
 Most popular cloud providers:
@@ -74,7 +74,7 @@ analytics or business inteligence - alows company to analyze and mine data findi
 getting access to sophisticated applications and no need to manage any infrastructure yourself. Imagine all of the work needed to install Skype for business, SharePoint servers on premises vs just using the same tools in a matter of minutes.
 
 # Cloud computing deployment models
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/Cloud_Computing_Deployment_Models.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/Cloud_Computing_Deployment_Models.png?raw=true)
 
 <b>Public Cloud</b>
 Multiple clients, shares hardware and backend. Most Azure customers are in public cloud.
@@ -109,18 +109,18 @@ Resource is managable iteam in Azure: virtual machines, storage accounts , web a
 Resource group is container that hold related resources which share the same lifecycle (you update, delete, deploy them together). Resources can only exists in one Resource Group. You can move resource to another resource group but it can't be in two resources groups in the same time. <b>Of course resources can communicate between different resource groups.</b> Example: you have three applications with the same database. Database can be in completely different Resource group but still all three apps can use this database. <b>One resource group can contains resources from many Azure regions.</b>
 You can create accounts e.g for developers who can only check what resources are in resource group and admin account who can make changes. When you create resource group you specify region that it gets created in. If you delete resource group all resources in this resource group will be also deleted. If you are afraid of removing resource group by accident you can create remove lock.
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/resource_group.png?raw=true)
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/resources_in_resource_group.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/resource_group.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/resources_in_resource_group.png?raw=true)
 
 # Azure Resource Manager(ARM)
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_resource_manager.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_resource_manager.png?raw=true)
 
 If you are using e.g Azure Portal you send requests to the ARM endpoint. ARM handles authentication using Azure Active Directory (Azure AD) and authorizes that you can perform action. <b>Up to 5000 custom roles can be creater for each Azure Active Directory.</b> ARM then send request to Azure service that you try to create e.g Virtual machine, Machine learning workspace etc.
 There are also another way to call ARM endpoint e.g Azure PowerShell, Azure CLI (`az --version`, `az login`, `az group list`, `az resource list --resource-group resourcename`)
 
 # Infrastructure as code using Azure Resource Manger Templates
 you can deploy automatically by CI/CD pipelines. Azure has Azure Resources Manager Templates written in JSON, where you defines infrastructure and configuration for Azure resources. Significant point: it's declarative syntax. Example:
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_resource_manager_template.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_resource_manager_template.png?raw=true)
 
 You can save such template into library and then you can find it in `Templates`.
 
@@ -140,28 +140,28 @@ you can use mobile app to check notifications, monitor status of your applicatio
 
 # Azure Advisor for Optimizing your Azure Resources
 Azure Advisor is personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It's a tool which provides recommendations. It's even send recommendations how to optimize costs - pay less and it's not just generic recomendations, it's checking your actual deployments. If you are not interested in some recomendations you can postpone(so you won't see them for some time) them or dissmiss
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_advisor.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_advisor.png?raw=true)
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/recomendation_example.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/recomendation_example.png?raw=true)
 
 # Azure Compute
 Azure compute is a set of services that provide on-demand computing power. Compute isn't really a service in itself, it's logical grouping of several services in Azure related to running application workloads. 
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_compute.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_compute.png?raw=true)
 
 # Azure Virtual Machines
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_virtual_machines.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_virtual_machines.png?raw=true)
 
 while creating new virtual machine you can choose a lot of images so you can have preinstalled e.g Visual Studio, SQL, etc. You also choose how many CPUs, RAM should virtual machine has. If you choose two or more availability zones you need to configure load balancer by yourself. When you create virtual machine, presented cost is just for virtual machine but beside of that there are other resources that get created: virtual network, disc, azure storage account so that will be additional cost. After you create virtual machine you can still add disc to it, enable auto shutdown so at night you won't pay for it, you can configure backup system. <b>When you already have virtual machines and you create a new subscriptions you can easily move them to the new subscription</b>.
 
 # Container options in Azure
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/vm_vs_containers.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/vm_vs_containers.png?raw=true)
 
 Here we have <b>Docker</b> is open source. There is docker hub, it's library for images. Docker provides standard for container format, it's runtime process which you can install on vm. For smaller/easier infrastructure there is Azure Container Instances.
 
 You can deploy containers on VMs in Azure of course. For complex architecture there is Azure Kubernetes Service (container management system in Azure, scale out container-based applications, monitoring and deploying containers, nodes are virtual machine) so containers orchestrator. Pods are groups of containers.
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/creating_container.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/creating_container.png?raw=true)
 
 when creating container you can upload your own image, use image from docker hub. In the same way you can create kubernetes cluster.
 
@@ -179,7 +179,7 @@ When you deploy application then address will be `https:<your app service name>.
 
 <b>You can try Azure App Service for free but then there are some limits e.g custom domain is not available, max number of apps is 10, you can't use auto scale. Azure free account has a 5 GB blob storage limit and a 5 GB file storage limit.</b>
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/example_app.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/example_app.png?raw=true)
 
 There is a lot of details from deployed app - how much time response from app took, how many request there were etc. You don't have to build the whole authentication subsystem into your app, you can just mark integration with Facebook, Twitter, etc. You can get console window to the virtual machine your app is deploy, you can check logs
 
@@ -188,7 +188,7 @@ Azure functions - which developer write enable to develop serverless application
 Azure Logic Apps - visual designer to model and automate process as steps/workflow. Pros+ (pre-buuld templates, easy to use design tools)
 Azure Event Grid - event routing service using publish-subscribe model. You can react on events, event sources, topics, event subscriptions and event handlers. Use Event Grid for reactive programming, as it is just an event distributor. Notify me when I need to do something or notify some other service when it needs to do something.
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/event_grid.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/event_grid.png?raw=true)
 
 # Azure Networking
 Azure Virtual Network is Azure virtual block in your private network. Vnet enables many types of Azure resources to communicate. Virtual network has an address space that you define in Azure, which is group of IP addresses that can be assigned to resources like Virtual Machines. VNet is segmented into one or more subnetworks called subnets, which are allocated a portion of the VNet's IP address space. Virtual Machine is assigned to a subnet and Virtual Machine can communicate with other VMs on the same network. By default, resources assigned to one virtual network can't communicate with resources in another virtual network. You can enable communication between VMs in other Virtual Network by feature called VNet peering. You can enable VNet peering even between virtual machines which are in other regions. 
@@ -198,15 +198,15 @@ To communicate with the world VM need to has public IP address. IP address is a 
 When you have two Virtual Machines in the same subnet you can implement LoadBalancer. 
 
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/load_balancer.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/load_balancer.png?raw=true)
 
 You can use Application Gateway like in screenshot above. So traffic from internet can be encrypted but then behind Application Gateway it doesn't need to be encrypted.
 
 In hybrid cloud you need connection between your on-premises network with azure virtual network (VNet).
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/hybrid_cloud_connection.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/hybrid_cloud_connection.png?raw=true)
 
 or you can use ExpressRoute (inbound traffic from on-premises to Azure is free, <b>outbound from Azure to on-premises is not free</b> and any data traffic between Azure services in the same region is also free)
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/expressroute.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/expressroute.png?raw=true)
 
 <b>The Azure VPN device is known as a Virtual Network Gateway</b>
 
@@ -217,7 +217,7 @@ In past you got single virtual machine for single user, windows virtual desktop 
 # Azure content delivery network
 Caching is a process of storing data locally so it can be provided quickly when it's requested again in future.
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/azure_content_delivery_network.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/azure_content_delivery_network.png?raw=true)
 
 AppService/WebApp from which we want to get data is called `Origin server`. CDN server can cache from Web app, blob service or any public web server in internet. CND server which get date from Origin server and provide to user is called `edge server`.
 
@@ -229,7 +229,7 @@ In Azure there are different storage services for specific data types. Benefits 
 * security and platform integration
 * development features and support
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/categories_of_data.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/categories_of_data.png?raw=true)
 
 <b>We need to remember that cost of storage will depend of localization, it's not the same in different locations, also cost depends of how much you write and read. If you want to transfer data between storage accounts in different azure regions you have to pay.</b>
 
@@ -422,7 +422,7 @@ Types of subscription:
 * The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone
 * The Premier support plan provides customer specific architectural support such as design reviews, performance tuning config and implementation delivered by Microsoft Azure specialists
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/cost_diffs.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/cost_diffs.png?raw=true)
 
 
 When you have free subscription and it will expire you won't be able to start virtual machine. 
