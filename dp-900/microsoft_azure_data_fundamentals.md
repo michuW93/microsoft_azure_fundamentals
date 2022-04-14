@@ -35,3 +35,12 @@ You can mix all data types and database types in both batch data and streaming d
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/batch_data.png?raw=true)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/streaming_data.png?raw=true)
 
+# Azure Data Factory
+What problem does it solve? Nowadays we collect data from many sources: business app, erp, social media, IoT etc. then we need one source of truth so we need to **extract, tranform and load** into Data Warehouse. Azure data factory is doing ETL for us.
+
+Definition: a cloud-based (PaaS Service) data integration service (consolidates data from multiple sources into a common view) that allows you to orchestrate and automate data movement and data transformation (transforms data itself (mapping data flows) or calls other services for it).
+
+ETL(transform before loading, designed for reliability) vs ELT(transform after loading, designed for agility)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/etl_vs_elt.png?raw=true)
+
+
