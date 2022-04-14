@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi tutorial
 
 # Types of data
 * **Structured**: Follows a predefined schema, often in a tabular form. Appears in CRM, ERP, administrative systems. Data is organized in tables, tables contains records. Records conforms to a schema. Tables have primary key and can have foreign keys. We use relational databases for structured data and we communicate with it with Structured Query Language (SQL) which is declarative. 
