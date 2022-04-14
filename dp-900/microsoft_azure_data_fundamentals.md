@@ -56,3 +56,9 @@ ADF is not data storage, there is no data in ADF, you need to persist data by th
 * linked services - similar to Connection Strings - tells you where to find the data. Can point to SQL Database, Blob Storega
 * datasets - represenations of the data that we're working with so generally concerned with the data structures inside a data store e.g describing name column is string, age is number. Can point to Tables, Files
 
+# HDInsight
+Big data attributes:
+* high volume of data incoming from varied sources such as blobs, sensor data, social media and others which occupies a huge space,
+* velocity - frequency with which data accumulates, such as tweeter feeds, share market pricing, GPS data etc.
+* variety - data comes from variet mediums and sources,
+* veracity - uncertainty of the data, it can be unstructured, semi-structured or structured 
