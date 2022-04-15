@@ -48,7 +48,7 @@ There are two main versions of ADF v1 and v2. v1 base on configurations by JSON 
 There are several ways how you can interact with ADF e.g Data Factory resources, PowerShell, Python, REST Api, ARM templates. Highly integrated e.g with Azure Key Vault to securely hold credentials, Azure Monitor, Databricks etc.
 ADF is not data storage, there is no data in ADF, you need to persist data by the end of execution.
 
-**Main ADF components**:
+**Main Azure Data Factory components**:
 * activities - pipeline is logical set of activities. 3 kinds of activities: Data movement, data transformations, data control
 * pipelines - can be craeted graphically on the Data Factory site or thought code.
 * trigger - when you want pipeline to execute e.g Monday 7:00. There are three types of triggers - schedule, tumbling window (for periodic data processing e.g every 2 hours) and event-based (fired based on an event e.g file arrival or file delete).
@@ -68,3 +68,6 @@ Data lake repository of data stored in it's natural format, every chunk of data 
 Hadoop consist of:
 * distributed storage (Hadoop distributed file system) to store huge amount of data
 * map reduce key-value mechanism, paraler processing framework
+
+
+Azure HDInsight is a manged Hadoop service on the cloud. Hadoop distributed file system and map reduce remainst the same. Integration with other cloud services - Azure Data Factory, CosmosDB etc.
