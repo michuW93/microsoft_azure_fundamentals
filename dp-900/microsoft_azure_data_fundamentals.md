@@ -62,3 +62,9 @@ Big data attributes:
 * velocity - frequency with which data accumulates, such as tweeter feeds, share market pricing, GPS data etc.
 * variety - data comes from variet mediums and sources,
 * veracity - uncertainty of the data, it can be unstructured, semi-structured or structured 
+
+Data lake repository of data stored in it's natural format, every chunk of data is assigned with unique ID.
+
+Hadoop consist of:
+* distributed storage (Hadoop distributed file system) to store huge amount of data
+* map reduce key-value mechanism, paraler processing framework
