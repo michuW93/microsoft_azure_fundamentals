@@ -73,3 +73,10 @@ Hadoop consist of:
 Azure HDInsight is a manged Hadoop service on the cloud. Hadoop distributed file system and map reduce remainst the same. Integration with other cloud services - Azure Data Factory, CosmosDB, Spark, Kafka, etc.
 
 Azure HDInsights pros: scale up or down base on traffic, cost (as you dont need to keep huge dbs on premises servers), 
+
+Cluster types:
+* Hadoop - batch processing,
+* Kafka - streaming platform,
+* ML Services - predictive modelling
+* Spark - In-memory processing,
+* Interactive query - in memory caching 
