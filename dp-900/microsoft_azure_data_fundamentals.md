@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo, Niraj Joshi tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole tutorial
 
 # Types of data
 * **Structured**: Follows a predefined schema, often in a tabular form. Appears in CRM, ERP, administrative systems. Data is organized in tables, tables contains records. Records conforms to a schema. Tables have primary key and can have foreign keys. We use relational databases for structured data and we communicate with it with Structured Query Language (SQL) which is declarative. 
@@ -80,3 +80,10 @@ Cluster types:
 * ML Services - predictive modelling
 * Spark - In-memory processing,
 * Interactive query - in memory caching 
+
+# Azure Databricks
+It's fully-managed, *Apache Spark* based cloud-based platform, that can be used for Big Data processing and Machine Learning. 
+Pros:
+* multiple languages: Java, Scala, R, SQL etc.
+* integration with Azure Active Directory and Azure services: Azure Data Service, Azure Storage
+* fullfils multiple industry security compliances  
