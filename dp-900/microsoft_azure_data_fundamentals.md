@@ -87,3 +87,9 @@ Pros:
 * multiple languages: Java, Scala, R, SQL etc.
 * integration with Azure Active Directory and Azure services: Azure Data Service, Azure Storage
 * fullfils multiple industry security compliances  
+
+
+Azure Databricks components:
+* Workspace - Apache Spark workspace for exploration and visualisation 
+* Cluster - Apache Spark cluster that can be created in seconds and autoscale and share across users
+* Notebook - Apache Spark Notebook that can write, query, explore and visualise datasets
