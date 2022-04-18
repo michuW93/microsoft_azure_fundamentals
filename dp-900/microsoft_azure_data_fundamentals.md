@@ -109,4 +109,5 @@ Azure Databricks can be used in machine learning process as well as streaming (S
 * connected services: Azure Cosmos DB (directly quering), Azure ML (integration with Azure Cognitive Services), Power BI, Azure SQL etc.
 
 Synapse Pipelines - Data Integration service that allows to create data-driven workflows. 
+
 **Ingest** (Ingest data at scale using COPY activity with support for 90+ connectors) -> **Transform** (Transform data at scale with code-free, Spark Based Mapping Data Flows) -> **Orchestrate** (Automate data movement and processing using Pipelines and Control Flow activities).
