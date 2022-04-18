@@ -93,3 +93,5 @@ Azure Databricks components:
 * Workspace - Apache Spark workspace for exploration and visualisation 
 * Cluster - Apache Spark cluster that can be created in seconds and autoscale and share across users
 * Notebook - Apache Spark Notebook that can write, query, explore and visualise datasets
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/ETL_azure_databricks.png?raw=true)
