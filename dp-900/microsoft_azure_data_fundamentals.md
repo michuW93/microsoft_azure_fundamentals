@@ -107,3 +107,6 @@ Azure Databricks can be used in machine learning process as well as streaming (S
 * Compute: Dedicated SQL pools, Apache Spark pools, Mapping Data Flows, Serverless SQL Pool
 * Ingestion: Synapse Pipelines (shares code with Azure Data Factory and can copy data from variety of sources), Mapping Data Flows
 * connected services: Azure Cosmos DB (directly quering), Azure ML (integration with Azure Cognitive Services), Power BI, Azure SQL etc.
+
+Synapse Pipelines - Data Integration service that allows to create data-driven workflows. 
+**Ingest** (Ingest data at scale using COPY activity with support for 90+ connectors) -> **Transform** (Transform data at scale with code-free, Spark Based Mapping Data Flows) -> **Orchestrate** (Automate data movement and processing using Pipelines and Control Flow activities).
