@@ -101,4 +101,4 @@ Azure Databricks can be used in machine learning process as well as streaming (S
 # Azure Synapse
 Azure Synapse is not a single service, it's group of multiple well-integrated Azure data services. It brings data integration, enterprise data warehousing and big data analytics.
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/synapse_workspace.jpeg?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/synapse_workspace.png?raw=true)
