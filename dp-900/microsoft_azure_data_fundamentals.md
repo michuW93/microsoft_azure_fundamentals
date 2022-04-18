@@ -95,3 +95,5 @@ Azure Databricks components:
 * Notebook - Apache Spark Notebook that can write, query, explore and visualise datasets
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/ETL_azure_databricks.png?raw=true)
+
+Azure Databricks can be used in machine learning process as well as streaming (Structured Streaming).
