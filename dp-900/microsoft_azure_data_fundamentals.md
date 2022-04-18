@@ -99,6 +99,11 @@ Azure Databricks components:
 Azure Databricks can be used in machine learning process as well as streaming (Structured Streaming).
 
 # Azure Synapse
-Azure Synapse is not a single service, it's group of multiple well-integrated Azure data services. It brings data integration, enterprise data warehousing and big data analytics.
+**Azure Synapse is not a single service, it's group of multiple well-integrated Azure data services.** It brings data integration, enterprise data warehousing and big data analytics.
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/synapse_workspace.png?raw=true)
+
+* Storage: Azure Data Lake Gen2 (one acc is mounted by default)
+* Compute: Dedicated SQL pools, Apache Spark pools, Mapping Data Flows, Serverless SQL Pool
+* Ingestion: Synapse Pipelines (shares code with Azure Data Factory and can copy data from variety of sources), Mapping Data Flows
+* connected services: Azure Cosmos DB (directly quering), Azure ML (integration with Azure Cognitive Services), Power BI, Azure SQL etc.
