@@ -3,6 +3,11 @@ microsoft_azure_fundamentals-DP-900-
 # microsoft_azure_fundamentals-DP-900-
 Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic tutorial
 
+# What is data?
+Data is a collection of facts, such as numbers, words, measurements, or just description of things.
+
+Data helps you make better decisions - decisions that are based on the knowledge coming from the data.
+
 # Types of data
 * **Structured**: Follows a predefined schema, often in a tabular form. Appears in CRM, ERP, administrative systems. Data is organized in tables, tables contains records. Records conforms to a schema. Tables have primary key and can have foreign keys. We use relational databases for structured data and we communicate with it with Structured Query Language (SQL) which is declarative. 
 Examples of Relations Database: **Microsoft SQL Server** - there is Azure Service called **Microsoft Azure SQL Database**, **MySQL**, **PostgreSQL** - more complex than MySQL
