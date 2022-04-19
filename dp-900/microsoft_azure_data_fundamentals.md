@@ -111,3 +111,23 @@ Azure Databricks can be used in machine learning process as well as streaming (S
 Synapse Pipelines - Data Integration service that allows to create data-driven workflows. 
 
 **Ingest** (Ingest data at scale using COPY activity with support for 90+ connectors) -> **Transform** (Transform data at scale with code-free, Spark Based Mapping Data Flows) -> **Orchestrate** (Automate data movement and processing using Pipelines and Control Flow activities).
+
+
+**Dedicated SQL Pool**:
+* Earlier known as Azure SQL Data Warehouse
+* Available as standalone service and within Synapse
+* like a SQL Server Database
+* Massive Parallel Processing (MPP) architecture. One control node -> several compute nodes (more nodes, more to pay) -> azure storage. If there is a query then control node analyse and send querites to compute nodes, they do the same and query db then get answer and merge results from many dbs and send results to control node which merge results from many compute node and send response.
+* elastically scale compute and storage separately
+* pause or resume service to save cost
+* Polybase - control node send metadata to compute node and compute nodes read sth from Azure Storage directly so Polybase allows to read and write data in external storage using T-SQL, parallel processing of files - extremaly fast.
+
+**Spark on Synapse**:
+* open source, in-memory engine, runs on cluster
+* performs distributed processing of data
+* multiple language support
+* integration with Synapse services
+
+We can use Spark for Batch processing, stream processing, machine learning.
+
+**Serverless SQL Pool** (uses distributed SQL engine called Polaris) - distributed data processing system that allows to run federated queries on variety of sources using T-SQL. How query execution works? User send query to control node, it analyze query and send to some of some compute nodes, compute nodes then run queries against external datasources (data lake, cosmosDB, spark tables).
