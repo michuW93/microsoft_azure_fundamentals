@@ -150,4 +150,5 @@ We can use Spark for Batch processing, stream processing, machine learning.
 
 
 # Questions:
-Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
+1. Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
+2. You need to query table Products in an Azure SQL database. You must have SELECT access to the Products table, you must have user in the database and your IP address must be allowed to connect to the database.
