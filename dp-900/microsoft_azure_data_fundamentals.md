@@ -37,7 +37,8 @@ A transaction is a set of related changes which is used to achieve some of the A
 So, transactions are a mechanism for guaranteeing these properties; they are a way of grouping related actions together such that as a whole, a group of operations can be atomic, produce consistent results, be isolated from other operations, and be durably recorded.
 
 
-* **Analytical** - support queries for getting insights or an overview over large amounts of data for KPIs, analysis, reports and business intelligence. Lower volume of read-only queries but larger amount of data. Batch-based or streaming data (OLAP)
+* **Analytical** - support queries for getting insights or an overview over large amounts of data for KPIs, analysis, reports and business intelligence. Lower volume of read-only queries but larger amount of data. Batch-based or streaming data (Online Analytical Processing System - OLAP). While Transactional systems are for WRITE, analytical systems are for READ. OLAP focus shifts from single transaction to aggregated data so it's for big picture. Generate insights - Sales trends, customer retention, process improvement.
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/olap_workflow.png?raw=true)
 
 
 # Analytical processing types
