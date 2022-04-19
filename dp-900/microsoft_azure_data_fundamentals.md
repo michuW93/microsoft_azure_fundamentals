@@ -136,3 +136,8 @@ Synapse Pipelines - Data Integration service that allows to create data-driven w
 We can use Spark for Batch processing, stream processing, machine learning.
 
 **Serverless SQL Pool** (uses distributed SQL engine called Polaris) - distributed data processing system that allows to run federated queries on variety of sources using T-SQL. How query execution works? User send query to control node, it analyze query and send to some of some compute nodes, compute nodes then run queries against external datasources (data lake, cosmosDB, spark tables).
+
+
+
+# Questions:
+Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
