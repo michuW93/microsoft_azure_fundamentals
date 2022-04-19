@@ -15,7 +15,7 @@ Different types of data require different types of storage.
 Examples of Relations Database: **Microsoft SQL Server** - there is Azure Service called **Microsoft Azure SQL Database**, **MySQL**, **PostgreSQL** - more complex than MySQL
 
 Normalization is the process of organising data in database it allows to avoid data redundancy withing tables and relationships. Redundant Data wastes space and causes maintenance problems. In most cases 3rd Normal Form is considered necessary. It eliminate transitive dependency.
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/3_normal_form_0.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/3_normal_form_0.jpeg?raw=true)
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/3_normal_form.png?raw=true)
 
