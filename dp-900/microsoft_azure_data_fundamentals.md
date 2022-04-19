@@ -9,14 +9,21 @@ Data is a collection of facts, such as numbers, words, measurements, or just des
 Data helps you make better decisions - decisions that are based on the knowledge coming from the data.
 
 # Types of data
-* **Structured**: Follows a predefined schema, often in a tabular form. Appears in CRM, ERP, administrative systems. Data is organized in tables, tables contains records. Records conforms to a schema. Tables have primary key and can have foreign keys. We use relational databases for structured data and we communicate with it with Structured Query Language (SQL) which is declarative. 
+Different types of data require different types of storage.
+
+* **Structured**: Follows a predefined schema, often in a tabular form. Appears in CRM, ERP, administrative systems, banking solutions, flight reservations, e-commerce app etc. Data is organized in tables, tables contains records. Records conforms to a schema. Tables have primary key and can have foreign keys. We use relational databases for structured data and we communicate with it with Structured Query Language (SQL) which is declarative. 
 Examples of Relations Database: **Microsoft SQL Server** - there is Azure Service called **Microsoft Azure SQL Database**, **MySQL**, **PostgreSQL** - more complex than MySQL
+
+Normalization is the process of organising data in database it allows to avoid data redundancy withing tables and relationships. Redundant Data wastes space and causes maintenance problems. In most cases 3rd Normal Form is considered necessary. It eliminate transitive dependency.
+
 * **Unstructured**: No predefined structure, no notion or fields, labels or types. Example: videos, images, audio files. Much harder to automatically process, often processed using machine learning to generate more structure data. We use non relational databases for unstructured data. They don't store data in tables but in collections or containers, they don't follow predefined schema. Different types available: **Document database**, **Wide-column store** but without predefined schema and **key-value store**, **Graph databases**. Examples of non relational dbs: **Redis** - often used for caching, **Cassandra**, **Azure CosmosDB** - only available on Azure.
 * **Semi-structured**: Is not necessarily tabular in nature, yet has an observable structure. Example: log files, data export/import formats e.g XML, JSON, CSV
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/dp-900/images/types_of_data.png?raw=true)
 
+
+
 # Workloads:
-* **Transactional** - support high volumes of reads and writes to support information systems like CRMs, tracking software or record keeping. Answers are always correct and full. Transactions / ACID properties, OLTP
+* **Transactional** - support high volumes of reads and writes to support information systems like CRMs, tracking software or record keeping. Answers are always correct and full. Transactions / ACID properties, OLTP (suitable for high volume of transactions, Support insert, update and delete statements, convenient for running ad-hoc queries, focus on data integrity). Relational database are suitable for transaction processing
 
 ACID is a set of properties that you would like to apply when modifying a database.
    * Atomicity - means that you can guarantee that all of a transaction happens, or none of it does; you can do complex operations as one single unit, all or nothing, and a crash, power failure, error, or anything else won't allow you to be in a state in which only some of the related changes have happened. 
