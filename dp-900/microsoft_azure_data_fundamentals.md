@@ -200,6 +200,12 @@ There are three types of access tiers:
 * cool - cost less than hot but also provides lesser performance
 * archive - lowest storage cost but latency to retrieve data is the highest. If we want to access archived data we need to rehydrate(bring data back to cool or hot tier) our data first.
 
+# Azure File Storage
+Azure File storage enables you to create files shares in the cloud, and access these file shares from anywhere with an internet connection. It uses SMB 3.0 protocol. Azure file storage supports Azure Active Directory so we can control access using authentication and authorisation. Advantages: very high capacity, supports Azure File Syns and AzCopy, data encryption at rest (when your data is not moving then it's 100% encrypted). Example usecases: Migration of application to the cloud, data sharing across on-premises and could, hosting high availability workload data
+
+There are two tiers for Azure File storage:
+* standard - HDD (hard disk drives)
+* premium - SSD
 
 
 
