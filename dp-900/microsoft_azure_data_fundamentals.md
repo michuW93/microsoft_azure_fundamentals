@@ -156,13 +156,23 @@ Platform as a service: Azure SQL DB, CosmosDB, Synapse Analytics
 
 Software as a service: Outlook, Office365
 
+# Azure Data Services
+Azure data services are built to ensure that your database is available for at least 99.99% of the time.
 
+**Azure SQL Database** - platform as a service offering from Microsoft. Azure SQL DB Available Options:
+* Single DB - you set it up and run. You are charged per hour you requested.
+* Elastic Pool - multiple databases share the same resources (memory, storage, process)
+* Managed Instance - you can install multiple DB's on single instance. You have full control over security and resources like in traditional on-prem server.
 
+**Azure DB for MySQL** is commonly implemented using single server deployment mode. You can create Azure DB for MySQL by command-line interface, Azure PowerShell, Azure portal.
+* based on MySQL Community Edition
+* Automatic backups and restores
+* Automated maintenance
+* elastic scaling
+* build-in high availability
+* cost optimization
 
-
-
-
-
+**Azure DB for PostgreSQL** - it's hybrid relational-object database which means you can store relational and non-relational data in it using custom data types to define entity properties. It can store and handle geometric data such as circles, lines, triangles etc. It provides two deployment models: single server and hyperscale (Citus) for large DBs
 
 
 # Questions:
