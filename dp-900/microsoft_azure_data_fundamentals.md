@@ -174,6 +174,9 @@ Azure data services are built to ensure that your database is available for at l
 
 **Azure DB for PostgreSQL** - it's hybrid relational-object database which means you can store relational and non-relational data in it using custom data types to define entity properties. It can store and handle geometric data such as circles, lines, triangles etc. It provides two deployment models: single server and hyperscale (Citus) for large DBs
 
+# Queries in relational DBs
+DML - data manipulation language. SELECT, INSERT, CREATE, DELETE, etc.
+DDL - data definition language. CREATE, DROP, ALTER, RENAME
 
 # Questions:
 1. Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
