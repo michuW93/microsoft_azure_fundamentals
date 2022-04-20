@@ -149,6 +149,18 @@ We can use Spark for Batch processing, stream processing, machine learning.
 
 **Serverless SQL Pool** (uses distributed SQL engine called Polaris) - distributed data processing system that allows to run federated queries on variety of sources using T-SQL. How query execution works? User send query to control node, it analyze query and send to some of some compute nodes, compute nodes then run queries against external datasources (data lake, cosmosDB, spark tables).
 
+# Delivery Models in Azure
+Infrastructure as a service: Azure VMs, Storage accounts
+Platform as a service: Azure SQL DB, CosmosDB, Synapse Analytics
+Software as a service: Outlook, Office365
+
+
+
+
+
+
+
+
 
 
 # Questions:
