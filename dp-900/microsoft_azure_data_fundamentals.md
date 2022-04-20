@@ -151,7 +151,9 @@ We can use Spark for Batch processing, stream processing, machine learning.
 
 # Delivery Models in Azure
 Infrastructure as a service: Azure VMs, Storage accounts
+
 Platform as a service: Azure SQL DB, CosmosDB, Synapse Analytics
+
 Software as a service: Outlook, Office365
 
 
