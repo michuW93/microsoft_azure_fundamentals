@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave tutorial
 
 # What is data?
 Data is a collection of facts, such as numbers, words, measurements, or just description of things.
@@ -177,6 +177,82 @@ Azure data services are built to ensure that your database is available for at l
 # Queries in relational DBs
 DML - data manipulation language. SELECT, INSERT, CREATE, DELETE, etc.
 DDL - data definition language. CREATE, DROP, ALTER, RENAME
+
+# Azure Table Storage (non relational)
+Azure Table Storage is a scalable key-value store held in the cloud. Items are reffered as rows and fields are refered as columns. No relationships, no stored procedures, denormalized data, grouping related rows based on partition key to search much faster. Very useful for event logging, performance monitoring data
+
+Advantages:
+* simpler to scale
+* semi-structured data
+* no complex relationships so fast row insertion and faster data retrieval when you know partition key
+* high-availability in a single region - data is copied multiple times in a single region
+
+# Azure Blob Storage 
+Azure Blob (**binary large object**) storage is a service that enables you to store massive amounts of unstructured data, or blobs, in the cloud. Advantages: Reduncancy(3 copies in one region), soft delete - we can get back accidentally removed or overwritten blob. Example usecase: serving images/docs from browser, streaming video and audio, storing data for backups and store
+
+Three types of blobs:
+* Block - it's good for large binary objects which change infrequently
+* page - collection of fixed size, 512 byte pages. They are optimized to support random read and writes
+* append - an append blob is block blog optimized to support append operations, you cant update or delete exsisting blobs, you can only append new blob at the end of last blob
+
+There are three types of access tiers:
+* hot (default) - for data which we have to access frequently
+* cool - cost less than hot but also provides lesser performance
+* archive - lowest storage cost but latency to retrieve data is the highest. If we want to access archived data we need to rehydrate(bring data back to cool or hot tier) our data first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Questions:
 1. Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
