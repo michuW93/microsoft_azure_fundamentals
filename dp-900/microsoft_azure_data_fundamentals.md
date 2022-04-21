@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave, Viktor Suha tutorial
 
 # What is data?
 Data is a collection of facts, such as numbers, words, measurements, or just description of things.
@@ -230,17 +230,45 @@ Challanges:
 
 in Azure we have **Azure time series insights** to manage it. It's stream processing, data store, analytics, reporting
 
+# Azure Data Studio
+Azure data studo:
+* lightweight
+* multi-database desktop tool - it let you connect to multiple different databases including SQL Server and PostgreSQL
+* cross-platform because runs on Windows, Linux and MacOS
+* open source - code is on GitHub
+
+In Azure Data Studio you can import files with data into tables, you can compare database schema with different database etc.
+
+Working with Azure Data Studio: first you connect to db, then you run query then you can e.g visualize data on bar chart or export query results to different formats e.g JSON
+
+Database connections:
+* SQL Server,
+* PostgreSQL
+* SQL Server Big data cluster
+* azure SQL database
+* Azure Synapse Analytics
+* Azure data explorer
+* Azure Database for PostgreSQL
 
 
+Azure Data Studio vs SQL Server Management Studio - when you mostly run and edit queries and dont need complex database management tool use Azure Data Studio, in the other hand when you mostly manage the database and need full database management capability, including security task use SQL Server Management Studio (it works only on Windows).
 
 
+Main components of Azure Data Studio:
+* connections - where you create and manage database connections. You can create server groups to categorize connections for easier maintenance e.g test dbs
+* dashboards - can display custom properties e.g performance data
+* object explorer - to explore tables or views
+* query editor - to run and edit SQL query
+* query result viewer - displays data
+* notebooks
+* extensions
 
-
-
-
-
-
-
+* command Palette - shortcuts
+* integrated terminal - to run PowerShell or bash commands without leaving tool
+* source control
+* accounts
+* settings
+* deployment wizard
 
 
 
