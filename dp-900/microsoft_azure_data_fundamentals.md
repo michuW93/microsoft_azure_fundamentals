@@ -207,7 +207,17 @@ There are two tiers for Azure File storage:
 * standard - HDD (hard disk drives)
 * premium - SSD
 
+# Azure CosmosDB
+Azure Cosmos DB is multi-model NoSQL database management system. Data as partitioned set of documents where document is a collection of files identified by a key. Azure CosmosDB supports JavaScript Object Notation (JSON), CosmosDB supports many APIs like SQL API, Table API, MongoDB API, Gremlin API etc.
 
+CosmosDB is used where you have a frequent bursts of large activity (IoT). Single digit latency e.g it's useful for gaming platforms, it's also great for e-commerce because of elastic scale up or down. Skype, Xbox, Microsoft 365 are using CosmosDB
+
+Advantages:
+* high availability 99.999%
+* replication across regions
+* 10-ms or less latancies for reads/writes
+* certified for compliance standards
+* encrypted at rest and in motion - data is always secured
 
 
 
