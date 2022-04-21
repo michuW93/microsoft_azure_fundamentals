@@ -220,6 +220,15 @@ Advantages:
 * encrypted at rest and in motion - data is always secured
 
 
+# Time Series Data
+Time series data is a set of values organized by time. Usecase: asset progress over time, detect anomalies, visualize trends, compare historical trends.
+
+Challanges:
+* high volume - a lot of data
+* high speed storage
+* powerful computation
+
+in Azure we have **Azure time series insights** to manage it. It's stream processing, data store, analytics, reporting
 
 
 
