@@ -8,6 +8,8 @@ Data is a collection of facts, such as numbers, words, measurements, or just des
 
 Data helps you make better decisions - decisions that are based on the knowledge coming from the data.
 
+**Descriptive analytics** is the process of using current and historical data to identify trends and relationships.
+
 # Types of data
 Different types of data require different types of storage.
 
