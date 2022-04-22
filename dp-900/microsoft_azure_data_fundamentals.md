@@ -211,6 +211,9 @@ There are two tiers for Azure File storage:
 * premium - SSD
 
 # Azure CosmosDB
+It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency at the 99th percentile.
+
+
 Azure Cosmos DB is multi-model NoSQL database management system. Data as partitioned set of documents where document is a collection of files identified by a key. Azure CosmosDB supports JavaScript Object Notation (JSON), CosmosDB supports many APIs like SQL API, Table API, MongoDB API, Gremlin API etc.
 
 CosmosDB is used where you have a frequent bursts of large activity (IoT). Single digit latency e.g it's useful for gaming platforms, it's also great for e-commerce because of elastic scale up or down. Skype, Xbox, Microsoft 365 are using CosmosDB
@@ -280,9 +283,6 @@ Power BI Desktop is a free desktop application that supports the full analytics 
 There is also a Web version of Power BI also you can check content on iOS, Android, Windows, anywhere.
 
 It can also produce Paginated reports - they are great for content ready to be printed. In Interactive report when we have 1000 rows it will just print some of these, on the other hand paginated report will print all 1000 rows over multiple pages.
-
-# CosmosDB (PaaS service)
-It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency at the 99th percentile.
 
 
 
