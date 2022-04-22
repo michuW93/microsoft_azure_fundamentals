@@ -259,7 +259,7 @@ Azure Data Studio vs SQL Server Management Studio - when you mostly run and edit
 Main components of Azure Data Studio:
 * connections - where you create and manage database connections. You can create server groups to categorize connections for easier maintenance e.g test dbs
 * dashboards - can display custom properties e.g performance data
-* object explorer - to explore tables or views
+* object explorer - to explore tables or views (**In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object. This pre-established query command is kept in the database dictionary. Unlike ordinary base tables in a relational database, a view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested**)
 * query editor - to run and edit SQL query
 * query result viewer - displays data
 * notebooks
