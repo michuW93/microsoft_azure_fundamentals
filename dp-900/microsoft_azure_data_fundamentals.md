@@ -280,6 +280,8 @@ There is also a Web version of Power BI also you can check content on iOS, Andro
 
 It can also produce Paginated reports - they are great for content ready to be printed. In Interactive report when we have 1000 rows it will just print some of these, on the other hand paginated report will print all 1000 rows over multiple pages.
 
+# Fact table and Dimension Tables
+
 In Data Warehouse Modeling, a star schema and a snowflake schema consists of Fact and Dimension tables.
 
 **Fact Table:**
