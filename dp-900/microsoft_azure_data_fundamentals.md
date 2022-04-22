@@ -176,7 +176,7 @@ Azure data services are built to ensure that your database is available for at l
 
 # Queries in relational DBs
 DML - data manipulation language. SELECT, INSERT, CREATE, DELETE, etc.
-DDL - data definition language. CREATE, DROP, ALTER, RENAME
+DDL - data definition language. CREATE, DROP, ALTER, RENAME e.g ALTER TABLE Employee ADD BirthData date;
 
 # Azure Table Storage (non relational)
 Azure Table Storage is a scalable key-value store held in the cloud. Items are reffered as rows and fields are refered as columns. No relationships, no stored procedures, denormalized data, grouping related rows based on partition key to search much faster. Very useful for event logging, performance monitoring data
