@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave, Viktor Suha, Mihaela Danci tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave, Viktor Suha, Mihaela Danci, JS Padoan tutorial
 
 # What is data?
 Data is a collection of facts, such as numbers, words, measurements, or just description of things.
@@ -279,6 +279,21 @@ Power BI Desktop is a free desktop application that supports the full analytics 
 There is also a Web version of Power BI also you can check content on iOS, Android, Windows, anywhere.
 
 It can also produce Paginated reports - they are great for content ready to be printed. In Interactive report when we have 1000 rows it will just print some of these, on the other hand paginated report will print all 1000 rows over multiple pages.
+
+# CosmosDB (PaaS service)
+It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency at the 99th percentile.
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Fact table and Dimension Tables
 
