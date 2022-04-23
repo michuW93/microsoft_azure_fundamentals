@@ -10,6 +10,9 @@ Data helps you make better decisions - decisions that are based on the knowledge
 
 **Descriptive analytics** is the process of using current and historical data to identify trends and relationships.
 
+**What is the Modern Data Warehouse?**
+Using cloud services to manage data around big data analytics, relational online analytical processing, streaming real-time data and storing historical data.
+
 # Types of data
 Different types of data require different types of storage.
 
