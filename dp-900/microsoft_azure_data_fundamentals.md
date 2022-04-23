@@ -213,7 +213,7 @@ There are two tiers for Azure File storage:
 * premium - SSD
 
 # Azure CosmosDB
-It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency at the 99th percentile.
+It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency (single-digit) at the 99th percentile.
 
 
 Azure Cosmos DB is multi-model NoSQL database management system. Data as partitioned set of documents where document is a collection of files identified by a key. Azure CosmosDB supports JavaScript Object Notation (JSON), CosmosDB supports many APIs like SQL API, Table API, MongoDB API, Gremlin API etc.
