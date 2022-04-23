@@ -227,6 +227,7 @@ Advantages:
 * certified for compliance standards
 * encrypted at rest and in motion - data is always secured
 
+Cost of CosmosDB is measured by Request Units. To estimate how much we will need to pay there is Capacity Planner.
 
 # Time Series Data
 Time series data is a set of values organized by time. Usecase: asset progress over time, detect anomalies, visualize trends, compare historical trends.
