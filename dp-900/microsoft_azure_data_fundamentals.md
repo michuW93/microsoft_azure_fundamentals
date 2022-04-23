@@ -1,7 +1,7 @@
 microsoft_azure_fundamentals-DP-900-
 
 # microsoft_azure_fundamentals-DP-900-
-Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave, Viktor Suha, Mihaela Danci, JS Padoan tutorial
+Tutorial based on Henry Been, Emilio Melo, Niraj Joshi, Ifedayo Bamikole, Mohit Batra, Nikola Ilic, Pinal Dave, Viktor Suha, Mihaela Danci, JS Padoan, Thomas LeBlanc tutorial
 
 # What is data?
 Data is a collection of facts, such as numbers, words, measurements, or just description of things.
