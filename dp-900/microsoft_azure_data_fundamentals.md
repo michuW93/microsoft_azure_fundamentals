@@ -99,7 +99,7 @@ Azure HDInsight is a manged Hadoop service on the cloud. Hadoop distributed file
 Azure HDInsights pros: scale up or down base on traffic, cost (as you dont need to keep huge dbs on premises servers), 
 
 Cluster types:
-* Hadoop - batch processing,
+* Hadoop - batch processing (where latency is expected),
 * Kafka - streaming platform,
 * ML Services - predictive modelling
 * Spark - In-memory processing,
@@ -152,7 +152,7 @@ Synapse Pipelines - Data Integration service that allows to create data-driven w
 * multiple language support
 * integration with Synapse services
 
-We can use Spark for Batch processing, stream processing, machine learning.
+We can use Spark for Batch processing (it can output data to a file store, relational DB or NoSQL), stream processing, machine learning.
 
 **Serverless SQL Pool** (uses distributed SQL engine called Polaris) - distributed data processing system that allows to run federated queries on variety of sources using T-SQL. How query execution works? User send query to control node, it analyze query and send to some of some compute nodes, compute nodes then run queries against external datasources (data lake, cosmosDB, spark tables).
 
