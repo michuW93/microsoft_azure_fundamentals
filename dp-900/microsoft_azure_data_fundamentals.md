@@ -10,6 +10,8 @@ Data helps you make better decisions - decisions that are based on the knowledge
 
 **Descriptive analytics** is the process of using current and historical data to identify trends and relationships.
 
+An **Entity** (Church and empire were fused in a single entity) is the thing in which information needs to be known or held. **Table** is collection of entities. **Row** is the single instance of entity.
+
 **What is the Modern Data Warehouse?**
 Using cloud services to manage data around big data analytics, relational online analytical processing, streaming real-time data and storing historical data.
 
