@@ -354,7 +354,7 @@ It contains all the primary keys of the dimension and associated facts or measur
 # Questions:
 1. Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
 2. You need to query table Products in an Azure SQL database. You must have SELECT access to the Products table, you must have user in the database and your IP address must be allowed to connect to the database.
-3. Each Azure SQL database is protected by **Azure firewall**.
+3. Each Azure SQL database (it supports OLTP) is protected by **Azure firewall**.
 4. creating closing caption is cognitive analitycs.
 5. With a **clustered index** the rows are stored physically on the disk in the same order as the index. Therefore, there can be only one clustered index.
 6. **Transparent data encryption** encrypts the database to protect it at rest.
