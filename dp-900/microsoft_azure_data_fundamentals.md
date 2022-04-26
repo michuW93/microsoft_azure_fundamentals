@@ -362,3 +362,4 @@ It contains all the primary keys of the dimension and associated facts or measur
 8. Extreact, Transform, Load is the correct approach when you need to filter sensitive data before load it into an analytical model.
 9. **Azure query editor** is available in the Azure Portal.
 10. **Azure resource manager template** uses JSON and it's used to automate the creation of an interdependent group of Azure resources in a repeatable way
+11. A **columnar database** is a database management system (DBMS) that stores data in columns instead of rows. The purpose of a columnar database is to efficiently write and read data to and from hard disk storage in order to speed up the time it takes to return a query. Columnar databases store data in a way that greatly improves disk I/O performance. They are particularly helpful for data analytics and data warehousing.
