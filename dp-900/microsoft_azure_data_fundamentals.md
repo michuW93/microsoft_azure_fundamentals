@@ -8,7 +8,10 @@ Data is a collection of facts, such as numbers, words, measurements, or just des
 
 Data helps you make better decisions - decisions that are based on the knowledge coming from the data.
 
-**Descriptive analytics** is the process of using current and historical data to identify trends and relationships.
+Types of analytics:
+* **Descriptive analytics** is the process of using current and historical data to identify trends and relationships. It's about past
+* **Diagnostic analytics** What's happening, go into details to check e.g why did sales increased last month?
+* **Prescriptive analytics** what actions should we take?
 
 An **Entity** (Church and empire were fused in a single entity) is the thing in which information needs to be known or held. **Table** is collection of entities. **Row** is the single instance of entity.
 
@@ -221,7 +224,7 @@ There are two tiers for Azure File storage:
 It's NoSQL database that supports global distribution build-in automatic and instant scalability, guaranteed low latency (single-digit) at the 99th percentile.
 
 
-Azure Cosmos DB is multi-model NoSQL database management system. Data as partitioned set of documents where document is a collection of files identified by a key. Azure CosmosDB supports JavaScript Object Notation (JSON), CosmosDB supports many APIs like SQL API, Table API, MongoDB API, Gremlin API etc.
+Azure Cosmos DB is multi-model NoSQL database management system. Data as partitioned set of documents where document is a collection of files identified by a key. Azure CosmosDB supports JavaScript Object Notation (JSON), CosmosDB supports many APIs like SQL API, Table API, MongoDB API, **G**remlin API (**G**raphs) etc.
 
 CosmosDB is used where you have a frequent bursts of large activity (IoT). Single digit latency e.g it's useful for gaming platforms, it's also great for e-commerce because of elastic scale up or down. Skype, Xbox, Microsoft 365 are using CosmosDB
 
@@ -351,3 +354,8 @@ It contains all the primary keys of the dimension and associated facts or measur
 # Questions:
 1. Your company needs to implement a relational database in Azure, maintenance must be minimized. You should use Azure SQL Database.
 2. You need to query table Products in an Azure SQL database. You must have SELECT access to the Products table, you must have user in the database and your IP address must be allowed to connect to the database.
+3. Each Azure SQL database is protected by **Azure firewall**.
+4. creating closing caption is cognitive analitycs.
+5. With a **clustered index** the rows are stored physically on the disk in the same order as the index. Therefore, there can be only one clustered index.
+6. **Transparent data encryption** encrypts the database to protect it at rest.
+7. **Linked service** - the information used to connect to external resources
