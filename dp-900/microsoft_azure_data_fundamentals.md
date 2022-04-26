@@ -361,4 +361,4 @@ It contains all the primary keys of the dimension and associated facts or measur
 7. **Linked service** - the information used to connect to external resources.
 8. Extreact, Transform, Load is the correct approach when you need to filter sensitive data before load it into an analytical model.
 9. **Azure query editor** is available in the Azure Portal.
-10. **Azure resource manager** uses JSON
+10. **Azure resource manager** uses JSON and it's used to automate the creation of an interdependent group of Azure resources in a repeatable way
