@@ -358,4 +358,5 @@ It contains all the primary keys of the dimension and associated facts or measur
 4. creating closing caption is cognitive analitycs.
 5. With a **clustered index** the rows are stored physically on the disk in the same order as the index. Therefore, there can be only one clustered index.
 6. **Transparent data encryption** encrypts the database to protect it at rest.
-7. **Linked service** - the information used to connect to external resources
+7. **Linked service** - the information used to connect to external resources.
+8. Extreact, Transform, Load is the correct approach when you need to filter sensitive data before load it into an analytical model.
