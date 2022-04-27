@@ -248,7 +248,7 @@ Challanges:
 in Azure we have **Azure time series insights** to manage it. It's stream processing, data store, analytics, reporting
 
 # Azure Data Studio
-Azure data studo:
+Azure data studio:
 * lightweight
 * multi-database desktop tool - it let you connect to multiple different databases including SQL Server and PostgreSQL
 * cross-platform because runs on Windows, Linux and MacOS
