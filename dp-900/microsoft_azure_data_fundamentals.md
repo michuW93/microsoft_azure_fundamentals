@@ -57,7 +57,7 @@ So, transactions are a mechanism for guaranteeing these properties; they are a w
 
 # Analytical processing types
 * Batch data - periodically transfer data to another database for analytical querying. Executes on schedule, all data is stored for analytical querying, you query the data after loading whenever you want, easy joining of datasets, efficient opportunities
-* Streaming data - continously calculate new nalytical query results when data is added or updated. Executes near real-time, stores queries, not other data, queries are predefined, combaining datasets is more difficult
+* Streaming data - continously calculate new analytical query results when data is added or updated. Executes near real-time, stores queries, not other data, queries are predefined, combaining datasets is more difficult
 
 You can mix all data types and database types in both batch data and streaming data approches!
 
