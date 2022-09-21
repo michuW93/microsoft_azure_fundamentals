@@ -28,3 +28,8 @@ Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
 Virtual Machine Components: Resource group, VM Size, Network, Images, Storage/Virtual Disk
 
 How to create VM in Azure? Via Azure Portal, Azure CLI, Azure PowerShell(AZ module), Azure ARM Templates
+
+For Windows RDP: 3389, for Linux SSH: 22.
+
+It's possible to create VM programmatically, it's a bit better because add consistency to your deployments and VM creation, any production system should be implemented using automation, it's allow to construct similar down-level environments, such as DEV/TEST. It can be done via tools: Azure CLI, Azure PowerShell or ARM Templates.
+
