@@ -34,24 +34,27 @@ For Windows RDP: 3389, for Linux SSH: 22.
 It's possible to create VM programmatically, it's a bit better because add consistency to your deployments and VM creation, any production system should be implemented using automation, it's allow to construct similar down-level environments, such as DEV/TEST. It can be done via tools: Azure CLI, Azure PowerShell or ARM Templates.
 
 Create VM from Azure CLI:
-az group create \
+<code>az group create \
   --name "resource_group_name" \
   --location "centralus"
-  
+  </code>
+  <code>
 az vm create \
   --resource-group "psdemo" \
   --name "psdemo-win-cli" \
   --image "win2019datacenter" \
   --admin-username "demo" \ 
   --admin-password "pass123@!$#@@!"
-  
+  </code>
 To enable remote access with Azure CLI:
-az vm open-port \
+<code>az vm open-port \
   --resource-group "psdemo-rg" \
   --name "psdemo-win-cli" \
   --port "3389"
-  
+  </code>
 To get ip adresses:
+<code>
 az vm list-ip-addresses \
   --resource-group "psdemo-rg" \
   --name "psdemo-linux-cli"
+</code>
