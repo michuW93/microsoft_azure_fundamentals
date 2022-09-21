@@ -39,9 +39,9 @@ Create VM from Azure CLI:
   --name "resource_group_name" \
   --location "centralus"
   </code>
-  <code>
   
 2. create VM
+<code>
 az vm create \
   --resource-group "psdemo" \
   --name "psdemo-win-cli" \
