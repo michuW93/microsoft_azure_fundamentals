@@ -1,6 +1,6 @@
 microsoft_azure_fundamentals-AZ-204-
 
-Tutorial based on Matthew Kruczek videos
+Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
 
 # Develop Azure Compute Solutions:
 * Implement IaaS Solutions (Provision Virtual Machines but you need to take care of rest, Configure, validate and deploy ARM templates, Configure container images for solutions, publish an image to the Azure Container Registry, Run Containers by using Azure Container Instance)
