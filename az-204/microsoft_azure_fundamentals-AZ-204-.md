@@ -2,6 +2,7 @@ microsoft_azure_fundamentals-AZ-204-
 
 Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
 
+1. 
 # Develop Azure Compute Solutions:
 * Implement IaaS Solutions (Provision Virtual Machines but you need to take care of rest, Configure, validate and deploy ARM templates, Configure container images for solutions, publish an image to the Azure Container Registry, Run Containers by using Azure Container Instance)
 * Create Azure App Service Web Apps (Create an Azure App Service Web App, enable diagnostic logging, deploy code to a web app, configure web app settings, implement autoscaling rules, including scheduled autoscaling and scaling by operational or system metrics)
@@ -22,3 +23,8 @@ Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
 # Monitor, Troubleshoot and optimize azure solutions
 * Integrate caching and content delivery within solutions (Configure cache and expiration policies for Azure Redis cache, Implement data sizing, connections, encryption and expiration)
 * instrument solutions to support monitoring and logging (configure an app to use Application Insights, analyze and troubleshoot solutions by using Azure Monitor, Implement Application Insights web tests and alerts)
+
+2. 
+Virtual Machine Components: Resource group, VM Size, Network, Images, Storage/Virtual Disk
+
+How to create VM in Azure? Via Azure Portal, Azure CLI, Azure PowerShell(AZ module), Azure ARM Templates
