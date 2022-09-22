@@ -63,3 +63,6 @@ az vm list-ip-addresses \
   --resource-group "psdemo-rg" \
   --name "psdemo-linux-cli"
 </code>
+
+
+To remove resource group: `az group delete --name "psdemo-rg"`
