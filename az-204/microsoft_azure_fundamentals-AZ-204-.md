@@ -41,17 +41,17 @@ az group create \ <br/>
 
   
 2. create VM
-az vm create \<br/>
-  --resource-group "psdemo" \<br/>
-  --name "psdemo-win-cli" \<br/>
-  --image "win2019datacenter" \<br/>
+az vm create \ <br/>
+  --resource-group "psdemo" \ <br/>
+  --name "psdemo-win-cli" \ <br/>
+  --image "win2019datacenter" \ <br/>
   --admin-username "demo" \ <br/>
-  --admin-password "pass123@!$#@@!"<br/>
+  --admin-password "pass123@!$#@@!" <br/>
   
 To enable remote access with Azure CLI:
-az vm open-port \<br/>
-  --resource-group "psdemo-rg" \<br/>
-  --name "psdemo-win-cli" \<br/>
+az vm open-port \ <br/>
+  --resource-group "psdemo-rg" \ <br/>
+  --name "psdemo-win-cli" \ <br/>
   --port "3389"<br/>
   
 To get ip adresses:
