@@ -74,6 +74,8 @@ $username = 'demoadmin'
  $WindowsCred = 
   </code>
   
+  
+  and then create VM with above credentials:
  <code>
  New-AzVM \
   -ResourceGroupName 'psdemo-rg'
