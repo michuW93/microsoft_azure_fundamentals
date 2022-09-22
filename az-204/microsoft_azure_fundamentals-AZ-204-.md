@@ -103,9 +103,9 @@ Docker / Azure Container Registry (ACR) / Azure Container Instances (ACI)
 
 In general - containers allows to package binaries, libraries and other components into one file which is called <b>Container image</b> - binary application package. Container is place where image is running. There is one app inside the container. Container is very small and very portable. <b>Container Registires enables exchanging of container images</b>
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/containers_vs_old_way.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/containers_vs_old_way.png?raw=true)
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/containers_vs_old_way.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/containers_vs_old_way.png?raw=true)
 
 To build image: `docker build -t image:v1 .`
 To check images: `docker ps`
