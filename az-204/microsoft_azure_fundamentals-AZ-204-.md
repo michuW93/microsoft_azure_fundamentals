@@ -68,15 +68,18 @@ az vm list-ip-addresses \
 To remove resource group: `az group delete --name "psdemo-rg"`
 
 # Creating a VM with Azure PowerShell
-`$username = 'demoadmin'
+<code>
+$username = 'demoadmin'
  $password = ConvertTo-SecureString 'pass'
  $WindowsCred = 
- 
+  </code>
+ <code>
  New-AzVM \
   -ResourceGroupName 'psdemo-rg'
   -Name 'psdemo-win-az'
   -Image 'Win2019Datacenter'
   -Credential $WindowsCred
-  -OpenPorts 3389`
+  -OpenPorts 3389
+  </code>
   
 To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
