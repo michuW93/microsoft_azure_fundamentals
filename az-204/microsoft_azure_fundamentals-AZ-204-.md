@@ -55,9 +55,9 @@ az vm open-port \ <br/>
   --port "3389"<br/>
   
 To get ip adresses:
-az vm list-ip-addresses \<br/>
-  --resource-group "psdemo-rg" \<br/>
-  --name "psdemo-linux-cli"<br/>
+az vm list-ip-addresses \ <br/>
+  --resource-group "psdemo-rg" \ <br/>
+  --name "psdemo-linux-cli" <br/>
 
 
 To remove resource group: `az group delete --name "psdemo-rg"`
