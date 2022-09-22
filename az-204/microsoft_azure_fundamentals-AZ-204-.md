@@ -35,55 +35,46 @@ It's possible to create VM programmatically, it's a bit better because add consi
 
 Create VM from Azure CLI:
 1. create resource group
-<code>az group create \ <br/>
-  --name "resource_group_name" \<br/>
-  --location "centralus"<br/>
-  </code>
+az group create \ <br/>
+  --name "resource_group_name" \ <br/>
+  --location "centralus" <br/>
+
   
 2. create VM
-<code>
 az vm create \<br/>
   --resource-group "psdemo" \<br/>
   --name "psdemo-win-cli" \<br/>
   --image "win2019datacenter" \<br/>
   --admin-username "demo" \ <br/>
   --admin-password "pass123@!$#@@!"<br/>
-  </code>
   
 To enable remote access with Azure CLI:
-<code>az vm open-port \<br/>
+az vm open-port \<br/>
   --resource-group "psdemo-rg" \<br/>
   --name "psdemo-win-cli" \<br/>
   --port "3389"<br/>
-  </code>
   
 To get ip adresses:
-<code>
 az vm list-ip-addresses \<br/>
   --resource-group "psdemo-rg" \<br/>
   --name "psdemo-linux-cli"<br/>
-</code>
 
 
 To remove resource group: `az group delete --name "psdemo-rg"`
 
 # Creating a VM with Azure PowerShell
-<code>
 $username = 'demoadmin'<br/>
  $password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
  $WindowsCred = <br/>
-  </code>
   
   
   and then create VM with above credentials:
- <code>
  New-AzVM \<br/>
   -ResourceGroupName 'psdemo-rg'<br/>
   -Name 'psdemo-win-az'<br/>
   -Image 'Win2019Datacenter'<br/>
   -Credential $WindowsCred<br/>
   -OpenPorts 3389<br/>
-  </code>
   
 To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
 
@@ -92,7 +83,7 @@ To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
 with ARM Templates you can create any resource, not only VM. ARM Templates base on JSON files. It is possible to export ARM Template in Azure Portal or write on your own, then deploy from Quickstart template library. Once .json file is created you can import it into Azure Portal and deploy from file which you created, this template.json can also be used via CLI
 
 Example part of json template Downloaded from Azure Portal:
-`{<br/>
+{<br/>
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",<br/>
     "contentVersion": "1.0.0.0",<br/>
     "parameters": {<br/>
@@ -101,4 +92,4 @@ Example part of json template Downloaded from Azure Portal:
         },<br/>
         "networkInterfaceName1": {<br/>
             "type": "string"<br/>
-        },`<br/>
+        }<br/>
