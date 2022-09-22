@@ -73,6 +73,7 @@ $username = 'demoadmin'
  $password = ConvertTo-SecureString 'pass'
  $WindowsCred = 
   </code>
+  
  <code>
  New-AzVM \
   -ResourceGroupName 'psdemo-rg'
