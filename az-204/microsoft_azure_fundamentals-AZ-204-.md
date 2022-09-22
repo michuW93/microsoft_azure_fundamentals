@@ -70,7 +70,7 @@ To remove resource group: `az group delete --name "psdemo-rg"`
 # Creating a VM with Azure PowerShell
 <code>
 $username = 'demoadmin'
- $password = ConvertTo-SecureString 'pass'
+ $password = ConvertTo-SecureString 'pass' -AsPlainText -Force
  $WindowsCred = 
   </code>
   
