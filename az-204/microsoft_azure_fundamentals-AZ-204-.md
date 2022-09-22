@@ -1,6 +1,6 @@
 microsoft_azure_fundamentals-AZ-204-
 
-Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
+Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer videos
 
 1. 
 # Develop Azure Compute Solutions:
@@ -24,12 +24,12 @@ Tutorial based on Matthew Kruczek, Anthony E.Nocentino videos
 * Integrate caching and content delivery within solutions (Configure cache and expiration policies for Azure Redis cache, Implement data sizing, connections, encryption and expiration)
 * instrument solutions to support monitoring and logging (configure an app to use Application Insights, analyze and troubleshoot solutions by using Azure Monitor, Implement Application Insights web tests and alerts)
 
-2. 
+# 2. Virtual Machines 
 Virtual Machine Components: Resource group, VM Size, Network, Images, Storage/Virtual Disk
 
 How to create VM in Azure? Via Azure Portal, Azure CLI, Azure PowerShell(AZ module), Azure ARM Templates
 
-For Windows RDP: 3389, for Linux SSH: 22.
+For Windows <b>RDP: 3389, for Linux SSH: 22. </b>
 
 It's possible to create VM programmatically, it's a bit better because add consistency to your deployments and VM creation, any production system should be implemented using automation, it's allow to construct similar down-level environments, such as DEV/TEST. It can be done via tools: Azure CLI, Azure PowerShell or ARM Templates.
 
@@ -93,3 +93,78 @@ Example (just part) of json template Downloaded from Azure Portal:
         "networkInterfaceName1": {<br/>
             "type": "string"<br/>
         }<br/>
+
+
+# CONCLUSION
+There are many ways to create VM in Azure. First Resource Group needs to be created, then VM (with open ports)
+
+# 3. Containers
+Docker / Azure Container Registry (ACR) / Azure Container Instances (ACI)
+
+In general - containers allows to package binaries, libraries and other components into one file which is called <b>Container image</b> - binary application package. Container is place where image is running. There is one app inside the container. Container is very small and very portable. <b>Container Registires enables exchanging of container images</b>
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/containers_vs_old_way.png?raw=true)
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-900/images/containers_vs_old_way.png?raw=true)
+
+To build image: `docker build -t image:v1 .`
+To check images: `docker ps`
+
+# Azure Container Registry (ACR) - build, store and manage container images
+it has ACR Tasks for container image automation - building, testing, pushing, deploying images in Azure, it has Service tiers.
+
+ACR requires authentication for operations (Azure Active Directory Identities, ACR Admin (by default disabled))
+to login to ACR: `az acr login` or `docker login`. It has Role-based access controls to know who can do what. There are some predefined roles but also new customized roles (e.g owner, contributor, reader, AcrPush, AcrPull, AcrDelete and AcrImageSigner) can be created. 
+
+Create and Authenticating to Azure Container Registry:
+ACR_NAME='login name' #this needs to be global<br/> 
+az acr create \ <br/>
+  --resource-group psdemo-rg \ <br/>
+  --name $ACR_NAME \ <br/>
+  --sku Standard<br/>
+
+az acr login --name $ACR_NAME
+
+Pushing an Image into ACR (it can be done via Docker tools and ACR Tasks):
+ACR_NAME='psdemoacr' <br/>
+ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) <br/>
+docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 <br/>
+docker push $ACR_LOGINSERVER/webappimage:v1<br/>
+
+
+#Build using ACR Tasks
+az acr build --image "webappimage:v1-acr-task" --registry $ACR_NAME .
+
+# Deploying Containers in Azure Container Instances
+it's serverless container platform, it allows access application via Internet or on an Azure Virtual Network, it can run on Windows or Linux containers, it can use Azure Files for persistent storage, restart policy - always (default), on failure or never.
+You can deploy container in Azure Container Instances from Azure Container Registry but it can also be done from Docker Hub or other container registries
+
+# creating a Service Principal for ACI to Pull From ACR
+ACR_NAME='psdemoacr'<br/>
+ACR_REGISTRY_ID=$(az acr show --name $ACR_NAME)<br/>
+
+SP_NAME=acr-service-principal
+SP_PASSWD=$(az ad sp  create-for-rbac \ <br/>
+  --name http://$ACR_NAME-pull <br/>
+  --scopes<br/>
+  --role acrpull<br/>
+  --query password<br/>
+  --output tsv)<br/>
+  
+SP_APPID=$(az ad sp show <br/>
+  --id<br/>
+  -- query appId<br/>
+  --output tsv<br/>
+  
+# Running a container from ACR in ACI
+ACR_LOGINSERVER -> took $ACR_NAME
+
+az container create \<br/>
+  --resource-group psdemo-rg<br/>
+  --name<br/>
+  --dns-name-label<br/>
+  --ports 80 <br/>
+  --image $ACR_LOGINSERVER/webappimage:v1 <br/>
+  --registry-login-server $ACR_LOGINSERVER <br/>
+  --registry-username $SP_APPID
+  --registry-password $SP_PASSWD
