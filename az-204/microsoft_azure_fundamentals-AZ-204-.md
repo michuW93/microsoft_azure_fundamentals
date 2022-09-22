@@ -89,4 +89,4 @@ To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
 
 
 # Creating a VM with ARM (Azure Resource Manager) Templates
-with ARM Templates you can create any resource, not only VM. ARM Templates base on JSON files. It is possible to export ARM Template in Azure Portal or write on your own, then deploy from Quickstart template library.
+with ARM Templates you can create any resource, not only VM. ARM Templates base on JSON files. It is possible to export ARM Template in Azure Portal or write on your own, then deploy from Quickstart template library. Once .json file is created you can import it into Azure Portal and deploy from file which you created, this template.json can also be used via CLI
