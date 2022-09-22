@@ -105,7 +105,7 @@ In general - containers allows to package binaries, libraries and other componen
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/containers_vs_old_way.png?raw=true)
 
-![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/containers_vs_old_way.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/woring_with_containers_in_azure.png?raw=true)
 
 To build image: `docker build -t image:v1 .`
 To check images: `docker ps`
