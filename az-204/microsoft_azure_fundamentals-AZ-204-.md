@@ -1,6 +1,6 @@
 microsoft_azure_fundamentals-AZ-204-
 
-Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heath videos
+Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heath, David Tucker videos
 
 1. 
 # Develop Azure Compute Solutions:
@@ -266,3 +266,4 @@ Orchestration patterns:
 * Fan-out Fan-in
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/fan_out_fan_in.png?raw=true)
 
+What if you would like to create Azure Function in Rust or Go which are not supported? You need to use Custom Handler. Custom Handler can be implemented using your language or runtime of choice.
