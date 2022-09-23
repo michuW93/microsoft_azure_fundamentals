@@ -253,3 +253,16 @@ Azure Functions usually run in a `Service plan` on Azure App Service. You can ch
 You can develop azure functions in Azure Portal or Visual Studio or Azure Functions Core Tools
 
 Azure function trigger - when trigger is trigerred then Azure Function is executed. It can be implemented using data operations(BLOB Storage Trigger), timers(scheduled task) and webhooks(HTTP Request Trigger). Every Azure function has exactly one trigger. For timer trigger you need to provide CRON expression.
+
+Azure Function Binding is a connection to data. Input binding provide read-access to data. Output bindings let us write to an external system. Functions can have multiple input and output bindings. Input/Output bindings are defined in .json file.
+
+Azure <b>Durable Function</b> is an extension to Azure Functions which enables to create stateful, serverless workflows. It consist of 3 types of function:
+* Client(Started) Function - initiate a new orchestration, can use any trigger
+* orchestrator function - defines the steps in the workflow, handle errors
+* activity function - implements a step in the workflow, use any bindings
+
+Orchestration patterns: 
+* Function chaining = do activities in defined order Activity1 -> Activity2 -> Activity3
+* Fan-out Fan-in
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/fan_out_fan_in.png?raw=true)
+
