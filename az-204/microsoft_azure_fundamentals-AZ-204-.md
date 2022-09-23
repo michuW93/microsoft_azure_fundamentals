@@ -1,6 +1,6 @@
 microsoft_azure_fundamentals-AZ-204-
 
-Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer videos
+Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heath videos
 
 1. 
 # Develop Azure Compute Solutions:
@@ -63,18 +63,18 @@ az vm list-ip-addresses \ <br/>
 To remove resource group: `az group delete --name "psdemo-rg"`
 
 # Creating a VM with Azure PowerShell
-$username = 'demoadmin'<br/>
+$username = 'demoadmin' <br/>
  $password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
  $WindowsCred = <br/>
   
   
   and then create VM with above credentials:
  New-AzVM \<br/>
-  -ResourceGroupName 'psdemo-rg'<br/>
-  -Name 'psdemo-win-az'<br/>
-  -Image 'Win2019Datacenter'<br/>
-  -Credential $WindowsCred<br/>
-  -OpenPorts 3389<br/>
+  -ResourceGroupName 'psdemo-rg' <br/>
+  -Name 'psdemo-win-az' <br/>
+  -Image 'Win2019Datacenter' <br/>
+  -Credential $WindowsCred <br/>
+  -OpenPorts 3389 <br/>
   
 To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
 
@@ -85,14 +85,14 @@ with ARM Templates you can create any resource, not only VM. ARM Templates base 
 Example (just part) of json template Downloaded from Azure Portal:
 {<br/>
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",<br/>
-    "contentVersion": "1.0.0.0",<br/>
-    "parameters": {<br/>
-        "location": {<br/>
-            "type": "string"<br/>
-        },<br/>
-        "networkInterfaceName1": {<br/>
-            "type": "string"<br/>
-        }<br/>
+    "contentVersion": "1.0.0.0", <br/>
+    "parameters": { <br/>
+        "location": { <br/>
+            "type": "string" <br/>
+        }, <br/>
+        "networkInterfaceName1": { <br/>
+            "type": "string" <br/>
+        } <br/>
 
 
 # CONCLUSION
@@ -129,7 +129,7 @@ Pushing an Image into ACR (it can be done via Docker tools and ACR Tasks):
 ACR_NAME='psdemoacr' <br/>
 ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) <br/>
 docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 <br/>
-docker push $ACR_LOGINSERVER/webappimage:v1<br/>
+docker push $ACR_LOGINSERVER/webappimage:v1 <br/>
 
 
 #Build using ACR Tasks
@@ -140,16 +140,16 @@ it's serverless container platform, it allows access application via Internet or
 You can deploy container in Azure Container Instances from Azure Container Registry but it can also be done from Docker Hub or other container registries
 
 # creating a Service Principal for ACI to Pull From ACR
-ACR_NAME='psdemoacr'<br/>
-ACR_REGISTRY_ID=$(az acr show --name $ACR_NAME)<br/>
+ACR_NAME='psdemoacr' <br/>
+ACR_REGISTRY_ID=$(az acr show --name $ACR_NAME) <br/>
 
 SP_NAME=acr-service-principal
 SP_PASSWD=$(az ad sp  create-for-rbac \ <br/>
   --name http://$ACR_NAME-pull <br/>
-  --scopes<br/>
-  --role acrpull<br/>
-  --query password<br/>
-  --output tsv)<br/>
+  --scopes <br/>
+  --role acrpull <br/>
+  --query password <br/>
+  --output tsv) <br/>
   
 SP_APPID=$(az ad sp show <br/>
   --id<br/>
@@ -159,10 +159,10 @@ SP_APPID=$(az ad sp show <br/>
 # Running a container from ACR in ACI
 ACR_LOGINSERVER -> took $ACR_NAME
 
-az container create \<br/>
-  --resource-group psdemo-rg<br/>
-  --name<br/>
-  --dns-name-label<br/>
+az container create \ <br/>
+  --resource-group psdemo-rg <br/>
+  --name <br/>
+  --dns-name-label <br/>
   --ports 80 <br/>
   --image $ACR_LOGINSERVER/webappimage:v1 <br/>
   --registry-login-server $ACR_LOGINSERVER <br/>
@@ -204,4 +204,52 @@ Isolation with App Service Environments(ASE):
 * fine-grainded control over network traffic
 * apps can connect over VPN to on-premises resources
 
-We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template
+We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. There are 3 steps: create resource group, create app service plan and then finally create web app
+
+Example with Azure CLI:
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
+
+# Secure a Domain with SSL/TLS Binding
+You must at least use Basic plan type to be able to use HTTPS. You can then enforce HTTPS and TLS versions.
+
+First you need to add custom domain and then add binding TLS/SSL because there would be a warning message. 
+
+# Configuring a Database Connection String
+App Service Web App -----> Connection string e.g SQLServerDB -------> Azure SQL Database
+
+we don't want to hardcode connection string
+
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/connection_string.png?raw=true)
+
+It's like a variable - if you name it `DatabaseConnection` and then in app you can query it via this name. Connection Strings can also map to the values from Key Vault (some secrets).
+
+Diagnostic logging:
+* application logging (linux or windows) - logs generated by application, can be stored in Azure Storage
+* web server logging (windows) - method which were used, http requests etc.
+* detailed error messages (windows) - you don't want to show all details to end user but you need it while debugging
+* failed request tracing (windows) - detailed error for requests
+* deployment logging (win/linux) - when you do deploy
+
+it can be turned on in Azure Portal: Monitoring -> App Service Logs
+
+How to deploy code to App Service Web Apps: configure continous deployment so App Service pulls code from GitHub or Azure Repos. You need to authorize Azure App Service and enable continous deployment.
+In Azure Portal it's in Deployment section and `Deployment Center`. First you choose source of code e.g GitHub, then specify `Build Provider` e.g Azure Pipelines or App Service Kudu, then configure GitHub setting e.g repository and branch.
+
+# Scaling Azure App Service
+Scaling up Vertically vs Scaling up horizontaly
+Vertically - you have 1vCore and 2GB RAM but app is getting bigger and bigger then you switch machine for 8vCore and 64 GB RAM
+Horizontally - adding new machines e.g add azure load balancer and second virtual machine, then add third machine
+
+Auto scale is available for standard, premium and isolated pricing tiers. Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70%)
+
+# Azure functions
+What are Azure Functions? A serverless application platform, a simple way to run small piece of code ("functions") in the cloud, FaaS - function as a service.
+Serverless - delegate server management responsibility to the cloud provider, supports automatic scaling to meet demand, billed only when it's running
+Azure function app - one or more related Azure Functions, that are developed, deployed and hosted as a group
+
+You can create Azure Functions in C#, Java, JS, Python and many others
+Azure Functions usually run in a `Service plan` on Azure App Service. You can choose Consumption plan - it's serverless, automatic scale, 5 min limit and you pay if use or App Service plan in which is traditional pricing model - paying X per month, or Premium Plan which offers better speed, security and reserved instances. Or you can run Azure functions in Docker Container or Locally for development and testing. 
+
+You can develop azure functions in Azure Portal or Visual Studio or Azure Functions Core Tools
+
+Azure function trigger - when trigger is trigerred then Azure Function is executed. It can be implemented using data operations(BLOB Storage Trigger), timers(scheduled task) and webhooks(HTTP Request Trigger). Every Azure function has exactly one trigger. For timer trigger you need to provide CRON expression.
