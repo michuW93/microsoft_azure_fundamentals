@@ -1,4 +1,4 @@
-microsoft_azure_fundamentals-AZ-204-
+microsoft_azure_developer-AZ-204-
 
 Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heath, David Tucker videos
 
