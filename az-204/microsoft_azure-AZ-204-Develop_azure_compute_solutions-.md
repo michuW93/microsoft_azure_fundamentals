@@ -69,7 +69,7 @@ $username = 'demoadmin' <br/>
   
   
   and then create VM with above credentials:
- New-AzVM \<br/>
+ New-AzVM \ <br/>
   -ResourceGroupName 'psdemo-rg' <br/>
   -Name 'psdemo-win-az' <br/>
   -Image 'Win2019Datacenter' <br/>
