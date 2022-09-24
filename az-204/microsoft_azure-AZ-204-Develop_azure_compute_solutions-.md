@@ -236,8 +236,8 @@ How to deploy code to App Service Web Apps: configure continous deployment so Ap
 In Azure Portal it's in Deployment section and `Deployment Center`. First you choose source of code e.g GitHub, then specify `Build Provider` e.g Azure Pipelines or App Service Kudu, then configure GitHub setting e.g repository and branch.
 
 # Scaling Azure App Service
-Scaling up Vertically vs Scaling up horizontaly
-Vertically - you have 1vCore and 2GB RAM but app is getting bigger and bigger then you switch machine for 8vCore and 64 GB RAM
+Scaling up Vertically vs Scaling up horizontaly <br/>
+Vertically - you have 1vCore and 2GB RAM but app is getting bigger and bigger then you switch machine for 8vCore and 64 GB RAM <br/>
 Horizontally - adding new machines e.g add azure load balancer and second virtual machine, then add third machine
 
 Auto scale is available for standard, premium and isolated pricing tiers. Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70%)
