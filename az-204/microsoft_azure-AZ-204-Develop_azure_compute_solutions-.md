@@ -2,7 +2,7 @@ microsoft_azure_developer-AZ-204-
 
 Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heath, David Tucker videos
 
-1. 
+# General Overview
 # Develop Azure Compute Solutions:
 * Implement IaaS Solutions (Provision Virtual Machines but you need to take care of rest, Configure, validate and deploy ARM templates, Configure container images for solutions, publish an image to the Azure Container Registry, Run Containers by using Azure Container Instance)
 * Create Azure App Service Web Apps (Create an Azure App Service Web App, enable diagnostic logging, deploy code to a web app, configure web app settings, implement autoscaling rules, including scheduled autoscaling and scaling by operational or system metrics)
@@ -24,6 +24,7 @@ Tutorial based on Matthew Kruczek, Anthony E.Nocentino, Mike Pfeiffer, Mark Heat
 * Integrate caching and content delivery within solutions (Configure cache and expiration policies for Azure Redis cache, Implement data sizing, connections, encryption and expiration)
 * instrument solutions to support monitoring and logging (configure an app to use Application Insights, analyze and troubleshoot solutions by using Azure Monitor, Implement Application Insights web tests and alerts)
 
+# Preparation
 # 2. Virtual Machines 
 Virtual Machine Components: Resource group, VM Size, Network, Images, Storage/Virtual Disk
 
