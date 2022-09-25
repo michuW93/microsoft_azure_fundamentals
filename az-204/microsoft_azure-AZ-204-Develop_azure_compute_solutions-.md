@@ -267,4 +267,39 @@ Orchestration patterns:
 * Fan-out Fan-in
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/fan_out_fan_in.png?raw=true)
 
+* Async HTTP API's
+* Monitoring
+* Human Interaction
+* Aggregator(Stateful Entities)
+
 What if you would like to create Azure Function in Rust or Go which are not supported? You need to use Custom Handler. Custom Handler can be implemented using your language or runtime of choice.
+
+# Review
+Managed Identities - how to login into VM, how to allow user do sth etc. Get credentials in PowerShell <br/>
+$username = 'demoadmin' <br/>
+ $password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
+ $WindowsCred = <br/>
+  
+ and then create VM with above credentials:
+ New-AzVM \ <br/>
+  -ResourceGroupName 'psdemo-rg' <br/>
+  -Name 'psdemo-win-az' <br/>
+  -Image 'Win2019Datacenter' <br/>
+  -Credential $WindowsCred <br/>
+  -OpenPorts 3389 <br/>
+
+Backup and Restore Approaches - how to backup VM
+Accelerated Networking
+When to not to use an Azure VM - cost effective solutions
+
+Deployment slot and slot swapping.
+
+App Service Tiers:
+* Free (F) 
+* Shared (D) - designed for development and testing, not for Prod!
+* Basic (B) - doesn't provide app scaling but provide e.g loadbalancing, but also not for Production
+* Standard (S) - allow <b>autoscaling</b>
+* Premium (P) - higher scale level, better machines
+* Isolated (I) - it's in isolated network, azure app service environment (ASE)
+
+Azure functions - input and output bindings
