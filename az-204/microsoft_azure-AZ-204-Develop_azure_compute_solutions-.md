@@ -303,3 +303,25 @@ App Service Tiers:
 * Isolated (I) - it's in isolated network, azure app service environment (ASE)
 
 Azure functions - input and output bindings
+
+Durable functions usa cases:
+
+
+# Example Scenarios
+1. moving apps to Azure, web apps are deployed as containers, application demand varies, and they have struggled with uptime in the past. What is most cost effective approach?
+So it must have autoscaling. Solution: Azure App Service for Containers - Standard tier with Linux Runtime (because of containers)
+
+2. Edward has created a doc processing service for his company, after his app upload a doc to blob storage, it calls an API. The API triggers the doc processing on a VM. What is the most efficient and cost effective approach?
+Solution: No, we can use Azure Function with a Trigger based on Blob Storage
+
+3. company provides a digital asset management SaaS solution. They are trying to find more cost effective ways to process large videos. Cindy has read about Durable Functions and believes this could be solution. Is this problem solved by using Durable Functions?
+Solution: No, processing of large files is not an identified use case.
+
+4. company currently runs a fantasy football platform. Currently they perform myltiple actions on a VM when a  new user is added. William is afraid to move it to a single Azure function due to a possible timeout. Is this problem solved by using Durable Functions?
+Solution: yes, function chaining is a valid Durable Functions use case
+
+5. Company is deploying new web app using App Service. It will be deployed using CLI. Oscar will be deploying into a brand new account that is currently empty.
+Solution: az group create (because acc is empty) -> az appserviceplan create -> az webapp create
+
+6. Company has multiple Windows VM's deployed in a VNet, they need high-speed communication to analyze shared streaming data. Currently they are experiencing higher than desired lag between their VM's. Which solution could reduce the latency between VM's?
+Accelerated Networking because in a single VNet
