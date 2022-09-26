@@ -109,6 +109,24 @@ Strategy considerations:
 
 <b>Partition key can't change so for example email of employee as partition key is wrong decision because mail can change</b>
 
-Hot partition
+Hot partition - by Erick Ramirez:
+There's no hard rule for it but it's generally just a partition (or a subset of partitions) which are accessed more frequently than other partitions in the table.
+
+We generally refer to hot partitions in the context of unbalanced loads in the cluster such that some nodes are accessed significantly more compared to other nodes.
+
+Think of a situation where an application keyspace has a replication factor of 3 in a data centre which has 50 nodes. In a table of users where one of the users is a service account that is used to connect multiple times a day for monitoring.
+
+The 3 replicas out of the 50 nodes which hold this service account will have a significantly higher utilisation compared to the rest of the nodes because it is a hot partition.
 
 Physical partition include logical partitions.
+
+# server side programming with CosmosDB
+Server-side capabilities - Cosmos DB provides a robust approach for executing code in response to actions taken on the data stored in Cosmos DB. While in some cases these mirror traditional database constructs, they are fundamentally different in implmentation and have unique limitations.
+
+Cosmos DB server-side concepts:
+* stored procedures - executed within the database engine, supports only Javascript, can be created and managed via the portal and via the SDK. Executes on a single partition and it only has access to that partition. Partition key must be provided with the execution request. Supports a transaction model as all statements will be removed if it fails
+* triggers - executed within the database engine, supports only Javascript, can be created and managed via the portal and via the SDK. They can be executed either before (pre) or after (post) data is written. Pre triggers can handle data transformation and validation, post triggers can handle aggregation and change notifications. Triggers are not guaranteed to execute as they have to be specified in a request. Errors in either the PRE or POST trigger will result in data being rolled back.
+* user defined functions (UDF's) - executed within the database engine, supports only Javascript, can be created and managed via the portal and via the SDK. Enables you to define a custom function that can be leveraged in a query. Enables encapsulation of common logic in query conditions. 
+* change feed - while all other server-side programming approaches enable execution on the Cosmos DB engine, change feed processing enables you to react to data changes using server-side code outside of the Cosmos DB engine. Enables you to be notified for any insert and update on your data. Deletes are not directly supported but you can leverage a soft-delete flag. A change will appear exactly once in the change feed. Reading data from the database will consume thoughput. Partition updates will be in order but between partitions there is no guarantee. Is not supported for the Azure Table API
+
+Change feed approaches: Azure Functions, change feed processor
