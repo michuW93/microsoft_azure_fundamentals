@@ -10,21 +10,21 @@ NoSQL Databases: Fluid schema, Multiple structures (key-value, graph, document, 
 From Microsoft, CosmosDB documentation: If your transactional volumes are reaching extreme levels, such as many thousands of transactions per second, you should consider a distrubuted NoSQL database
 
 # Capabilities of CosmosDB
-Azure CosmosDB is Microsoft's globally distrubuted, multi-model database service.
+Azure CosmosDB is Microsoft's globally distributed, multi-model database service.
 
-* Provides extrmaly low latency (single digit milisecond)
+* Provides extremaly low latency (single digit milisecond)
 * Provides SLA for throughput, latency, availability and consistency
 * support multi-region replication at any point
 * provides five-nines of high-availability for both reads and writes
 * enables elastic scalability
-* priving is for the thtoughput you provision
+* pricing is for the throughput you provision
 * supports multiple consistency options
 
 Additional CosmosDB features:
 * integrated analytics
 * region support
 * schema-agnostic
-* atumatic indexing
+* automatic indexing
 * supports multiple SDK's
 
 Cosmos DB Organization:
@@ -33,7 +33,7 @@ Cosmos DB Organization:
 Supported Cosmos DB API's:
 * SQL - if you want to leverage a SQL-like language, you want to store data as JSON documents and in general if no other use cases fit, you don't know what to take then choose SQL API
 * Cassandra - if you want Cassandra Query Language to query data (CQL) or you want to be able to leverage existsing Cassandra tools, you want to store data in a wide-column format (two dimentsional key-value store)
-* MongoDB - if you are familiar with MongiDB API to query data, or if you have existsing MongoDB and want to migrate to cloud or you want to store data as JSON documents
+* MongoDB - if you are familiar with MongoDB API to query data, or if you have existsing MongoDB and want to migrate to cloud or you want to store data as JSON documents
 * Gremlin - graph database, so if you want to store graph relationships
 * Azure table - if you have expirience with Azure Table Storage
 
@@ -59,7 +59,7 @@ then create a sql database container (az cosmosdb sql container create --resourc
 Selecting an SDK:
 * SQL API - utilize latest Cosmos DB SDK
 * MongoDB, Cassandra, Gremlin use current SDK's for thoses API's
-* Azure Table API leverage the currecnt Table Storage SDK
+* Azure Table API leverage the current Table Storage SDK
 
 Traditional Database scaling: vertically - upgrade CPU, memory etc. or Horizontal scaling - add new machine. <br/>
 to scale Cosmos DB we need to request unit. RU - a request unit encapsulates many of the resources needed for the database into a single unit. As a beseline, one RU is equal to a 1kb item read operation from a CosmosDB container. Resources which are encapsulated in RU's are processing power(CPU), memory and IOPS (input/output operations per second)
@@ -96,7 +96,7 @@ For MongoDB the write concern uses the account default consistency level, the re
 Thoughput considerations - both strong and bounded staleness reads will consume twice the normal amount of request units for a request, as Cosmos DB will need to query two replicas to meet the criteria of the consistency level.
 
 Data partitioning:
-* logical partition - is a set of items within a container that share the same partiion key. A container can have as many logical partitions as it needs, but each partition is limited to 20GB of storage. Logical partitions are managed by Cosmos DB but their use is governed by your partition key strategy.
+* logical partition - is a set of items within a container that share the same partiton key. A container can have as many logical partitions as it needs, but each partition is limited to 20GB of storage. Logical partitions are managed by Cosmos DB but their use is governed by your partition key strategy.
 * physical partition - a container is scaled by distributing data and thoughput across physical partitions. Internally, one or more logical partitions are mapped to a single physical partition. They are entirely managed by Azure Cosmos DB.
 * replica set - a physical partition contains multiple replicas of the data, known as a replica set. By having this data replicated, you enable your storage to be durable and fault tolerant. These replica sets are managed by Cosmos DB.
 * partition key - serves as the means of routing your request to the correct partition. Made up of both the key and the value of the defined partition key. Should be the value that does not change for the item. Should also have many different values represented in the container. Azure Cosmos DB uses hash-based partitioning to spread logical partitions across physical partitions. Azure Cosmos DB hashes the partition key value of an item. Then Cosmos DB allocates the key space of partition key hashes evenly across the physical partitions.
