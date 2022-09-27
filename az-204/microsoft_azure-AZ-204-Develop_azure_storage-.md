@@ -1,6 +1,6 @@
 microsoft_azure_developer-AZ-204-
 
-Tutorial based on David Tucker videos
+Tutorial based on David Tucker and Thomas Claudius Huber videos
 
 # Relationed DB vs NoSQL DB
 Relational Database: Fixed schema, Table based structure, Vertical scaling and manual sharding for scalability, Provides ACID guarantees (atomicity, consistency, isolation, durability), data normalization
