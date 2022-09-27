@@ -130,3 +130,12 @@ Cosmos DB server-side concepts:
 * change feed - while all other server-side programming approaches enable execution on the Cosmos DB engine, change feed processing enables you to react to data changes using server-side code outside of the Cosmos DB engine. Enables you to be notified for any insert and update on your data. Deletes are not directly supported but you can leverage a soft-delete flag. A change will appear exactly once in the change feed. Reading data from the database will consume thoughput. Partition updates will be in order but between partitions there is no guarantee. Is not supported for the Azure Table API
 
 Change feed approaches: Azure Functions, change feed processor
+
+# Properties and metadata.
+Blob Container has System properties. One of system properties is <b>ETag</b> (entity tag), <b>lastModified<b/>. <br/>
+Blob also has System properties with ETag, LastModified, Content-Type, Content-Length, x-ms-blob-type. <br/>
+ETag and LastModified are read only! <br/>
+Blob container besides <b>System Properties<b/> also can have <b>Used-defined metadata</b>. In User-defined metadata it's string based key-value pairs which is stored in the container. The same concept exists on the Blob - so it also can have User-defined metadata.
+  
+Properties and metadatas are set and retrieved via HTTP headers.
+  
