@@ -218,4 +218,21 @@ traction rear
   PS /home/pluralsight-b06e4edc> Get-AzStorageAccountManagementPolicy -ResourceGroupName pluralsight-resource-group -AccountName globomanticsp52f01z2lm
 Get-AzStorageAccountManagementPolicy: No ManagementPolicy found for account globomanticsp52f01z2lm
   
- # Review
+# Review CosmosDB
+Cosmos DB supported API: SQL, Cassandra, MongoDB, Gremlin, Azure Table. SQL is the most important here. 
+  
+Consistency levels: <b>Consistent Prefix</b> - ensure we will have right order of reading. <b>Session</b> - we will see our own writes but not others.
+  
+Cosmos DV server-side Concepts: store procedures, tiggers and User defined functions are JavaScript based and runs in CosmosDB environment, change feed can run in any environment - azure functions or your own.
+  
+# Review Blob
+Copying data between storage account
+  
+Data rehydration Priorities:
+* standard priority - it can take from 1 to 15 hours
+* high priority - it can be rehydrated faster but cost more
+  
+Only Read-access geo-redundant Storage and read-access geo-redundant storeage can read from second location, i mean from non-primary regions
+  
+azCopy
+  
