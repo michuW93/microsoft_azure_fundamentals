@@ -139,3 +139,83 @@ Blob container besides <b>System Properties<b/> also can have <b>Used-defined me
   
 Properties and metadatas are set and retrieved via HTTP headers.
   
+# Access Tiers for Block Blobs
+* hot (default) - used for frequently accessed data, it's online
+* cool - infrequently accessed data stored for at least 30 days, it's online
+* archive - data that can be archived for at least 180 days, it's offline
+  
+Access and transaction costs are low for hot tier and high for archive but on the other hand storage costs per GB is low for archive tier and high for hot tier.
+  
+For storage account you can set default access tier - hot or cool where hot is default. In Block Blob you can choose hot, cool, archive. Notice that archive can be set only on Block Blob level. 
+  
+To move data from archived to cool or hot it can take several hours and process is called <b>Rehydrating</b> <br/>
+Support access tiers only for StorageV2 and BlobStorage. Access tiers can be changed manually in Azure Portal but also we can manage the Blob lifecycle (Lifecycle Management in Azure Portal) with rules when it should change state.
+  
+For blob soft delete can be enabled then when you remove blob you can click `show deleted blobs` and then click `undelete` so again blob which was removed previously is restored. The same appply for `versions` and `snapshots`
+  
+# Snapshots and verions
+Snapshot is read only copy of Blob in a specific point of time. So if you want to create blob from current version then just need to click `create snapshot`. <br/>
+Version let us to get previous version of blob - let's say that we have image.png blob, then we upload again image.png with other content. It will be overriden but still we can get original version when we enabled `Version` in Azure Portal. You can even restore original version of image.png. In general versions let us keep history of changes for our blob
+
+Lease can be acquire for Blob and then it's not possible to change or delete. If need to unblock then `break lease`
+  
+Immutable Blob Storage - in `access policy` you can set `time-based retention` on e.g 7 days, then for 7 days Blob can't be changed or deleted.
+  
+# Moving items between storage account and containers
+To move items in blob storage you copy items from source to target and then delete the source. Tools to copy items in Blob Storage: Azure CLI (`az storage blob copy start`), AzCopy (`azcopy copy`), .NET client library. 
+  
+  
+PS /home/pluralsight-50a97207> Get-AzStorageContainer -Context $storageAccount.Context
+
+Storage Account Name: psblobstorageacc414481
+
+Name                 PublicAccess         LastModified                   IsDeleted  VersionId
+----                 ------------         ------------                   ---------  ---------
+cars-and-engines     Off                  9/28/2022 11:54:35 AM +00:00              
+food                 Off                  9/28/2022 11:46:58 AM +00:00  
+  
+  
+  
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.Metadata.Add("content","pictures about cars and engine")
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.Metadata.Add("pictures_count","4")
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.SetMetadata()
+PS /home/pluralsight-50a97207> 
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.Metadata.Remove("content")
+True
+PS /home/pluralsight-50a97207> 
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.Metadata
+
+Key            Value
+---            -----
+pictures_count 4
+  
+  
+PS /home/pluralsight-50a97207> $carsAndEnginesContainer.CloudBlobContainer.Metadata["pictures_count"]
+4
+  
+  PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata.Add("cylinders","6")
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata.Add("liters","3")
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata.Add("traction","rear")
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.SetMetadata()
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata
+
+Key       Value
+---       -----
+cylinders 6
+liters    3
+traction  rear
+
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata.Remove("cylinders")
+True
+PS /home/pluralsight-50a97207> $carEngine1Blob.ICloudBlob.Metadata
+
+Key      Value
+---      -----
+liters   3
+traction rear
+
+  
+  PS /home/pluralsight-b06e4edc> Get-AzStorageAccountManagementPolicy -ResourceGroupName pluralsight-resource-group -AccountName globomanticsp52f01z2lm
+Get-AzStorageAccountManagementPolicy: No ManagementPolicy found for account globomanticsp52f01z2lm
+  
+ # Review
