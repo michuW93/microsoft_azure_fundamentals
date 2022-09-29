@@ -73,3 +73,6 @@ Authorization Azure Ad is helping:
 * groups - can be used for both users and apps
 * custom claims - info which you can put to access token e.g country to know if person can authorize
 * app roles - defined on app level, can be assigned to user or app
+
+
+# Microsoft Graph
