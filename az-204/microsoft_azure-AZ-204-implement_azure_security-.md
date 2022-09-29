@@ -61,3 +61,15 @@ OpenID Connect Tokens:
 * Access token - enough info to allow API know who you are and what you can do
 * ID Token - users identity
 * refresh token
+
+
+Authorization - what you can do?
+
+Entities:
+* App as service principle, app can authenticate, for app there is no id token
+* user login to a browser or app
+
+Authorization Azure Ad is helping:
+* groups - can be used for both users and apps
+* custom claims - info which you can put to access token e.g country to know if person can authorize
+* app roles - defined on app level, can be assigned to user or app
