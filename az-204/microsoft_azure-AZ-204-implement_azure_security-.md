@@ -41,7 +41,7 @@ On the left is Ad-hoc shared access signature while on the right is Service SAS 
 The Microsoft Identity Platform  is and authentication service, open-source libraries, and applicaiton menagement tools.
 
 Identity platform conist of: <br/>
-Authentication Service - Azure Active Directory, <br/>
+Authentication Service - Azure Active Directory (allows single sign on), <br/>
 Open-Source Libraries - MSAL, Microsoft.Identity.Web, Open ID connect (you can use it in no supported languages as Ruby) <br/>
 Application Management tools - Gallery and non gallery apps (e.g Dropbox), single tenant and Multi Tenant apps, authorization, consent, logs
 
