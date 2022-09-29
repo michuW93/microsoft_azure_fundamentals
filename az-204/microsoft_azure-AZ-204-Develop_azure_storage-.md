@@ -236,3 +236,6 @@ Only Read-access geo-redundant Storage and read-access geo-redundant storeage ca
   
 azCopy
   
+Rehydration take between one and 15 hours <br/>
+Multiple containers in the same container group - it's not supported on Windows (--hyper-v), so it will be e.g --sku B1 --is-linux </br>
+To update the metadata of the blobs: fetchAttributesAsync, then Metadata.Add, then SetMetadataAsync
