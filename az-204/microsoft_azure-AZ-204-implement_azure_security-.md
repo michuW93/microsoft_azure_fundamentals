@@ -76,3 +76,36 @@ Authorization Azure Ad is helping:
 
 
 # Microsoft Graph
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365, Windows 10 and Enterprise Mobility + Security. It can work with office 365, Excel, Windows 10, Calendar, Mail etc. it provides a unified programming model that you can use to access data in Microsoft 365, Windows 10 and Enterprise Mobility + security. By Microsoft Graph we can treat office 365 informations as data, query it and write to it! It can be used by REST APIs or SDKs. There is https://graph.microsoft.com where are some already created calls to endpoint like in Postman. You can get your profile info, all docs linked to your account etc.
+
+# Azure Key Vault
+is an Azure Service which allows you to securely store and access secrets
+
+Types of Azure Key Vault Secrets:
+* Keys - cryptographic keys used in other Azure services such as Azure Disk Encryption
+* Secrets - any sensitive information including connection strings or passwords
+* certifiactes - x509 certificates used in HTTPS/SSL/TLS communications (encryption in transit)
+
+There are two pricing tiers for Azure Key vault: standard with software protected or Premium - all in standard + hardware security modules (HSM)
+
+You can provison Azure Key Vault in Azure Portal or programatically in PoweShell (`New-AzKeyVault -VaultName`), AzureCLI, REST API or ARM templates
+
+Configuring auth for Azure Key Vault:
+* Use Azure AD app registration
+* Use managed identity
+* use key vault references
+
+Key Vault References allow to move secrets to Key Vault without single line change in code. How to read a Key Vault Secret? `string secret = client.GetSecretAsync("secretmessage")Result.Value` <br/>
+<b>Use Key Vault references to move app setting values to Azure Key Vault with no code changes.</b>
+
+Using Key Vault References:
+1. Move the configuration to Key Vault </br>
+2. Deploy your App Service or Azure Function </br>
+3. Create a system-assigned identity for your App </br>
+4. Give GET KV SECRETS access to the app identity </br>
+5. Update the configuration values with the KV reference syntax </br>
+6. Verify your application functionality
+
+2 syntaxes to use when updating app setting value:
+`@Microsoft.KeyVault(VaultName=az204;SecretName=blobConnectionString;SecretVersion=fsj2nj3nj23n23323232)` or `@Microsoft.KeyVault(SecretUri=https://az204.vault.azure.net/secrets/blobConnectionString/fsj2nj3nj23n23323232)`
+
