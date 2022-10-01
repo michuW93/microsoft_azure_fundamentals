@@ -65,8 +65,8 @@ To remove resource group: `az group delete --name "psdemo-rg"`
 
 # Creating a VM with Azure PowerShell
 $username = 'demoadmin' <br/>
- $password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
- $WindowsCred = <br/>
+$password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
+$WindowsCred = <br/>
   
   
   and then create VM with above credentials:
@@ -324,4 +324,4 @@ Solution: yes, function chaining is a valid Durable Functions use case
 Solution: az group create (because acc is empty) -> az appserviceplan create -> az webapp create
 
 6. Company has multiple Windows VM's deployed in a VNet, they need high-speed communication to analyze shared streaming data. Currently they are experiencing higher than desired lag between their VM's. Which solution could reduce the latency between VM's?
-Accelerated Networking because in a single VNet
+Accelerated Networking because it's in a single VNet
