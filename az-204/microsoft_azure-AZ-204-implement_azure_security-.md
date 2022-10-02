@@ -109,3 +109,11 @@ Using Key Vault References:
 2 syntaxes to use when updating app setting value:
 `@Microsoft.KeyVault(VaultName=az204;SecretName=blobConnectionString;SecretVersion=fsj2nj3nj23n23323232)` or `@Microsoft.KeyVault(SecretUri=https://az204.vault.azure.net/secrets/blobConnectionString/fsj2nj3nj23n23323232)`
 
+# Soft-delete and Purge Protection
+Azure Key Vault Soft-delete allows recovery of the deleted vaults and key vault objects(keys, secrets and certificates). It's automatically enabled. When a key, certificate or secred or the whole vault is deleted then it remains recoverable for 7 to 90 days where 90 is the default. If you want to pernamently delete the secret then you must perform PURGE operation. <br/>
+
+Azure Key Vault Purge protection - when purge protection is enabled, a vault or and object in the deleted state cannot be purged until the retention period has passed.
+
+For configuration soft-delete and purge protection you can use Azure Portal or do it programatically - PowerShell, AzureCLI, ARM
+
+To set it programatically first it must be set to true `Add-Member -MemberType "NoteProperty" -Name "enablePurgeProtection" -Value "true"` and then set it to resources `Set-AzResource -resourceid`
