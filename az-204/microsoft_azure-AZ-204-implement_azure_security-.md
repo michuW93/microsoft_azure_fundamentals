@@ -38,7 +38,7 @@ Stored Access policy: Reused by multiple SAS, defined on resource container, per
 On the left is Ad-hoc shared access signature while on the right is Service SAS with Stored Access Policy. So all these stuff like srt, se, spr etc. are now packed into `mypolicy`
 
 # Authenticate using Azure Active Directory
-The Microsoft Identity Platform  is and authentication service, open-source libraries, and applicaiton menagement tools.
+The Microsoft Identity Platform  is and authentication service, open-source libraries, and application menagement tools.
 
 Identity platform conist of: <br/>
 Authentication Service - Azure Active Directory (allows single sign on), <br/>
