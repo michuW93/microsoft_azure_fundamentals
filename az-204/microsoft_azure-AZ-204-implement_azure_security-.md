@@ -117,3 +117,26 @@ Azure Key Vault Purge protection - when purge protection is enabled, a vault or 
 For configuration soft-delete and purge protection you can use Azure Portal or do it programatically - PowerShell, AzureCLI, ARM
 
 To set it programatically first it must be set to true `Add-Member -MemberType "NoteProperty" -Name "enablePurgeProtection" -Value "true"` and then set it to resources `Set-AzResource -resourceid`
+
+
+Create a key in KeyVault in Bash:
+`az keyvault key create --name "key1" --vault-name pssacsn2n579mhfu1s67` <br/>
+
+Createe a secret in KeyVault in Bash:
+`az keyvault secret set --name "SQLPassword" --value "hVFkk965BuUv" --vault-name pssacsn2n579mhfu1s67`
+
+# Review
+User Authentication and Authorization:
+* Microsoft Identity Platform - a modern identity platform consisting of several components that enable developers to integrate identity into their custom applications while also integrating with Microsoft API's. They are Standards-based Auth Service, Open-source Libraries, Application Management Portal etc. <br/>
+Standards for <b>authentication is OpenID Connect and for Authorization OAuth2.0</b>
+
+How Microsoft Identity Platform uses JSON Web Tokens (JWT's)
+
+* Azure AD App Manifest - the definition of an application object within the Microsoft Identity platform which includes all configuration for allowed authentication and authorization integrations. Some important attributes in manifest: appRoles, groupMembershitCliams, optionalClaims, oauth2AlowImplicitFlow, oauth2Permissions
+* Shared access signature(SAS) provides secure delegated access to resources in your storage account without compromising the security of your data. Types: User Delegation (using Azure AD), Service, Account. Use user delegation SAS whenever possible but it's just limited to Blob storage. 
+* Mutual TLS Authentication - not supported on free or shared tiers, certificate value is Base64 encoded
+
+
+Secure Cloud Solutions:
+* Microsoft Graph - to integrate with this we need to register an app with Azure AD, leverage the Microsoft Identity Platform authorize endpoint with defined scopes, user signs in with credentials and accepts the scopes, app receives an auth code, authorization code can be used to get a token from the token endpoint, token cna be leveraged to access microsoft graph
+* Azure Key Vault - it has soft-delete and purge-protection 
