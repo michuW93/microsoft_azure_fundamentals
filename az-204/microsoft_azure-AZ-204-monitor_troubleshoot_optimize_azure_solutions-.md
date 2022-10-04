@@ -85,3 +85,35 @@ Data Encryption in Azure Redis Cache
 
 
 # Azure Monitoring and Logging
+there are two types of Azure Monitor:
+* metrics - are numerical values that describe some aspect of a system at a particular time. Example of metrics can be CPU or memory usage value.
+* logs - logs are events that occured within the system. Example: exception thrown during application execution
+
+Azure monitor capabilities:
+* correlate infrastructures issues e.g not enough memory
+* detect and diagnose issues across applications and dependencies
+* support operations with smart alerts and automated actions e.g when there is a problem we can get email notification about it
+* create visualizations with Azure dashboards and workbooks
+
+What date does azure monitor collect
+* data about the performance and functionality of the application's source code
+* data about operating system
+* data about the operation of an Azure resources e.g performance of Azure web app
+* data about the operation of tenant-level azure services, such as Azure Active Directory
+
+Azure Monitor can collect log data from any REST client what allows to create custom monitoring scenarios, including on-premises solutions
+
+<b>Azure application insight</b> is an extensible application performance management (APM) service for developers and DevOPs professionals. It's part of Azure Monitor
+
+Application Insights Capabilities:
+* check performance of server machines like CPU or memory usage
+* detect thrown exceptions in the applications source code
+* add custom events and metrics in the client or server code to track business events
+* collect request rates, response times, failure rates
+* collect page views and load performance repored by client web browser
+
+How can I see collected telemetry from my apps? 
+* Smart detection - automatically warns you of potential performance problems and failure anomalies in your web applications
+* application map - helps spot performance bottlenecks or failure hotspots across all components of the distributed application
+* live metrics tab provides real time information about application performance
+* failures tab provides details about issues detected inside your applications like exceptions and server errors
