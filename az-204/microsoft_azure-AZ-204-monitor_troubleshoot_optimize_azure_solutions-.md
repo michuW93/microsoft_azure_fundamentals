@@ -1,6 +1,6 @@
 microsoft_azure_developer-AZ-204-
 
-Tutorial based on James Millar videos
+Tutorial based on James Millar and Daniel Krzyczkowski videos
 
 # Content Delivery Network
 A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. CDNs store cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency. Benefit is low latency, reducing hosting bandwidth. It has protection from denial-of-service attacks
