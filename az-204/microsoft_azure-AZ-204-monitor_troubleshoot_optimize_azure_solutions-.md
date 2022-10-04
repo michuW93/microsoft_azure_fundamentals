@@ -82,3 +82,6 @@ There is a benchmark which can help `Redis-benchmark -q -n 10000` so more or les
 Data Encryption in Azure Redis Cache
 * encryption in transit - use TLS1.2 so communication between redis and app is encrypted, HTTP connections are disabled by default
 * encryption at rest - in memory data is not encrypted but in Premium Tiers data persistence is encrypted
+
+
+# Azure Monitoring and Logging
