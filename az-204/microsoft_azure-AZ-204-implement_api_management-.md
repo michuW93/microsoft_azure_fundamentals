@@ -11,7 +11,7 @@ Azure API Management Components:
 * Developer portal - web user interface for developers where they can read API documentation
 
 API gateway example:
-Web App calling many Web API services. We can add proxy (API gateway) so client will always call API Gateway which decide to which API service call should go.
+Web App calling many Web API services. We can add proxy (API gateway between web app and web API services) so client will always call API Gateway which decide to which API service call should go.
 
 API Gateway Capabilities:
 * accepts API calls and routes them to your backends
