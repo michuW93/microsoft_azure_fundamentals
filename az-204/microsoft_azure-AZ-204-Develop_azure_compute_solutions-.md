@@ -127,9 +127,9 @@ az acr create \ <br/>
 az acr login --name $ACR_NAME
 
 Pushing an Image into ACR (it can be done via Docker tools and ACR Tasks):
-ACR_NAME='psdemoacr' <br/>
-ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) <br/>
-docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 <br/>
+ACR_NAME='psdemoacr' </br>
+ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) </br>
+docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 </br>
 docker push $ACR_LOGINSERVER/webappimage:v1 <br/>
 
 
