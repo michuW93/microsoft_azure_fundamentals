@@ -58,3 +58,53 @@ Administrators - manage API Management service instancesm creating the APIs, ope
 Developers (can be created or invited to join by administrators or they can sign up from the Developer portal) - are granted access to the developer portal and build applications that call the operations of an API. Each developer is a member of one or more groups </br>
 Guests - unauthenticated developer portal users with certain read-only access, such as the ability to view APIs but not call them </br>
 Custom groups - Administrators can also create custom groups or leverage external groups in associated Azure Active Directory tenants
+
+<b>Policies</b> are a powerful capability of Azure API Management that allow changing the behavior of the API through configuration.
+Policies are a collection of statements that are executed sequentially on the request or response of an API.
+
+Examples of Azure API Management Policies:
+* it can convert format of e.g response of API. Let's say response is in XML and we want JSON
+* restrict the amount of incoming calls
+* enforces existence and/or value of a HTTP Header
+* caches response according to the specified cache control configuration
+
+Access restriction policies:
+* limit call rate by key - Prevents API usage by limiting call rate, on a per key basis
+* validate JWT tokens - Enforces existence and validity of a JWT token in header or query parameter
+* set usage quota by key - enforces a renewable or lifetime call volume and/or bandwidth quota
+* check HTTP header presence - enforces existence and/or value of a HTTP header
+* limit call rate by subscription - prevents API usage by limiting call rate, on a per subscription basis
+
+Advanced policies:
+* Mock response - returns a mocked response directly to the caller
+* Forward request - forwards the request to the backend service
+* retry - retries execution of a request at the specified time intervals
+* set request method - allows changing the HTTP method for a request
+* Trace - adds custom traces into the API inspector output or Application Insights
+
+Transformation policies:
+* convert XML to JSON and JSON to XML - converts request or response body from one extension to another
+* Find and replace string in body
+* set backend service - changes the backend service for an incoming request
+* set query string parameter - adds/replaces/deletes request query string parameter
+
+Caching policies:
+* store to cache - caches response according to the specified cache control configuration
+* get from cache - perform cache look up and return a valid cached response when available
+* remove value from cache - remove and item in the cache by key
+
+there are many more policies in Azure API management service
+
+Policy Scopes:
+* global scope - affects all APIs within the instance of API Management
+* Product scope - manages access to the product as a single entity
+* API scope - affects only a single API
+* operation scope - affects only one operation within the API
+
+When do policies execute?
+* inbound policies execute when a request is received from a client
+* backend policies execute before a request is forwarded to a managed API
+* outbound policies execute before a response is sent to a client
+* on-error execute when an exception is raised
+
+Policies are defined in XML format and it supports inheritance
