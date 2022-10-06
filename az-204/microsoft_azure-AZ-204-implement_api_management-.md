@@ -23,7 +23,7 @@ Azure Portal Capabilities:
 * define or import API schema
 * set up policies like quotas or transformations on the APIs
 * package APIs into products
-* Manage users
+* manage users
 
 Developer portal capabilities:
 * read API documentation
@@ -31,7 +31,7 @@ Developer portal capabilities:
 * try out an API via the interactive console
 * access analytics
 
-There are versions and revisions.
+There are <b>versions</b> and <b>revisions</b>.
 <b>Versions</b> allow to present groups of related APIs to the developers. You can use versions to handle breaking changes in your API safely.
 https://api-car.com/car/all/v1
 https://api-car.com/car/all/v2
