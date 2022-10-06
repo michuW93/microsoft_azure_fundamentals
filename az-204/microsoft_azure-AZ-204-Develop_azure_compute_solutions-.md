@@ -69,7 +69,7 @@ $password = ConvertTo-SecureString 'pass' -AsPlainText -Force<br/>
 $WindowsCred = <br/>
   
   
-  and then create VM with above credentials:
+ and then create VM with above credentials:
  New-AzVM \ <br/>
   -ResourceGroupName 'psdemo-rg' <br/>
   -Name 'psdemo-win-az' <br/>
@@ -81,7 +81,7 @@ To get public IP: `Get-AzPublicIpAddress -ResourceGroupName 'psdemo-rg'`
 
 
 # Creating a VM with ARM (Azure Resource Manager) Templates
-with ARM Templates you can create any resource, not only VM. ARM Templates base on JSON files. It is possible to export ARM Template in Azure Portal or write on your own, then deploy from Quickstart template library. Once .json file is created you can import it into Azure Portal and deploy from file which you created, this template.json can also be used via CLI
+with ARM Templates you can create any resource, not only VM. <b>ARM Templates base on JSON files</b>. It is possible to export ARM Template in Azure Portal or write on your own, then deploy from Quickstart template library. Once .json file is created you can import it into Azure Portal and deploy from file which you created, this template.json can also be used via CLI
 
 Example (just part) of json template Downloaded from Azure Portal:
 {<br/>
@@ -127,9 +127,9 @@ az acr create \ <br/>
 az acr login --name $ACR_NAME
 
 Pushing an Image into ACR (it can be done via Docker tools and ACR Tasks):
-ACR_NAME='psdemoacr' <br/>
-ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) <br/>
-docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 <br/>
+ACR_NAME='psdemoacr' </br>
+ACR_LOGINSERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv) </br>
+docker tag webappimage:v1 (this is local image built earlier) $ACR_LOGINSERVER/webappimage:v1 </br>
 docker push $ACR_LOGINSERVER/webappimage:v1 <br/>
 
 
