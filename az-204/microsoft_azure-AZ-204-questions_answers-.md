@@ -11,4 +11,4 @@ Basic and Client Certificate will send credential to the API.
 4. You have an Azure user account that has access to two subscriptions. You need to retrieve a storage account key secret from Azure Key Vault. </br>
 `Get-AzSubscription` because there is more than 1, then `Set-AzContext -SubscriptionId`, then `Get-AzStorageAccountKey`, then `Get-AzKeyVaultSecret -VaultName`
 
-5. You must grant a VM access to specific resource groups in Azure Resource Manager. You need to obtain an Azure Resource Manager access token. Answer: We need to run `Invoke-RestMethod` cmdlet to make a request to the local managed identity for Azure resources endpoint.
+5. You must grant a VM access to specific resource groups in Azure Resource Manager. You need to obtain an Azure Resource Manager access token. Answer: We need to run `Invoke-RestMethod` cmdlet (Sends an HTTP or HTTPS request to a RESTful web service) to make a request to the local managed identity for Azure resources endpoint.
