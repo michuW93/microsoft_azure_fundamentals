@@ -134,7 +134,7 @@ docker push $ACR_LOGINSERVER/webappimage:v1 <br/>
 
 
 #Build using ACR Tasks
-az acr build --image "webappimage:v1-acr-task" --registry $ACR_NAME .
+`az acr build --image "webappimage:v1-acr-task" --registry $ACR_NAME .`
 
 # Deploying Containers in Azure Container Instances
 it's serverless container platform, it allows access application via Internet or on an Azure Virtual Network, it can run on Windows or Linux containers, it can use Azure Files for persistent storage, restart policy - always (default), on failure or never.
@@ -205,7 +205,7 @@ Isolation with App Service Environments(ASE):
 * fine-grainded control over network traffic
 * apps can connect over VPN to on-premises resources
 
-We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. There are 3 steps: create resource group, create app service plan and then finally create web app
+We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. There are 3 steps: first create resource group, then create app service plan and then finally create web app
 
 Example with Azure CLI:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
@@ -241,7 +241,7 @@ Scaling up Vertically vs Scaling up horizontaly <br/>
 Vertically - you have 1vCore and 2GB RAM but app is getting bigger and bigger then you switch machine for 8vCore and 64 GB RAM <br/>
 Horizontally - adding new machines e.g add azure load balancer and second virtual machine, then add third machine
 
-Auto scale is available for standard, premium and isolated pricing tiers. Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70%)
+<b>Auto scale is available for standard, premium and isolated pricing tiers</b>, not e.g for basic. Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70%)
 
 # Azure functions
 What are Azure Functions? A serverless application platform, a simple way to run small piece of code ("functions") in the cloud, FaaS - function as a service.
