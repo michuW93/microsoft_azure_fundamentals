@@ -108,3 +108,68 @@ When do policies execute?
 * on-error execute when an exception is raised
 
 Policies are defined in XML format and it supports inheritance
+
+# Event base solutions
+
+Event types:
+* discrete: report state changes and are actionable (Event grid) e.g image was upload, account was created
+* Series: report a condition, time-ordered, and analyzable (Event Hub) 
+* user notification: prompt user or their device for attention (Notification Hub)
+
+Azure Event Grid:
+* event-based architectures (published/subscriber)
+* publishers emit and subscribers consume
+* supports many subscribers to one publisher
+* filter events so if subscriber if not interested in sth then can ignore
+* scalable up and down
+* pay for what you use
+
+`az provider register --namespace Microsoft.EventGrid`
+
+
+Publisher/Subscriber concepts:
+* event signifies something changed
+* published has no expectation of what happens with event, he doesn't care was happens later
+* subscriber determines what to do with even, he doesn't care what was before
+
+
+<b>Azure Event Hub</b>:
+* scalable event processing service
+* great for big data scenarios with millions of events per second like IoT or Banking
+* decouples sending and receiving data like in event grid consumer and sender don't know each other
+* it can be easily integrated with Azure and Non-Azure services
+* capture events to azure blob storage or data lake
+
+Typical scenarios:
+* telemetry e.g many sensors to predict earthquake
+* transaction processing e.g banking
+* anomaly detection for e.g transaction processing in bank
+
+before creating event hub you need to create namespace `az eventhubs namespace create --resource-group`
+then `az eventhubs eventhub create --name`
+
+<b>Azure Notification Hubs</b>:
+* send push notifications - app to user e.g phone buzzez to let you know that you got email or when someone link you on facebook
+
+<b>Message-based Solutions</b> - it enables fault tolerance between modules. Even if service which consumes something go down, we still have all info in queue.
+Once service will be back we can proceed all messages from queue
+
+Azure Queue Storage: fully-managed service that is a part of the Azure Storage suite that enables you to create durable 
+and configurable message queues to enable application modularity and fault tolerance
+
+How to interact with Azure Queue Storage:
+* first you need an Azure Storage Account (general-purpose v2)
+* queues are created within a single storage account
+* it can supports messages up to 64KiB in size
+* messages exist withing a single queue
+* number of messages limited only by size of the storage account
+* it supports a configurable time to live per message (withing the default 7 days)
+
+Queue security
+* data in queues is encrypted by default
+* azure storage stored access policies can work with queues
+* can interact with queue date via HTTP or HTTPS
+
+Visibility timeout - message are delivered to consumers but are not immediatelly deleted from the queue.
+However messages will not be visible in the queue again until a period of time has passed from the initial delivery.
+This period of time is the visibility timeout and it enables fault tolerance for your apps
