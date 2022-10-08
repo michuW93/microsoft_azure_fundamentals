@@ -173,3 +173,11 @@ Queue security
 Visibility timeout - message are delivered to consumers but are not immediatelly deleted from the queue.
 However messages will not be visible in the queue again until a period of time has passed from the initial delivery.
 This period of time is the visibility timeout and it enables fault tolerance for your apps
+
+create a queue: `az storage queue create --name` </br>
+delete a queue: `az storage queue delete --name` </br>
+view messages in queue without affecting visibility `az storage message peek --queue-name` </br>
+delete all messaged in a queue: `az storage message clear --queue-name` </br>
+
+you can also play with queue via Azure Portal
+
