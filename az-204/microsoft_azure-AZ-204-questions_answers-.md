@@ -20,3 +20,7 @@ Basic and Client Certificate will send credential to the API.
 8. To purge specific file then `single path purge` should be use.
 
 9. Use API Management to access the services, use OpenID Connect for authentication and prevent anonymous usage. Answer: <b>validate-jwt</b> policy in API Management to validate OAuth token presented in each incoming API request. Valid requests can be passed to the API. 
+
+10. Inbound - here we need to detect the user identity in the user request and then store the data in the cache. So, we need to look at the incoming request for this e.g Cache-lookup-value and cache-store-value. Outbound - here we need to update the response body so it should go in the output section e.g find and replace policy.
+
+11. You need to develop code to access a secret stored in Azure Key Vault: `Environment.GetEnvironmentVariable("KEY_VAULT_URI")`, then `new <b>SecretClient</b>(new Uri(kvUri), new <b>DefaultAzureCredential()</b>)` 
