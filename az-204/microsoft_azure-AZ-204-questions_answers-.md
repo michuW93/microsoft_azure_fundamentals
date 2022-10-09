@@ -18,3 +18,5 @@ Basic and Client Certificate will send credential to the API.
 7. `Start-AzureStorageBlobCopy` to copy blobs between containers.
 
 8. To purge specific file then `single path purge` should be use.
+
+9. Use API Management to access the services, use OpenID Connect for authentication and prevent anonymous usage. Answer: <b>validate-jwt</b> policy in API Management to validate OAuth token presented in each incoming API request. Valid requests can be passed to the API. 
