@@ -181,3 +181,18 @@ delete all messaged in a queue: `az storage message clear --queue-name` </br>
 
 you can also play with queue via Azure Portal
 
+<b>Azure Service Bus</b> is fully managed enterprise message broken service that enables multiple modes of messaging with integrations for common messaging systems including Java Message Service (JMS)
+
+Azure service bus consist of Namespace in which there is a queue or topic. Queue is filled with producer and messages are taken by consumer while in topic there is publisher who publish sth into topic and then we can have many subscribers which can work on these data.
+
+Azure service bus:
+* supports both HTTP and HTTPS like Azure Queue Storage  but also AMQP protocols
+* includes messaging for both queues and topics
+* supports advanced configurability: ordering, batching, DLQ and Duplicate detection
+
+Azure service bus supports three different performance tiers:
+* Basic tier - only supports queues and not topics. To fully utilize the functionality of this service, it is recommended to use the Standard or Premium tier 
+* standard tier - pricing is pay as you go, utilizes shared resources, provides automatic scaling, support messages up to 256kb, does not support geo-disaster recovery or availability zones
+* pricing is fixed based on messaging units, utilized dedicated resources, requires configuration of scaling rules, support messages up to 1 mb and supports geo-disaster recovery and availability zones
+
+Azure service Bus supports message FIFO (first in, first out), it also supports Dead letter queue (DLQ) - this enables you to capture messages that were not processed during their lifetime and act accordingly with those messages.
