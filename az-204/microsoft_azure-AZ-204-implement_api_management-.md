@@ -13,6 +13,17 @@ Azure API Management Components:
 API gateway example:
 Web App calling many Web API services. We can add proxy (API gateway between web app and web API services) so client will always call API Gateway which decide to which API service call should go.
 
+API Management Pricing Tiers:
+* consumption - you will pay for request, not for hour/day/month etc. You pay for what you use
+* developer - just for testing, no SLA, supports both cache types
+* basic - adds SLA
+* standard - larger internal cache, adds azure AD integration
+* premium - lareger cache, multi region deployments
+
+API Management cache types:
+* internal - cache provided within the API Management service
+* external - redis compatible cache outside of API Management, such as Azure Cache for Redis
+
 API Gateway Capabilities:
 * accepts API calls and routes them to your backends
 * verifies API keys, JWT tokens, certificates, and other credentials
@@ -45,7 +56,7 @@ Typically versions are used to separate API versions with breaking changes, whil
 
 APIs are the foundation of the Azure API Management service
 
-Products are how APIs are surfaced to to developer, and have one or more APIs, title, description and terms of use. </br>
+Products are how APIs are surfaced to developer, and have one or more APIs, title, description and terms of use. </br>
 Groups are used to manage the visibility of products to developers
 
 <b>Products Overview</b>
@@ -196,3 +207,36 @@ Azure service bus supports three different performance tiers:
 * pricing is fixed based on messaging units, utilized dedicated resources, requires configuration of scaling rules, support messages up to 1 mb and supports geo-disaster recovery and availability zones
 
 Azure service Bus supports message FIFO (first in, first out), it also supports Dead letter queue (DLQ) - this enables you to capture messages that were not processed during their lifetime and act accordingly with those messages.
+
+Azure Queue Storage Use cases:
+* total storage for queue needs to be over 80GB
+* logs needed for all transactions executed against queue
+* need to track progress of message processing
+
+Azure Service Bus use cases:
+* need support for receiving messages without polling so something else than just HTTP/HTTPS
+* there is a need to guarantee message processing order (FIFO)
+* there is a need to detect duplicate messages
+* you need to support messages up to 256KB
+* you may need to support topic based notifications (one to many)
+* you need to support publishing and consuming in batches
+
+to create a queue: `az servicebus queue create --namespace-name`
+
+Azure service bus topics:
+* enables a one-to-many relationship between messages and consumers
+* a consumer creates a subscription to a topic
+* subscriptions act as dedicated queues for a subscriber with configuration options
+* topic filers can be specified as: boolean filters, SQL filters or correclation filters
+
+to create a topic: `az servicebus topic create --namespace-name`
+
+# Review
+Do you need a solution to send events to mobile device as push notifications? Select Azure Notification Hub </br>
+Does your solution product discrete events, that report state changes that a system can act on? Select Azure Event Grid </br>
+Does your solution report state over time for analysis by another system, such as in a data pipeline? Select Azure Event Hub
+
+Choose Azure Queue Storage when:
+* total storage for queue needs to be over 80GB
+* logs needed for all transactions executed against queue
+* need to track progress of message processing
