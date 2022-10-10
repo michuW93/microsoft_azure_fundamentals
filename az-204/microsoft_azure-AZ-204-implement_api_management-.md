@@ -232,9 +232,9 @@ Azure service bus topics:
 to create a topic: `az servicebus topic create --namespace-name`
 
 # Review
-Do you need a solution to send events to mobile device as push notifications? Select Azure Notification Hub </br>
-Does your solution product discrete events, that report state changes that a system can act on? Select Azure Event Grid </br>
-Does your solution report state over time for analysis by another system, such as in a data pipeline? Select Azure Event Hub
+Do you need a solution to send events to mobile device as push notifications? Select <b>Azure Notification Hub</b> </br>
+Does your solution product discrete events, that report state changes that a system can act on? Select <b>Azure Event Grid</b> </br>
+Does your solution report state over time for analysis by another system, such as in a data pipeline? Select <b>Azure Event Hub</b>
 
 Choose Azure Queue Storage when:
 * total storage for queue needs to be over 80GB
