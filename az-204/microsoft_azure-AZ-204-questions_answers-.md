@@ -3,7 +3,7 @@ the contents of the forms must not be compromised. <br>
 We can use Azure Key vault and public key encryption and store encrypted form in Azure Storage Blob storage
 
 2. Configure Azure Disk Encryption for the VM: 
-Keyvault -> Keyvault Key -> vm -> vm encryption -> all (all means encrypt both data and operating system)
+Keyvault -> Keyvault Key -> VirtualMachine -> VM encryption -> all (all means encrypt both data and operating system)
 `az keyvault create` then `az keyvault key create` then `az vm create` then `az vm encryption`
 
 3. Requirements: all API calls must be authenticated and callers to the API must not send credentials. Answer: Managed Identity <br>
