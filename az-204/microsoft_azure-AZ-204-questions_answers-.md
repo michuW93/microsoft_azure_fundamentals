@@ -98,5 +98,7 @@ A user delegation SAS is only supported for the Blob service.
 
 35. You have RBAC application. Role is sales but there are some people in this role which shouldn't have access to create customers. How to do it without adding new role? Build and register a policy.
 
+36. <b>Helm</b> helps you manage Kubernetes application - Helm charts help you define, install, and upgrade even the most complex Kubernetes applications. <b>kubectl</b> - Kubernetes command line tool which allows to run commands against Kubernetes clusters.
+
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/
 https://www.kaplanlearn.com/
