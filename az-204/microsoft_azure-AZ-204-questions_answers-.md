@@ -96,5 +96,7 @@ A user delegation SAS is only supported for the Blob service.
 
 34. add a message that does not expire: `await theQueue.AddMessageAsync` and inside `Timespan.FromSeconds(-1)`
 
+35. You have RBAC application. Role is sales but there are some people in this role which shouldn't have access to create customers. How to do it without adding new role? Build and register a policy.
+
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/
 https://www.kaplanlearn.com/
