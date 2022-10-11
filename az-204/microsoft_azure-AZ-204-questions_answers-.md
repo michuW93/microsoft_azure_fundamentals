@@ -1,4 +1,5 @@
-1. App is storing medical documents, if the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised. <br>
+1. App is storing medical documents, if the stored intake forms are downloaded from storage by a third party, 
+the contents of the forms must not be compromised. <br>
 We can use Azure Key vault and public key encryption and store encrypted form in Azure Storage Blob storage
 
 2. Configure Azure Disk Encryption for the VM: 
@@ -11,32 +12,89 @@ Basic and Client Certificate will send credential to the API.
 4. You have an Azure user account that has access to two subscriptions. You need to retrieve a storage account key secret from Azure Key Vault. </br>
 `Get-AzSubscription` because there is more than 1, then `Set-AzContext -SubscriptionId`, then `Get-AzStorageAccountKey`, then `Get-AzKeyVaultSecret -VaultName`
 
-5. You must grant a VM access to specific resource groups in Azure Resource Manager. You need to obtain an Azure Resource Manager access token. Answer: We need to run `Invoke-RestMethod` cmdlet (Sends an HTTP or HTTPS request to a RESTful web service) to make a request to the local managed identity for Azure resources endpoint.
+5. You must grant a VM access to specific resource groups in Azure Resource Manager. You need to obtain an Azure Resource Manager access token. 
+Answer: We need to run `Invoke-RestMethod` cmdlet (Sends an HTTP or HTTPS request to a RESTful web service) to make a request to the local managed 
+identity for Azure resources endpoint.
 
-6. Azure AD users must be able to login to the website. auth2Permissions can only accept collections value like an array, not boolean. <b>oauth2AllowImplicitFlow accepts boolean value</b>. `oauth2AllowImplicitFlow : true`
+6. Azure AD users must be able to login to the website. auth2Permissions can only accept collections value like an array, not boolean.
+<b>oauth2AllowImplicitFlow accepts boolean value</b>. `oauth2AllowImplicitFlow : true`
 
 7. `Start-AzureStorageBlobCopy` to copy blobs between containers.
 
 8. To purge specific file then `single path purge` should be use.
 
-9. Use API Management to access the services, use OpenID Connect for authentication and prevent anonymous usage. Answer: <b>validate-jwt</b> policy in API Management to validate OAuth token presented in each incoming API request. Valid requests can be passed to the API. 
+9. Use API Management to access the services, use OpenID Connect for authentication and prevent anonymous usage. 
+Answer: <b>validate-jwt</b> policy in API Management to validate OAuth token presented in each incoming API request. Valid requests can be passed to the API. 
 
-10. Inbound - here we need to detect the user identity in the user request and then store the data in the cache. So, we need to look at the incoming request for this e.g Cache-lookup-value and cache-store-value. Outbound - here we need to update the response body so it should go in the output section e.g find and replace policy.
+10. Inbound - here we need to detect the user identity in the user request and then store the data in the cache. 
+So, we need to look at the incoming request for this e.g Cache-lookup-value and cache-store-value. 
+Outbound - here we need to update the response body so it should go in the output section e.g find and replace policy.
 
-11. You need to develop code to access a secret stored in Azure Key Vault: `Environment.GetEnvironmentVariable("KEY_VAULT_URI")`, then `new <b>SecretClient</b>(new Uri(kvUri), new <b>DefaultAzureCredential()</b>)` 
+11. You need to develop code to access a secret stored in Azure Key Vault: `Environment.GetEnvironmentVariable("KEY_VAULT_URI")`, 
+then `new SecretClient(new Uri(kvUri), new <b>DefaultAzureCredential()</b>)` 
 
 12. cache-store in `<outbound>`
 
 13. You have two Hyper-V hosts named Host1 and Host2. Host1 has an Azure virtual machine named VM1 that was deployed by using a custom Azure Resource
-    Manager template. You need to move VM1 to Host2. What should you do? When you redeploy a VM, it moves the VM to a new node within the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources.
+Manager template. You need to move VM1 to Host2. What should you do? When you redeploy a VM, it moves the VM to a new node within 
+the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources.
 
-14. You want to deploy an ARM template using C#. The template deploys a single virtual machine in a new virtual network with single subnet. Which template files are necessary?
-`createVMTemplate.json` as the template file (it must be .json because ARM template!), `parameters.json` as the parameters file(it also must be .json!), `azureauth.properties` as the autorization file
+14. You want to deploy an ARM template using C#. The template deploys a single virtual machine in a new virtual network with single subnet. 
+Which template files are necessary?
+`createVMTemplate.json` as the template file (it must be .json because ARM template!), 
+`parameters.json` as the parameters file(it also must be .json!), 
+`azureauth.properties` as the autorization file
 
+15. Standard tier plan and above supports Kafka messages in Event Hub. The Basic tier does not.
 
+16. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. This environment variable can increase the throughput when 
+transferring small files and specifies the number of concurrent requests that can occur.
 
+17. Blob permission allow an annonymous user to read all the blobs in the container but not enumerate them.
 
+18. <b>Timespan can be used only if the function app is running on a dedicated app service plan</b>, not available for consumption and premium plan.
 
+19. To set up exception reporting, you will need the following:
+* ensure application insights extension site extension is updated
+* add application monitoring extension
+* install application insights SDK in your app code
+
+20. Partition key can be skipped if your collection is not partitioned i.e does not have a partition key defined during creation.
+
+21. you want to use a simple SQL API-based solution to remove all date before some date. Answer: Time to Live because you can set TTL for documents and/or containers.
+You can enable TTL for documents and wait for the cosmos DB cleanup to start.
+
+22. how to create alert?
+* in the azure portal under Azure CosmosDB properties, add an Alert Rule
+* in the Azure CLI, execute the command `az monitor alert create`
+* use an azure PowerShell script to execute `Add-AzMetricAlertRule`
+
+23. Azure Notification Hub can be used for sending push notifications to Android, iOS, Windows and more
+
+24. Azure Event Hubs enable you to automatically capture the streaming data in Event Hubs in Azure Blob storage or Azure Data Lake Storage account
+
+25. You have been using the VM in Azure DevTest Labs. After completing your assigned development task, what must you do to make the VM available
+to another developer who is responsible for the next part of the solution? Unclaim the VM and allow the developer to claim it and take over.
+
+26. `--vnet-subnet-id` is optional and specifies the subnet in a VNet where the new AKS cluster will be deployed
+
+27. In Azure Monitor you can see `CPU usage, network usage and disk operations per second`. To see boot diagnostic and application logs you need to enable it,
+it's not enabled by default
+
+28. Azure Cosmos DB accounts that are configured to use strong consistency cannot associate more than one Azure region with their Azure Cosmos DB account.
+
+29. <b>You cannot implement user delegation SAS though the stored access policy feature</b>. Stored access policies are not supported for a user delegation SAS.
+A user delegation SAS is only supported for the Blob service.
+
+30. Durable timers are limited to seven days. The workaround is to simulate using the timer API in a loop, such as a while loop or a for loop
+
+31. port 443 HTTPS, ports 5671-5672 for advanced message queuing protocol (AMQP), ports 9350-9354 for listeners on service bus relay over TCP
+
+32. NewGUID(.NET) is deterministic API, GUIDs/UUIDs is not deterministic
+
+33. you need the workspace ID and workspace (Premium) key to implement Azure OMS log analytics.
+
+34. add a message that does not expire: `await theQueue.AddMessageAsync` and inside `Timespan.FromSeconds(-1)`
 
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/
 https://www.kaplanlearn.com/
