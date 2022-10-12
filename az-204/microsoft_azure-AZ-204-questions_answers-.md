@@ -33,7 +33,7 @@ Outbound - here we need to update the response body so it should go in the outpu
 11. You need to develop code to access a secret stored in Azure Key Vault: `Environment.GetEnvironmentVariable("KEY_VAULT_URI")`, 
 then `new SecretClient(new Uri(kvUri), new <b>DefaultAzureCredential()</b>)` 
 
-12. cache-store in `<outbound>`
+12. find and replace in `<outbound>` because it's changing response body
 
 13. You have two Hyper-V hosts named Host1 and Host2. Host1 has an Azure virtual machine named VM1 that was deployed by using a custom Azure Resource
 Manager template. You need to move VM1 to Host2. What should you do? When you redeploy a VM, it moves the VM to a new node within 
