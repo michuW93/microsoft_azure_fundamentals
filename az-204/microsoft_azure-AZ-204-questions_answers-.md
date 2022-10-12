@@ -136,7 +136,7 @@ continues to receive requests
 
 47. In the dynamic data masking configuration page you need to choose `schema, table, column`
 
-
+48. Problems with VM. When it's related to backup and restore then `Azure backup`, when it's related to performance then `Accelerated Networking`
 
 
 
