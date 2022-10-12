@@ -47,10 +47,10 @@ Which template files are necessary?
 
 15. Standard tier plan and above supports Kafka messages in Event Hub. The Basic tier does not.
 
-16. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. This environment variable can increase the throughput when 
-transferring small files and specifies the number of concurrent requests that can occur.
+16. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. 
+This environment variable can increase the throughput when transferring small files and specifies the number of concurrent requests that can occur.
 
-17. Blob permission allow an annonymous user to read all the blobs in the container but not enumerate them.
+17. Blob permission allow an anonymous user to read all the blobs in the container but not enumerate them.
 
 18. <b>Timespan can be used only if the function app is running on a dedicated app service plan</b>, not available for consumption and premium plan.
 
@@ -61,7 +61,8 @@ transferring small files and specifies the number of concurrent requests that ca
 
 20. Partition key can be skipped if your collection is not partitioned i.e does not have a partition key defined during creation.
 
-21. you want to use a simple SQL API-based solution to remove all date before some date. Answer: Time to Live because you can set TTL for documents and/or containers.
+21. you want to use a simple SQL API-based solution to remove all date before some date. 
+Answer: Time to Live because you can set TTL for documents and/or containers.
 You can enable TTL for documents and wait for the cosmos DB cleanup to start.
 
 22. how to create alert?
@@ -81,7 +82,8 @@ to another developer who is responsible for the next part of the solution? Uncla
 27. In Azure Monitor you can see `CPU usage, network usage and disk operations per second`. To see boot diagnostic and application logs you need to enable it,
 it's not enabled by default
 
-28. Azure Cosmos DB accounts that are configured to use strong consistency cannot associate more than one Azure region with their Azure Cosmos DB account.
+28. Azure Cosmos DB accounts that are configured to use strong consistency cannot associate more than one Azure region with 
+their Azure Cosmos DB account.
 
 29. <b>You cannot implement user delegation SAS though the stored access policy feature</b>. Stored access policies are not supported for a user delegation SAS.
 A user delegation SAS is only supported for the Blob service.
@@ -96,9 +98,46 @@ A user delegation SAS is only supported for the Blob service.
 
 34. add a message that does not expire: `await theQueue.AddMessageAsync` and inside `Timespan.FromSeconds(-1)`
 
-35. You have RBAC application. Role is sales but there are some people in this role which shouldn't have access to create customers. How to do it without adding new role? Build and register a policy.
+35. You have RBAC application. Role is sales but there are some people in this role which shouldn't have access to create customers. 
+How to do it without adding new role? Build and register a policy.
 
-36. <b>Helm</b> helps you manage Kubernetes application - Helm charts help you define, install, and upgrade even the most complex Kubernetes applications. <b>kubectl</b> - Kubernetes command line tool which allows to run commands against Kubernetes clusters.
+36. <b>Helm</b> helps you manage Kubernetes application - Helm charts help you define, install, and upgrade even the most complex Kubernetes applications. 
+<b>kubectl</b> - Kubernetes command line tool which allows to run commands against Kubernetes clusters. 
+<b>ingress controller</b> is a piece of software that provides reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services.
 
-Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/
-https://www.kaplanlearn.com/
+37. You have developed an event-based solution that uses Azure Service Bus. Because of reaching subscription spending limits, 
+the system has suspended entities, and you want to reactivate system-disabled entities. Answer: <b>Restore the system-disabled entity</b> 
+
+38. API Management tier consumption does not support rate-limit-by-key or quota-by-key. You need premium tier to use it
+
+39. `Microsoft.Azure.Management.Redis.Fluent` is not a directive which can be used for CDN
+
+40. you can form a partition key by concatenating multiple property values into a single artificial partitionKey. It's synthetic key then
+
+41. steps to follow to create the app registration to Azure AD:
+* sign in to the Azure Portal
+* search for and select azure active directory
+* select app registration, then new registration
+* enter a display name for you application
+
+42. You are using Azure AD and you need to add multifactor authentication:
+* In azure AD, create a new conditional access policy
+* upgrade to azure AD premium
+
+43. Azure Cosmos DB provides new RBAC role, `Cosmos DB Operator`.
+This role lets you provision Azure Cosmos accounts, databases and containers but can't access the keys that are required to access the data.
+
+44. Azure CDN from Akamai purge request is processing the fastest.
+
+45. UseAzureAppConfiguration to allow the configuration setting registered for refresh to be updated while ASP.NET core web app 
+continues to receive requests
+
+46. The JWT validation policy pre-authorizes requests in API Management by validation the access tokens of each incoming request.
+
+
+
+
+
+
+
+Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
