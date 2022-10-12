@@ -140,4 +140,10 @@ continues to receive requests
 
 49. You need to implement code that creates the object which is used to create indexes in the azure search service. You should use `SeachServiceClient` and `SearchIndexClient`
 
+50. You need to ensure that the web app automatically scales when CPU load is about 85 percent and minimize costs.
+* configure the web app to the Standard App Service Tier
+* enable autoscaling on the web app
+* add a scale rule
+* add a scale condition
+
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
