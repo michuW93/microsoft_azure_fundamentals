@@ -134,7 +134,7 @@ continues to receive requests
 
 46. The JWT validation policy pre-authorizes requests in API Management by validation the access tokens of each incoming request.
 
-
+47. In the dynamic data masking configuration page you need to choose `schema, table, column`
 
 
 
