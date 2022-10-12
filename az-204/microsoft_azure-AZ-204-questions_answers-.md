@@ -138,6 +138,6 @@ continues to receive requests
 
 48. Problems with VM. When it's related to backup and restore then `Azure backup`, when it's related to performance then `Accelerated Networking`
 
-
+49. You need to implement code that creates the object which is used to create indexes in the azure search service. You should use `SeachServiceClient` and `SearchIndexClient`
 
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
