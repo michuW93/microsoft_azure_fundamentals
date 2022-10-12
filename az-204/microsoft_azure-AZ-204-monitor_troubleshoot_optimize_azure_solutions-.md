@@ -11,7 +11,7 @@ Application has two content types:
 
 Caching Rules:
 * Azure CDN Standard Verizon
-* Azure CDN Standard Akamai
+* Azure CDN Standard Akamai (purge for this works the fastest)
 * Azure CDN Microsoft - it's standard rules engine
 * Azure CDN Premium Verizon - premium rules engine
 
