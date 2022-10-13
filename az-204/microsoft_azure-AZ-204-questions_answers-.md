@@ -43,14 +43,14 @@ the Azure infrastructure and then powers it back on, retaining all your configur
 Which template files are necessary?
 `createVMTemplate.json` as the template file (it must be .json because ARM template!), 
 `parameters.json` as the parameters file(it also must be .json!), 
-`azureauth.properties` as the autorization file
+`azureauth.properties` as the authorization file
 
 15. Standard tier plan and above supports Kafka messages in Event Hub. The Basic tier does not.
 
 16. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. 
 This environment variable can increase the throughput when transferring small files and specifies the number of concurrent requests that can occur.
 
-17. Blob permission allow an anonymous user to read all the blobs in the container but not enumerate them.
+17. <b>Blob permission</b> allow an anonymous user to read all the blobs in the container but not enumerate them.
 
 18. <b>Timespan can be used only if the function app is running on a dedicated app service plan</b>, not available for consumption and premium plan.
 
@@ -145,5 +145,23 @@ continues to receive requests
 * enable autoscaling on the web app
 * add a scale rule
 * add a scale condition
+
+51. In Azure Table Storage you need to insert multiple sets of user informations.
+`TableBatchOperation op = new TableBatchOperation()` then `table.executeBatch(op)`
+
+52. Create a new role reusing a default role definition. `Set-AzureRmRoleDefinition Input-File C:/SupportRole.json`
+
+53. You want to avoid a single hot partition key. You can use a partition key with <b>pre-calculated</b> or random suffixes.
+We don't want prefix, a suffix appends the value to the end, which makes it easier to read.
+
+54. How to view the logged information in an easy manner? Open the freb.xsl file, failed request traces are stored in XML files named fr###.xml
+
+55. Sharding pattern is used for splitting data across databases, disks, files, or partitions. It can prevent Azure Cosmos DB from being overloaded.
+this pattern can resolve database issues for SQL and NoSQL but not MySQL
+
+56. to build cluster named NutexAKSCluster for the resourcegroup test: `az aks create --name NutexAKSCluster --resource-group test`
+
+
+
 
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
