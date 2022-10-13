@@ -79,7 +79,7 @@ to another developer who is responsible for the next part of the solution? Uncla
 
 26. `--vnet-subnet-id` is optional and specifies the subnet in a VNet where the new AKS cluster will be deployed
 
-27. In Azure Monitor you can see `CPU usage, network usage and disk operations per second`. To see boot diagnostic and application logs you need to enable it,
+27. In Azure Monitor you can see <b>`CPU usage, network usage and disk operations per second`</b>. To see boot diagnostic and application logs you need to enable it,
 it's not enabled by default
 
 28. Azure Cosmos DB accounts that are configured to use strong consistency cannot associate more than one Azure region with 
@@ -88,11 +88,11 @@ their Azure Cosmos DB account.
 29. <b>You cannot implement user delegation SAS though the stored access policy feature</b>. Stored access policies are not supported for a user delegation SAS.
 A user delegation SAS is only supported for the Blob service.
 
-30. Durable timers are limited to seven days. The workaround is to simulate using the timer API in a loop, such as a while loop or a for loop
+30. <b>Durable timers are limited to seven days</b>. The workaround is to simulate using the timer API in a loop, such as a while loop or a for loop
 
-31. port 443 HTTPS, ports 5671-5672 for advanced message queuing protocol (AMQP), ports 9350-9354 for listeners on service bus relay over TCP
+31. port <b>443</b> HTTPS, ports 5671-5672 for advanced message queuing protocol (AMQP), ports 9350-9354 for listeners on service bus relay over TCP
 
-32. NewGUID(.NET) is deterministic API, GUIDs/UUIDs is not deterministic
+32. NewGUID(.NET) is deterministic API, GUIDs/UUIDs is not deterministic. Deterministic API returns the same value given the same input.
 
 33. you need the workspace ID and workspace (Premium) key to implement Azure OMS log analytics.
 
@@ -112,7 +112,7 @@ the system has suspended entities, and you want to reactivate system-disabled en
 
 39. `Microsoft.Azure.Management.Redis.Fluent` is not a directive which can be used for CDN
 
-40. you can form a partition key by concatenating multiple property values into a single artificial partitionKey. It's synthetic key then
+40. you can form a partition key by concatenating multiple property values into a single artificial partitionKey. It's called synthetic key then
 
 41. steps to follow to create the app registration to Azure AD:
 * sign in to the Azure Portal
@@ -127,7 +127,7 @@ the system has suspended entities, and you want to reactivate system-disabled en
 43. Azure Cosmos DB provides new RBAC role, `Cosmos DB Operator`.
 This role lets you provision Azure Cosmos accounts, databases and containers but can't access the keys that are required to access the data.
 
-44. Azure CDN from Akamai purge request is processing the fastest.
+44. <b>Azure CDN from Akamai</b> purge request is processing the fastest.
 
 45. UseAzureAppConfiguration to allow the configuration setting registered for refresh to be updated while ASP.NET core web app 
 continues to receive requests
@@ -154,10 +154,10 @@ continues to receive requests
 53. You want to avoid a single hot partition key. You can use a partition key with <b>pre-calculated</b> or random suffixes.
 We don't want prefix, a suffix appends the value to the end, which makes it easier to read.
 
-54. How to view the logged information in an easy manner? Open the freb.xsl file, failed request traces are stored in XML files named fr###.xml
+54. How to view the logged information in an easy manner? Open the <b>freb.xsl</b> file, failed request traces are stored in XML files named fr###.xml
 
 55. Sharding pattern is used for splitting data across databases, disks, files, or partitions. It can prevent Azure Cosmos DB from being overloaded.
-this pattern can resolve database issues for SQL and NoSQL but not MySQL
+<b>Sharding pattern can resolve database issues for SQL and NoSQL but not MySQL</b>
 
 56. to build cluster named NutexAKSCluster for the resourcegroup test: `az aks create --name NutexAKSCluster --resource-group test`
 
