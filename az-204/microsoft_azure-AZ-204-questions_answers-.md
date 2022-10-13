@@ -161,7 +161,7 @@ We don't want prefix, a suffix appends the value to the end, which makes it easi
 
 56. to build cluster named NutexAKSCluster for the resourcegroup test: `az aks create --name NutexAKSCluster --resource-group test`
 
-57. Purpose of `change feed` is to provide transaction logs of all the changes that occur to the blobs and the blob metadata in storage account
+57. Purpose of `change feed` is to provide transaction logs of all the changes that occur to the blobs and the blob metadata in storage account. The change feed provides ordered, guaranteed, durabled read only logs of changes.
 
 
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
