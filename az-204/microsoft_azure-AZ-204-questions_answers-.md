@@ -193,6 +193,21 @@ You decide to deploy a function app.
 Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.
 Select and Place: Consumption pland and SendGrid binding
 
+63. You company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.
+You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.
+You include the Data Management Gateway tool in your migration strategy. <b>mongorestore</b>
+
+64. You are developing an e-Commerce Web App.
+You want to use Azure Key Vault to ensure that sign-ins to the e-Commerce Web App are secured by using Azure App Service authentication and Azure Active
+Directory (AAD).
+What should you do on the e-Commerce Web App?
+Enable Managed Service Identity (MSI). - A managed identity from Azure Active Directory allows your app to easily access other AAD-protected resources such as Azure Key Vault.
+
+65. Your Azure Active Directory Azure (Azure AD) tenant has an Azure subscription linked to it.
+Your developer has created a mobile application that obtains Azure AD access tokens using the OAuth 2 implicit grant type.
+The mobile application must be registered in Azure AD.
+You require a redirect URI from the developer for registration purposes.
+No change required
 
 
 
@@ -204,6 +219,4 @@ Select and Place: Consumption pland and SendGrid binding
 
 
 
-
-
-Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and itexams.com
+Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and <b>itexams.com</b>
