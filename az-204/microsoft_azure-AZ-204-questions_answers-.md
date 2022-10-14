@@ -163,5 +163,10 @@ We don't want prefix, a suffix appends the value to the end, which makes it easi
 
 57. Purpose of `change feed` is to provide transaction logs of all the changes that occur to the blobs and the blob metadata in storage account. The change feed provides ordered, guaranteed, durabled read only logs of changes.
 
+58. You have downloaded an Azure Resource Manager template to deploy numerous virtual machines. The template is based on a current virtual machine, but must be adapted to reference an administrative password.
+You need to make sure that the password is not stored in plain text.
+You are preparing to create the necessary components to achieve your goal.
+Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.
+Select and Place: <b>an Azure Key Vault</b> and <b>an access policy</b>
 
-Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/
+Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and itexams.com
