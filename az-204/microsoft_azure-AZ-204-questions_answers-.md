@@ -169,4 +169,41 @@ You are preparing to create the necessary components to achieve your goal.
 Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.
 Select and Place: <b>an Azure Key Vault</b> and <b>an access policy</b>
 
+59. You need to deploy the YAML manifest file for the application.
+`kubectl apply -f myapp.yaml` applies a configuration change to a resource from a file or stdin.
+
+60. Your company has a web app named WebApp1.
+You use the WebJobs SDK to design a triggered App Service background task that automatically invokes a function in the code every time new data is received in a queue.
+You are preparing to configure the service processes a queue data item.
+Which of the following is the service you should use?
+<b>WebJobs</b>
+
+61. Your company has an Azure subscription.
+You need to deploy a number of Azure virtual machines to the subscription by using Azure Resource Manager (ARM) templates. The virtual machines will be included in a single availability set.
+You need to ensure that the ARM template allows for as many virtual machines as possible to remain accessible in the event of fabric failure or maintenance.
+* Which of the following is the value that you should configure for the platformFaultDomainCount property?
+Max value - The number of fault domains for managed availability sets varies by region - either two or three per region.
+
+* Which of the following is the value that you should configure for the platformUpdateDomainCount property?
+40 Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.
+
+62. You are creating an Azure Cosmos DB account that makes use of the SQL API. Data will be added to the account every day by a web application.
+You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.
+You decide to deploy a function app.
+Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.
+Select and Place: Consumption pland and SendGrid binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and itexams.com
