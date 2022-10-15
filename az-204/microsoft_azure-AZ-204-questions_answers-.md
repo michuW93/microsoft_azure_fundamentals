@@ -311,6 +311,51 @@ Incorrect:
 For HTTP-triggered functions with no additional bindings or outputs, you may want your handler to work directly with the HTTP request and response instead of the custom handler request and response payloads. This behavior can be configured in host.json using the enableForwardingHttpRequest setting.
 At the root of the app, the host.json file is configured to run handler.exe and enableForwardingHttpRequest is set to true.
 
+80. You are implementing a software as a service (SaaS) ASP.NET Core web service that will run as an Azure Web App. The web service will use an on-premises
+SQL Server database for storage. The web service also includes a WebJob that processes data updates. Four customers will use the web service.
+✑ Each instance of the WebJob processes data for a single customer and must run as a singleton instance.
+✑ Each deployment must be tested by using deployment slots prior to serving production data.
+✑ Azure costs must be minimized.
+✑ Azure resources must be located in an isolated network.
+You need to configure the App Service plan for the Web App.
+How should you configure the App Service plan? 
+Number of VM instances: 4, Pricing tier: isolated
+
+81. You are a developer for a software as a service (SaaS) company that uses an Azure Function to process orders. The Azure Function currently runs on an Azure
+Function app that is triggered by an Azure Storage queue.
+You are preparing to migrate the Azure Function to Kubernetes using Kubernetes-based Event Driven Autoscaling (KEDA).
+You need to configure Kubernetes Custom Resource Definitions (CRD) for the Azure Function.
+Which CRDs should you configure?
+Azure function code: Deployment
+Pooling interval: ScaledObject
+Azure Storeage connection String: Secret
+
+82. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
+After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
+You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
+You need to ensure that scripts run and resources are available before a swap operation occurs.
+Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot.
+Does the solution meet the goal? YES
+
+83. You are developing a serverless Java application on Azure. You create a new Azure Key Vault to work with secrets from a new Azure Functions application.
+The application must meet the following requirements:
+✑ Reference the Azure Key Vault without requiring any changes to the Java code.
+✑ Dynamically add and remove instances of the Azure Functions host based on the number of incoming application events.
+✑ Ensure that instances are perpetually warm to avoid any cold starts.
+✑ Connect to a VNet.
+✑ Authentication to the Azure Key Vault instance must be removed if the Azure Function application is deleted.
+You need to grant the Azure Functions application access to the Azure Key Vault.
+Which three actions should you perform in sequence?
+* create the Azure Functions app with a Consumption plan type
+* create a user-assigned managed identity for the application
+* create an access policy in Azure Key Vault for the application identity
+
+84. You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published.
+You must ensure that the website remains available and responsive while minimizing cost.
+You need to deploy the website.
+What should you do?
+Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
+
 
 
 
