@@ -356,7 +356,13 @@ You need to deploy the website.
 What should you do?
 Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
 
-
+85. You develop an HTTP triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob.
+The app continues to time out after four minutes. The app must process the blob data.
+You need to ensure the app does not time out and processes the blob data.
+Solution: Pass the HTTP trigger payload into an Azure Service Bus queue to be processed by a queue trigger function and return an immediate HTTP success response.
+Does the solution meet the goal? YES - Large, long-running functions can cause unexpected timeout issues. General best practices include:
+Whenever possible, refactor large functions into smaller function sets that work together and return responses fast. For example, a webhook or HTTP trigger function might require an acknowledgment response within a certain time limit; it's common for webhooks to require an immediate response. You can pass the
+HTTP trigger payload into a queue to be processed by a queue trigger function. This approach lets you defer the actual work and return an immediate response.
 
 
 
