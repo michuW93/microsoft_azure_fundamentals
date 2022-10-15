@@ -185,13 +185,13 @@ You need to ensure that the ARM template allows for as many virtual machines as 
 Max value - The number of fault domains for managed availability sets varies by region - either two or three per region.
 
 * Which of the following is the value that you should configure for the platformUpdateDomainCount property?
-40 Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.
+<b>40</b> Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.
 
 62. You are creating an Azure Cosmos DB account that makes use of the SQL API. Data will be added to the account every day by a web application.
 You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.
 You decide to deploy a function app.
 Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.
-Select and Place: Consumption pland and SendGrid binding
+Select and Place: Consumption plan and SendGrid binding
 
 63. You company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.
 You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.
@@ -219,7 +219,7 @@ Access control must require multi-factor authentication when granting access.
 
 67. You manage an Azure SQL database that allows for Azure AD authentication.
 You need to make sure that database developers can connect to the SQL database via Microsoft SQL Server Management Studio (SSMS). You also need to make sure the developers use their on-premises Active Directory account for authentication. Your strategy should allow for authentication prompts to be kept to a minimum.
-Which of the following should you implement?
+Which of the following should you implement? </br>
 Active Directory integrated authentication.
 Azure AD can be the initial Azure AD managed domain. Azure AD can also be an on-premises Active Directory Domain Services that is federated with the Azure
 AD.
