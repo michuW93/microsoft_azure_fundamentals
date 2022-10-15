@@ -246,14 +246,14 @@ You must configure alerts based on the information gathered by the Azure Log Ana
 You have to make sure that alert rules allow for dimensions, and that alert creation time should be kept to a minimum. Furthermore, a single alert notification must be created when the alert is created and when the alert is resolved.
 You need to make use of the necessary signal type when creating the alert rules.
 Which of the following is the option you should use?
-The Metric signal type - Metric alerts in Azure Monitor provide a way to get notified when one of your metrics cross a threshold. Metric alerts work on a range of multi-dimensional platform metrics, custom metrics, Application Insights standard and custom metrics.
+<b>The Metric signal type</b> - Metric alerts in Azure Monitor provide a way to get notified when one of your metrics cross a threshold. Metric alerts work on a range of multi-dimensional platform metrics, custom metrics, Application Insights standard and custom metrics.
 Note: Signals are emitted by the target resource and can be of several types. Metric, Activity log, Application Insights, and Log.
 
 72. You are developing a .NET Core MVC application that allows customers to research independent holiday accommodation providers.
 You want to implement Azure Search to allow the application to search the index by using various criteria to locate documents related to accommodation.
 You want the application to allow customers to search the index by using regular expressions.
 What should you do?
-Configure the QueryType property of the SearchParameters class - The SearchParameters.QueryType Property gets or sets a value that specifies the syntax of the search query. The default is 'simple'. Use 'full' if your query uses the Lucene query syntax.
+<b>Configure the QueryType property of the SearchParameters class</b> - The SearchParameters.QueryType Property gets or sets a value that specifies the syntax of the search query. The default is 'simple'. Use 'full' if your query uses the Lucene query syntax.
 You can write queries against Azure Search based on the rich Lucene Query Parser syntax for specialized query forms: wildcard, fuzzy search, proximity search, regular expressions are a few examples.
 
 73. You are a developer at your company.
@@ -264,7 +264,7 @@ the Logic App Code View
 74. You are developing a solution for a public facing API.
 The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.
 You must configure back-end authentication for the API Management service instance.
-Solution: You configure Client cert gateway credentials for the Azure resource.
+Solution: <b>You configure Client cert gateway credentials for the Azure resource.</b>
 YES - API Management allows to secure access to the back-end service of an API using client certificates.
 
 75. You are developing a .NET Core MVC application that allows customers to research independent holiday accommodation providers.
@@ -293,7 +293,7 @@ You have the following requirements:
 ✑ All authentication events must be processed by PolicyApp.
 ✑ Sign outs must be processed as fast as possible.
 What should you do?
-Add a subject prefix to sign-out events. Create an Azure Event Grid subscription. Configure the subscription to use the subjectBeginsWith filter.
+<b>Add a subject prefix to sign-out events. Create an Azure Event Grid subscription. Configure the subscription to use the subjectBeginsWith filter.</b>
 
 79. You are developing a C++ application that compiles to a native application named process.exe. The application accepts images as input and returns images in one of the following image formats: GIF, PNG, or JPEG.
 You must deploy the application as an Azure Function.
@@ -334,8 +334,7 @@ Azure Storeage connection String: Secret
 After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
 You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
 You need to ensure that scripts run and resources are available before a swap operation occurs.
-Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot.
-Does the solution meet the goal? YES
+Solution: <b>Enable auto swap for the Testing slot. Deploy the app to the Testing slot.</b> or <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
 
 83. You are developing a serverless Java application on Azure. You create a new Azure Key Vault to work with secrets from a new Azure Functions application.
 The application must meet the following requirements:
@@ -353,13 +352,13 @@ Which three actions should you perform in sequence?
 84. You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published.
 You must ensure that the website remains available and responsive while minimizing cost.
 You need to deploy the website.
-What should you do?
-Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
+What should you do?</br>
+<b>Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.</b>
 
 85. You develop an HTTP triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob.
 The app continues to time out after four minutes. The app must process the blob data.
 You need to ensure the app does not time out and processes the blob data.
-Solution: Pass the HTTP trigger payload into an Azure Service Bus queue to be processed by a queue trigger function and return an immediate HTTP success response.
+Solution: <b>Pass the HTTP trigger payload into an Azure Service Bus queue to be processed by a queue trigger function and return an immediate HTTP success response.</b>
 Does the solution meet the goal? YES - Large, long-running functions can cause unexpected timeout issues. General best practices include:
 Whenever possible, refactor large functions into smaller function sets that work together and return responses fast. For example, a webhook or HTTP trigger function might require an acknowledgment response within a certain time limit; it's common for webhooks to require an immediate response. You can pass the
 HTTP trigger payload into a queue to be processed by a queue trigger function. This approach lets you defer the actual work and return an immediate response.
@@ -368,7 +367,7 @@ HTTP trigger payload into a queue to be processed by a queue trigger function. T
 Storage Blob storage. The storage account type is General-purpose V2.
 When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute.
 You need to design the process that starts the photo processing.
-Solution: Move photo processing to an Azure Function triggered from the blob upload.
+Solution: <b>Move photo processing to an Azure Function triggered from the blob upload.</b>
 Does the solution meet the goal? YES - Azure Storage events allow applications to react to events. Common Blob storage event scenarios include image or video processing, search indexing, or any file- oriented workflow.
 Events are pushed using Azure Event Grid to subscribers such as Azure Functions, Azure Logic Apps, or even to your own http listener.
 Note: Only storage accounts of kind StorageV2 (general purpose v2) and BlobStorage support event integration. Storage (general purpose v1) does not support integration with Event Grid.
@@ -376,18 +375,35 @@ Note: Only storage accounts of kind StorageV2 (general purpose v2) and BlobStora
 87. You are developing an application that uses Azure Blob storage.
 The application must read the transaction logs of all the changes that occur to the blobs and the blob metadata in the storage account for auditing purposes. The changes must be in the order in which they occurred, include only create, update, delete, and copy operations and be retained for compliance reasons.
 You need to process the transaction logs asynchronously.
-What should you do? Enable the change feed on the storage account and process all changes for available events. Change feed support in Azure Blob Storage
+What should you do? <b>Enable the change feed on the storage account and process all changes for available events. </b> Change feed support in Azure Blob Storage
 The purpose of the change feed is to provide transaction logs of all the changes that occur to the blobs and the blob metadata in your storage account. The change feed provides ordered, guaranteed, durable, immutable, read-only log of these changes. Client applications can read these logs at any time, either in streaming or in batch mode. The change feed enables you to build efficient and scalable solutions that process change events that occur in your Blob Storage account at a low cost.
 
 88. You are developing an Azure Function App that processes images that are uploaded to an Azure Blob container.
 Images must be processed as quickly as possible after they are uploaded, and the solution must minimize latency. You create code to process images when the
 Function App is triggered.
 You need to configure the Function App.
-What should you do? Use a Consumption plan. Configure the Function App to use an Azure Blob Storage trigger. The Blob storage trigger starts a function when a new or updated blob is detected. The blob contents are provided as input to the function.
+What should you do? <b>Use a Consumption plan. Configure the Function App to use an Azure Blob Storage trigger.</b> The Blob storage trigger starts a function when a new or updated blob is detected. The blob contents are provided as input to the function.
 The Consumption plan limits a function app on one virtual machine (VM) to 1.5 GB of memory.
 
+89. You are configuring a development environment for your team. You deploy the latest Visual Studio image from the Azure Marketplace to your Azure subscription.
+The development environment requires several software development kits (SDKs) and third-party components to support application development across the organization. You install and customize the deployed virtual machine (VM) for your development team. The customized VM must be saved to allow provisioning of a new team member development environment.
+You need to save the customized VM for future provisioning.
+Generalize the VM - Azure PowerShell </br>
+Store images - Azure Blob Storage
 
+90. You are preparing to deploy a website to an Azure Web App from a GitHub repository. The website includes static content generated by a script.
+You plan to use the Azure Web App continuous deployment feature.
+You need to run the static generation script before the website starts serving traffic.
+Add the path to the static content generation tool to WEBSITE_RUN_FROM_PACKAGE setting in the host.json file. and Create a file named .deployment in the root of the repository that calls a script which generates the static content and deploys the website. 
 
+91. You are developing an application to use Azure Blob storage. You have configured Azure Blob storage to include change feeds.
+A copy of your storage account must be created in another region. Data must be copied from the current storage account to the new storage account directly between the storage servers.
+You need to create a copy of the storage account in another region and copy the data.
+* create a new template deployment
+* export a resource manager template
+* modify the template by changing the storage account name and region
+* deploy the template to create a new storage account in the target region
+* use azcopy to copy the data to the new storage account 
 
 
 
