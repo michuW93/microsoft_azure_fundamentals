@@ -364,7 +364,52 @@ Does the solution meet the goal? YES - Large, long-running functions can cause u
 Whenever possible, refactor large functions into smaller function sets that work together and return responses fast. For example, a webhook or HTTP trigger function might require an acknowledgment response within a certain time limit; it's common for webhooks to require an immediate response. You can pass the
 HTTP trigger payload into a queue to be processed by a queue trigger function. This approach lets you defer the actual work and return an immediate response.
 
+86. You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure
+Storage Blob storage. The storage account type is General-purpose V2.
+When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute.
+You need to design the process that starts the photo processing.
+Solution: Move photo processing to an Azure Function triggered from the blob upload.
+Does the solution meet the goal? YES - Azure Storage events allow applications to react to events. Common Blob storage event scenarios include image or video processing, search indexing, or any file- oriented workflow.
+Events are pushed using Azure Event Grid to subscribers such as Azure Functions, Azure Logic Apps, or even to your own http listener.
+Note: Only storage accounts of kind StorageV2 (general purpose v2) and BlobStorage support event integration. Storage (general purpose v1) does not support integration with Event Grid.
+
+87. You are developing an application that uses Azure Blob storage.
+The application must read the transaction logs of all the changes that occur to the blobs and the blob metadata in the storage account for auditing purposes. The changes must be in the order in which they occurred, include only create, update, delete, and copy operations and be retained for compliance reasons.
+You need to process the transaction logs asynchronously.
+What should you do? Enable the change feed on the storage account and process all changes for available events. Change feed support in Azure Blob Storage
+The purpose of the change feed is to provide transaction logs of all the changes that occur to the blobs and the blob metadata in your storage account. The change feed provides ordered, guaranteed, durable, immutable, read-only log of these changes. Client applications can read these logs at any time, either in streaming or in batch mode. The change feed enables you to build efficient and scalable solutions that process change events that occur in your Blob Storage account at a low cost.
+
+88. You are developing an Azure Function App that processes images that are uploaded to an Azure Blob container.
+Images must be processed as quickly as possible after they are uploaded, and the solution must minimize latency. You create code to process images when the
+Function App is triggered.
+You need to configure the Function App.
+What should you do? Use a Consumption plan. Configure the Function App to use an Azure Blob Storage trigger. The Blob storage trigger starts a function when a new or updated blob is detected. The blob contents are provided as input to the function.
+The Consumption plan limits a function app on one virtual machine (VM) to 1.5 GB of memory.
 
 
 
-Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and <b>[itexams.com](https://www.itexams.com/exam/AZ-204)</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questions also from https://www.examtopics.com/exams/microsoft/az-204/view/ and https://www.kaplanlearn.com/ and <b>[itexams.com](https://www.itexams.com/exam/AZ-204)</b> and https://www.examtopics.com/exams/microsoft/az-204/view/
