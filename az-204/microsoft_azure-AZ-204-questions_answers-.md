@@ -281,9 +281,9 @@ the Enterprise Integration Pack (EIP) - For business-to-business (B2B) solutions
 77. You are a developer for a company that provides a bookings management service in the tourism industry. You are implementing Azure Search for the tour agencies listed in your company's solution.
 You create the index in Azure Search. You now need to use the Azure Search .NET SDK to import the relevant data into the Azure Search service.
 Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions from left to right and arrange them in the correct order.
-1. Create the SearchIndexClient object to connect to the search index.
-2. Create an IndexBatch that contains the documents which must be added.
-3. Call the Documents.Index method of the SearchIndexClient and pass the IndexBatch
+* Create the SearchIndexClient object to connect to the search index.
+* Create an IndexBatch that contains the documents which must be added.
+* Call the Documents.Index method of the SearchIndexClient and pass the IndexBatch
 
 78. You are developing an application that applies a set of governance policies for internal and external services, as well as for applications.
 You develop a stateful ASP.NET Core 2.1 web application named PolicyApp and deploy it to an Azure App Service Web App. The PolicyApp reacts to events from
@@ -318,8 +318,8 @@ SQL Server database for storage. The web service also includes a WebJob that pro
 ✑ Azure costs must be minimized.
 ✑ Azure resources must be located in an isolated network.
 You need to configure the App Service plan for the Web App.
-How should you configure the App Service plan? 
-Number of VM instances: 4, Pricing tier: isolated
+How should you configure the App Service plan? </br>
+Number of VM instances: <b>4</b>, Pricing tier: <b>isolated</b>
 
 81. You are a developer for a software as a service (SaaS) company that uses an Azure Function to process orders. The Azure Function currently runs on an Azure
 Function app that is triggered by an Azure Storage queue.
@@ -334,7 +334,8 @@ Azure Storeage connection String: Secret
 After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
 You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
 You need to ensure that scripts run and resources are available before a swap operation occurs.
-Solution: <b>Enable auto swap for the Testing slot. Deploy the app to the Testing slot.</b> or <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
+* <b>Enable auto swap for the Testing slot. Deploy the app to the Testing slot.</b> 
+* <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
 
 83. You are developing a serverless Java application on Azure. You create a new Azure Key Vault to work with secrets from a new Azure Functions application.
 The application must meet the following requirements:
@@ -405,9 +406,38 @@ You need to create a copy of the storage account in another region and copy the 
 * deploy the template to create a new storage account in the target region
 * use azcopy to copy the data to the new storage account 
 
+92. You are preparing to deploy an Azure virtual machine (VM)-based application.
+The VMs that run the application have the following requirements:
+✑ When a VM is provisioned the firewall must be automatically configured before it can access Azure resources.
+✑ Supporting services must be installed by using an Azure PowerShell script that is stored in Azure Storage.
+You need to ensure that the requirements are met.
+Firewall configuration - Run command 
+Supporting services script - Hybrid Runbook Worker
 
+93. You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure
+Storage Blob storage. The storage account type is General-purpose V2.
+When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute.
+You need to design the process that starts the photo processing.
+Solution: Create an Azure Function app that uses the Consumption hosting model and that is triggered from the blob upload. YES - In the Consumption hosting plan, resources are added dynamically as required by your functions.
 
+94. You are developing a web app that is protected by Azure Web Application Firewall (WAF). All traffic to the web app is routed through an Azure Application
+Gateway instance that is used by multiple web apps. The web app address is contoso.azurewebsites.net.
+All traffic must be secured with SSL. The Azure Application Gateway instance is used by multiple web apps.
+You need to configure the Azure Application Gateway for the web app.
+* In the Azure Application Gateway's HTTP setting, enable the Use for App service setting. 
+* In the Azure Application Gateway's HTTP setting, set the value of the Override backend path option to contoso22.azurewebsites.net.
 
+95. You are developing a web application that runs as an Azure Web App. The web application stores data in Azure SQL Database and stores files in an Azure
+Storage account. The web application makes HTTP requests to external services as part of normal operations.
+The web application is instrumented with Application Insights. The external services are OpenTelemetry compliant.
+You need to ensure that the customer ID of the signed in user is associated with all operations throughout the overall system.
+<b>Add the customer ID for the signed in user to the CorrelationContext in the web application</b>
+
+96. You are developing an Azure Function App. You develop code by using a language that is not supported by the Azure Function App host. The code language supports HTTP primitives.
+You must deploy the code to a production Azure Function App environment.
+You need to configure the app for deployment.
+Which configuration values should you use?
+Publish docker container, Runtime stack PowerShell core, Version: 7.0
 
 
 
