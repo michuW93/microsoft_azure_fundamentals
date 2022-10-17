@@ -437,7 +437,7 @@ You need to ensure that the customer ID of the signed in user is associated with
 You must deploy the code to a production Azure Function App environment.
 You need to configure the app for deployment.
 Which configuration values should you use?
-Publish <b>docker container<>/b, Runtime stack <b>PowerShell core</b>, Version: <b>7.0</b>
+Publish <b>docker container</b>, Runtime stack <b>PowerShell core</b>, Version: <b>7.0</b>
 
 97.You are developing an Azure Durable Function to manage an online ordering process.
 The process must call an external API to gather product discount information.
