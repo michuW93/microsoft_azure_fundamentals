@@ -492,6 +492,12 @@ You need to restrict access to the Azure AD group.
 Which role-based access control should you use?
   <b>Cosmos DB Operator</b>
 
+106. You are developing a website that will run as an Azure Web App. Users will authenticate by using their Azure Active Directory (Azure AD) credentials.
+You plan to assign users one of the following permission levels for the website: admin, normal, and reader. A user's Azure AD group membership must be used to determine the permission level.
+You need to configure authorization.
+Solution: </br>
+✑ Create a new Azure AD application. In the application's manifest, set value of the groupMembershipClaims option to All.
+✑ In the website, use the value of the groups claim from the JWT for the user to determine permissions.
 
 
 
