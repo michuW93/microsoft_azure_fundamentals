@@ -441,8 +441,8 @@ Publish <b>docker container</b>, Runtime stack <b>PowerShell core</b>, Version: 
 
 97.You are developing an Azure Durable Function to manage an online ordering process.
 The process must call an external API to gather product discount information.
-You need to implement the Azure Durable Function.
-Orchestrator and entity
+You need to implement the Azure Durable Function. </br>
+<b>Orchestrator</b> and <b>entity</b>
 
 98. You develop Azure solutions.
 You must connect to a No-SQL globally-distributed database by using the .NET API.
