@@ -452,8 +452,8 @@ You need to create an object to configure and execute requests in the database.
 99. You are developing an Azure Cosmos DB solution by using the Azure Cosmos DB SQL API. The data includes millions of documents. Each document may contain hundreds of properties.
 The properties of the documents do not contain distinct values for partitioning. Azure Cosmos DB must scale individual containers in the database to meet the performance needs of the application by spreading the workload evenly across all partitions over time.
 You need to select a partition key.
-Which two partition keys can you use?
-<b>a concatenation of multiple property values with a random suffix appended</b> 
+Which two partition keys can you use? </br>
+<b>a concatenation of multiple property values with a random suffix appended</b> </br>
 <b>a hash suffix appended to a property value</b>
 
 100. You develop and deploy a web application to Azure App Service. The application accesses data stored in an Azure Storage account. The account contains several containers with several blobs with large amounts of data. You deploy all Azure resources to a single region.
