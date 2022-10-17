@@ -499,7 +499,11 @@ Solution: </br>
 ✑ Create a new Azure AD application. In the application's manifest, set value of the groupMembershipClaims option to All.
 ✑ In the website, use the value of the groups claim from the JWT for the user to determine permissions.
 
-
+107. You provide an Azure API Management managed web service to clients. The back-end web service implements HTTP Strict Transport Security (HSTS).
+Every request to the backend service must include a valid HTTP authorization header.
+You need to configure the Azure API Management instance with an authentication policy.
+Which two policies can you use?
+<b>Certificate Authentication</b> and <b>OAuth Client Credential Grant</b> 
 
 
 
