@@ -147,9 +147,9 @@ continues to receive requests
 * add a scale condition
 
 51. In Azure Table Storage you need to insert multiple sets of user informations.
-`TableBatchOperation op = new TableBatchOperation()` then `table.executeBatch(op)`
+<b>`TableBatchOperation op = new TableBatchOperation()`</b> then <b>`table.executeBatch(op)`</b>
 
-52. Create a new role reusing a default role definition. `Set-AzureRmRoleDefinition Input-File C:/SupportRole.json`
+52. Create a new role reusing a default role definition. <b>`Set-AzureRmRoleDefinition Input-File C:/SupportRole.json`</b>
 
 53. You want to avoid a single hot partition key. You can use a partition key with <b>pre-calculated</b> or random suffixes.
 We don't want prefix, a suffix appends the value to the end, which makes it easier to read.
@@ -166,23 +166,23 @@ We don't want prefix, a suffix appends the value to the end, which makes it easi
 58. You have downloaded an Azure Resource Manager template to deploy numerous virtual machines. The template is based on a current virtual machine, but must be adapted to reference an administrative password.
 You need to make sure that the password is not stored in plain text.
 You are preparing to create the necessary components to achieve your goal.
-Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.
+Which of the following should you create to achieve your goal?
 Select and Place: <b>an Azure Key Vault</b> and <b>an access policy</b>
 
 59. You need to deploy the YAML manifest file for the application.
-`kubectl apply -f myapp.yaml` applies a configuration change to a resource from a file or stdin.
+<b>`kubectl apply -f myapp.yaml`</b> applies a configuration change to a resource from a file or stdin.
 
 60. Your company has a web app named WebApp1.
 You use the WebJobs SDK to design a triggered App Service background task that automatically invokes a function in the code every time new data is received in a queue.
 You are preparing to configure the service processes a queue data item.
-Which of the following is the service you should use?
+Which of the following is the service you should use? </br>
 <b>WebJobs</b>
 
 61. Your company has an Azure subscription.
 You need to deploy a number of Azure virtual machines to the subscription by using Azure Resource Manager (ARM) templates. The virtual machines will be included in a single availability set.
 You need to ensure that the ARM template allows for as many virtual machines as possible to remain accessible in the event of fabric failure or maintenance.
 * Which of the following is the value that you should configure for the platformFaultDomainCount property?
-Max value - The number of fault domains for managed availability sets varies by region - either two or three per region.
+<b>Max value</b> - The number of fault domains for managed availability sets varies by region - either two or three per region.
 
 * Which of the following is the value that you should configure for the platformUpdateDomainCount property?
 <b>40</b> Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.
@@ -190,18 +190,18 @@ Max value - The number of fault domains for managed availability sets varies by 
 62. You are creating an Azure Cosmos DB account that makes use of the SQL API. Data will be added to the account every day by a web application.
 You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.
 You decide to deploy a function app.
-Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.
-Select and Place: Consumption plan and SendGrid binding
+Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area. </br>
+Select and Place: <b>Consumption plan and SendGrid binding</b>
 
-63. You company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.
+63. Your company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.
 You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.
-You include the Data Management Gateway tool in your migration strategy. <b>mongorestore</b>
+You include the Data Management Gateway tool in your migration strategy. </br> <b>mongorestore</b>
 
 64. You are developing an e-Commerce Web App.
 You want to use Azure Key Vault to ensure that sign-ins to the e-Commerce Web App are secured by using Azure App Service authentication and Azure Active
 Directory (AAD).
 What should you do on the e-Commerce Web App?
-Enable Managed Service Identity (MSI). - A managed identity from Azure Active Directory allows your app to easily access other AAD-protected resources such as Azure Key Vault.
+<b>Enable Managed Service Identity (MSI)</b>. - A managed identity from Azure Active Directory allows your app to easily access other AAD-protected resources such as Azure Key Vault.
 
 65. Your Azure Active Directory Azure (Azure AD) tenant has an Azure subscription linked to it.
 Your developer has created a mobile application that obtains Azure AD access tokens using the OAuth 2 implicit grant type.
@@ -220,7 +220,7 @@ Access control must require multi-factor authentication when granting access.
 67. You manage an Azure SQL database that allows for Azure AD authentication.
 You need to make sure that database developers can connect to the SQL database via Microsoft SQL Server Management Studio (SSMS). You also need to make sure the developers use their on-premises Active Directory account for authentication. Your strategy should allow for authentication prompts to be kept to a minimum.
 Which of the following should you implement? </br>
-Active Directory integrated authentication.
+<b>Active Directory integrated authentication. </b>
 Azure AD can be the initial Azure AD managed domain. Azure AD can also be an on-premises Active Directory Domain Services that is federated with the Azure
 AD.
 Using an Azure AD identity to connect using SSMS or SSDT
@@ -231,16 +231,16 @@ Which command should you use? To answer, select the appropriate settings in the 
 `--condition "avg Percentage CPU > 85" --window-size 5m`
 
 69. You are configuring a web app that delivers streaming video to users. The application makes use of continuous integration and deployment.
-You need to ensure that the application is highly available and that the usersג€™ streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.
-Solution: You include the use of an Azure Content Delivery Network (CDN) in your design.
+You need to ensure that the application is highly available and that the users streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.
+Solution: <b>You include the use of an Azure Content Delivery Network (CDN) in your design.</b>
 
 70. You develop a Web App on a tier D1 app service plan.
 You notice that page load times increase during periods of peak traffic.
 You want to implement automatic scaling when CPU load is above 80 percent. Your solution must minimize costs.
 What should you do first?
-Configure the web app to the Standard App Service Tier. The Standard tier supports auto-scaling, and we should minimize the cost. We can then enable autoscaling on the web app, add a scale rule and add a Scale condition.
+<b>Configure the web app to the Standard App Service Tier.</b> The Standard tier supports auto-scaling, and we should minimize the cost. We can then enable autoscaling on the web app, add a scale rule and add a Scale condition.
 
-71. Your companyג€™s Azure subscription includes an Azure Log Analytics workspace.
+71. Your company's Azure subscription includes an Azure Log Analytics workspace.
 Your company has a hundred on-premises servers that run either Windows Server 2012 R2 or Windows Server 2016, and is linked to the Azure Log Analytics workspace. The Azure Log Analytics workspace is set up to gather performance counters associated with security from these linked servers.
 You must configure alerts based on the information gathered by the Azure Log Analytics workspace.
 You have to make sure that alert rules allow for dimensions, and that alert creation time should be kept to a minimum. Furthermore, a single alert notification must be created when the alert is created and when the alert is resolved.
@@ -259,11 +259,11 @@ You can write queries against Azure Search based on the rich Lucene Query Parser
 73. You are a developer at your company.
 You need to update the definitions for an existing Logic App.
 What should you use?
-the Logic App Code View
+<b>the Logic App Code View</b>
 
 74. You are developing a solution for a public facing API.
 The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.
-You must configure back-end authentication for the API Management service instance.
+You must configure back-end authentication for the API Management service instance. </br>
 Solution: <b>You configure Client cert gateway credentials for the Azure resource.</b>
 YES - API Management allows to secure access to the back-end service of an API using client certificates.
 
@@ -271,12 +271,12 @@ YES - API Management allows to secure access to the back-end service of an API u
 You want to implement Azure Search to allow the application to search the index by using various criteria to locate documents related to accommodation venues.
 You want the application to list holiday accommodation venues that fall within a specific price range and are within a specified distance to an airport.
 What should you do?
-Configure the Filter property of the SearchParameters class.
+<b>Configure the Filter property of the SearchParameters class.</b>
 
 76. You are a developer at your company.
 You need to edit the workflows for an existing Logic App.
 What should you use?
-the Enterprise Integration Pack (EIP) - For business-to-business (B2B) solutions and seamless communication between organizations, you can build automated scalable enterprise integration workflows by using the Enterprise Integration Pack (EIP) with Azure Logic Apps.
+<b>the Enterprise Integration Pack (EIP)</b> - For business-to-business (B2B) solutions and seamless communication between organizations, you can build automated scalable enterprise integration workflows by using the Enterprise Integration Pack (EIP) with Azure Logic Apps.
 
 77. You are a developer for a company that provides a bookings management service in the tourism industry. You are implementing Azure Search for the tour agencies listed in your company's solution.
 You create the index in Azure Search. You now need to use the Azure Search .NET SDK to import the relevant data into the Azure Search service.
@@ -326,13 +326,11 @@ Function app that is triggered by an Azure Storage queue.
 You are preparing to migrate the Azure Function to Kubernetes using Kubernetes-based Event Driven Autoscaling (KEDA).
 You need to configure Kubernetes Custom Resource Definitions (CRD) for the Azure Function.
 Which CRDs should you configure?
-Azure function code: Deployment
-Pooling interval: ScaledObject
-Azure Storeage connection String: Secret
+<b>Azure function code: Deployment</b> </br>
+<b>Pooling interval: ScaledObject </b> </br>
+<b>Azure Storage connection String: Secret</b></br>
 
-82. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
-After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
-You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
+82. You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
 You need to ensure that scripts run and resources are available before a swap operation occurs.
 * <b>Enable auto swap for the Testing slot. Deploy the app to the Testing slot.</b> 
 * <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
