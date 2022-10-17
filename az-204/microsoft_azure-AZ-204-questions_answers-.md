@@ -424,8 +424,8 @@ Solution: Create an Azure Function app that uses the Consumption hosting model a
 Gateway instance that is used by multiple web apps. The web app address is contoso.azurewebsites.net.
 All traffic must be secured with SSL. The Azure Application Gateway instance is used by multiple web apps.
 You need to configure the Azure Application Gateway for the web app.
-* In the Azure Application Gateway's HTTP setting, enable the Use for App service setting. 
-* In the Azure Application Gateway's HTTP setting, set the value of the Override backend path option to contoso22.azurewebsites.net.
+* <b>In the Azure Application Gateway's HTTP setting, enable the Use for App service setting. </b>
+* <b>In the Azure Application Gateway's HTTP setting, set the value of the Override backend path option to contoso22.azurewebsites.net.</b>
 
 95. You are developing a web application that runs as an Azure Web App. The web application stores data in Azure SQL Database and stores files in an Azure
 Storage account. The web application makes HTTP requests to external services as part of normal operations.
@@ -437,17 +437,60 @@ You need to ensure that the customer ID of the signed in user is associated with
 You must deploy the code to a production Azure Function App environment.
 You need to configure the app for deployment.
 Which configuration values should you use?
-Publish docker container, Runtime stack PowerShell core, Version: 7.0
+Publish <b>docker container<>/b, Runtime stack <b>PowerShell core</b>, Version: <b>7.0</b>
 
+97.You are developing an Azure Durable Function to manage an online ordering process.
+The process must call an external API to gather product discount information.
+You need to implement the Azure Durable Function.
+Orchestrator and entity
 
+98. You develop Azure solutions.
+You must connect to a No-SQL globally-distributed database by using the .NET API.
+You need to create an object to configure and execute requests in the database.
+<b>new CosmosClient(EndpointUri, PrimaryKey);</b>
 
+99. You are developing an Azure Cosmos DB solution by using the Azure Cosmos DB SQL API. The data includes millions of documents. Each document may contain hundreds of properties.
+The properties of the documents do not contain distinct values for partitioning. Azure Cosmos DB must scale individual containers in the database to meet the performance needs of the application by spreading the workload evenly across all partitions over time.
+You need to select a partition key.
+Which two partition keys can you use?
+<b>a concatenation of multiple property values with a random suffix appended</b> 
+<b>a hash suffix appended to a property value</b>
 
+100. You develop and deploy a web application to Azure App Service. The application accesses data stored in an Azure Storage account. The account contains several containers with several blobs with large amounts of data. You deploy all Azure resources to a single region.
+You need to move the Azure Storage account to the new region. You must copy all data to the new region.
+What should you do first?
+<b>Export the Azure Storage account Azure Resource Manager template</b>
 
+101. An organization deploys Azure Cosmos DB.
+You need to ensure that the index is updated as items are created, updated, or deleted.
+What should you do?
+<b>Set the indexing mode to Consistent.</b>
 
+102. You are developing a .Net web application that stores data in Azure Cosmos DB. The application must use the Core API and allow millions of reads and writes.
+The Azure Cosmos DB account has been created with multiple write regions enabled. The application has been deployed to the East US2 and Central US regions.
+You need to update the application to support multi-region writes.
+What are two possible ways to achieve this goal?
+  Update the ConnectionPolicy class for the Cosmos client and set the UseMultipleWriteLocations property to true.
+  Create and deploy a custom conflict resolution policy.
+  
+103. You are developing a web application by using the Azure SDK. The web application accesses data in a zone-redundant BlockBlobStorage storage account.
+The application must determine whether the data has changed since the application last read the data. Update operations must use the latest data changes when writing data to the storage account.
+You need to implement the update operations.
+Which values should you use?
+  HTTP Header Value: <b>Last Modified</b>
+  Conditional Header: <b>If-Modified-Since</b>
 
-
-
-
+  104. An organization deploys a blob storage account. Users take multiple snapshots of the blob storage account over time.
+You need to delete all snapshots of the blob storage account. You must not delete the blob storage account itself.
+How should you complete the code segment?
+  `Azure.Storage.Blobs.Models.DeleteSnapshotsOption.OnlySnapshots`
+  
+105. You are developing a Java application that uses Cassandra to store key and value data. You plan to use a new Azure Cosmos DB resource and the Cassandra
+API in the application. You create an Azure Active Directory (Azure AD) group named Cosmos DB Creators to enable provisioning of Azure Cosmos accounts, databases, and containers.
+The Azure AD group must not be able to access the keys that are required to access the data.
+You need to restrict access to the Azure AD group.
+Which role-based access control should you use?
+  <b>Cosmos DB Operator</b>
 
 
 
