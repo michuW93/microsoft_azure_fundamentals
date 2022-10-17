@@ -469,16 +469,16 @@ What should you do?
 102. You are developing a .Net web application that stores data in Azure Cosmos DB. The application must use the Core API and allow millions of reads and writes.
 The Azure Cosmos DB account has been created with multiple write regions enabled. The application has been deployed to the East US2 and Central US regions.
 You need to update the application to support multi-region writes.
-What are two possible ways to achieve this goal?
-  Update the ConnectionPolicy class for the Cosmos client and set the UseMultipleWriteLocations property to true.
-  Create and deploy a custom conflict resolution policy.
+What are two possible ways to achieve this goal?</br>
+Update the ConnectionPolicy class for the Cosmos client and set the UseMultipleWriteLocations property to true.
+Create and deploy a custom conflict resolution policy.
   
 103. You are developing a web application by using the Azure SDK. The web application accesses data in a zone-redundant BlockBlobStorage storage account.
 The application must determine whether the data has changed since the application last read the data. Update operations must use the latest data changes when writing data to the storage account.
 You need to implement the update operations.
-Which values should you use?
-  HTTP Header Value: <b>Last Modified</b>
-  Conditional Header: <b>If-Modified-Since</b>
+Which values should you use? </br>
+HTTP Header Value: <b>Last Modified</b> </br>
+Conditional Header: <b>If-Modified-Since</b>
 
   104. An organization deploys a blob storage account. Users take multiple snapshots of the blob storage account over time.
 You need to delete all snapshots of the blob storage account. You must not delete the blob storage account itself.
