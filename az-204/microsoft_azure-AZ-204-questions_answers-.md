@@ -1,12 +1,12 @@
 1. App is storing medical documents, if the stored intake forms are downloaded from storage by a third party, 
 the contents of the forms must not be compromised. <br>
-We can use Azure Key vault and public key encryption and store encrypted form in Azure Storage Blob storage
+We can use <b>Azure Key vault and public key encryption</b> and store encrypted form in Azure Storage Blob storage
 
 2. Configure Azure Disk Encryption for the VM: 
 Keyvault -> Keyvault Key -> VirtualMachine -> VM encryption -> all (all means encrypt both data and operating system)
 `az keyvault create` then `az keyvault key create` then `az vm create` then `az vm encryption`
 
-3. Requirements: all API calls must be authenticated and callers to the API must not send credentials. Answer: Managed Identity <br>
+3. Requirements: all API calls must be authenticated and callers to the API must not send credentials. Answer: <b>Managed Identity</b> <br>
 Basic and Client Certificate will send credential to the API.
 
 4. You have an Azure user account that has access to two subscriptions. You need to retrieve a storage account key secret from Azure Key Vault. </br>
@@ -542,20 +542,19 @@ Microsoft Graph: User.Read <b>delegated</b>
      The API must be called by an Azure App Service web app. The API must retrieve and update user profile information stored in Azure Active Directory (Azure AD).
      You need to configure the API to make the updates.
      Which two tools should you use?
-Microsoft Graph API and Azure API Management
+<b>Microsoft Graph API</b> and <b>Azure API Management</b>
 
 114. You develop a REST API. You implement a user delegation SAS token to communicate with Azure Blob storage.
-     The token is compromised.
-     You need to revoke the token.
+     The token is compromised. You need to revoke the token.
      What are two possible ways to achieve this goal? Each correct answer presents a complete solution.
-     Revoke the delegation key and Delete the stored access policy.
+     <b>Revoke the delegation key</b> and <b>Delete the stored access policy.</b>
 
 115. You develop and deploy an Azure Logic app that calls an Azure Function app. The Azure Function app includes an OpenAPI (Swagger) definition and uses an
      Azure Blob storage account. All resources are secured by using Azure Active Directory (Azure AD).
      The Azure Logic app must securely access the Azure Blob storage account. Azure AD resources must remain if the Azure Logic app is deleted.
      You need to secure the Azure Logic app.
      What should you do?
-     Create a user-assigned managed identity and assign role-based access controls.
+     <b>Create a user-assigned managed identity and assign role-based access controls.</b>
 
 116. You deploy an Azure App Service web app. You create an app registration for the app in Azure Active Directory (Azure AD) and Twitter. 
 the app must authenticate users and must use SSL for all communications. The app must use Twitter as the identity provider. 
