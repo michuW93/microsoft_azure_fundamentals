@@ -191,7 +191,7 @@ You need to ensure that the ARM template allows for as many virtual machines as 
 You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.
 You decide to deploy a function app.
 Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area. </br>
-Select and Place: <b>Consumption plan and SendGrid binding</b>
+Select and Place: <b>Consumption plan</b> and <b>SendGrid binding</b>
 
 63. Your company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.
 You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.
@@ -478,7 +478,7 @@ Which values should you use? </br>
 HTTP Header Value: <b>Last Modified</b> </br>
 Conditional Header: <b>If-Modified-Since</b>
 
-  104. An organization deploys a blob storage account. Users take multiple snapshots of the blob storage account over time.
+104. An organization deploys a blob storage account. Users take multiple snapshots of the blob storage account over time.
 You need to delete all snapshots of the blob storage account. You must not delete the blob storage account itself.
 How should you complete the code segment?
   `Azure.Storage.Blobs.Models.DeleteSnapshotsOption.OnlySnapshots`
@@ -502,6 +502,91 @@ Every request to the backend service must include a valid HTTP authorization hea
 You need to configure the Azure API Management instance with an authentication policy.
 Which two policies can you use?
 <b>Certificate Authentication</b> and <b>OAuth Client Credential Grant</b> 
+
+108. You are developing an ASP.NET Core website that can be used to manage photographs which are stored in Azure Blob Storage containers.
+     Users of the website authenticate by using their Azure Active Directory (Azure AD) credentials.
+     You implement role-based access control (RBAC) role permissions on the containers that store photographs. You assign users to RBAC roles.
+     You need to configure the website's Azure AD Application so that user's permissions can be used with the Azure Blob containers.
+     How should you configure the application?
+Azure Storage: <b>user_impersonation delegated</b> </br>
+Microsoft Graph: User.Read <b>delegated</b>
+
+109. You have an application that includes an Azure Web app and several Azure Function apps. Application secrets including connection strings and certificates are stored in Azure Key Vault.
+     Secrets must not be stored in the application or application runtime environment. Changes to Azure Active Directory (Azure AD) must be minimized.
+     You need to design the approach to loading application secrets.
+     What should you do?
+<b>Create a system assigned Managed Identity in each App Service with permission to access Key Vault.</b>
+
+110. You are developing a medical records document management website. The website is used to store scanned copies of patient intake forms.
+     If the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised.
+     You need to store the intake forms according to the requirements.
+     Solution:
+* Create an Azure Key Vault key named skey.
+* Encrypt the intake forms using the public key portion of skey.
+* Store the encrypted data in Azure Blob storage.
+   Does the solution meet the goal? YES
+
+111. You develop Azure solutions.
+     You must grant a virtual machine (VM) access to specific resource groups in Azure Resource Manager.
+     You need to obtain an Azure Resource Manager access token.
+     Solution: Run the Invoke-RestMethod cmdlet to make a request to the local managed identity for Azure resources endpoint.
+     Does the solution meet the goal? YES
+
+112. You develop an app that allows users to upload photos and videos to Azure storage. The app uses a storage REST API call to upload the media to a blob storage account named Account1. You have blob storage containers named Container1 and Container2.
+     Uploading of videos occurs on an irregular basis.
+     You need to copy specific blobs from Container1 to Container2 when a new video is uploaded.
+     What should you do?
+<b>Create an Event Grid topic that uses the Start-AzureStorageBlobCopy cmdlet </b>
+
+113. You are developing an Azure App Service REST API.
+     The API must be called by an Azure App Service web app. The API must retrieve and update user profile information stored in Azure Active Directory (Azure AD).
+     You need to configure the API to make the updates.
+     Which two tools should you use?
+Microsoft Graph API and Azure API Management
+
+114. You develop a REST API. You implement a user delegation SAS token to communicate with Azure Blob storage.
+     The token is compromised.
+     You need to revoke the token.
+     What are two possible ways to achieve this goal? Each correct answer presents a complete solution.
+     Revoke the delegation key and Delete the stored access policy.
+
+115. You develop and deploy an Azure Logic app that calls an Azure Function app. The Azure Function app includes an OpenAPI (Swagger) definition and uses an
+     Azure Blob storage account. All resources are secured by using Azure Active Directory (Azure AD).
+     The Azure Logic app must securely access the Azure Blob storage account. Azure AD resources must remain if the Azure Logic app is deleted.
+     You need to secure the Azure Logic app.
+     What should you do?
+     Create a user-assigned managed identity and assign role-based access controls.
+
+116. You deploy an Azure App Service web app. You create an app registration for the app in Azure Active Directory (Azure AD) and Twitter. 
+the app must authenticate users and must use SSL for all communications. The app must use Twitter as the identity provider. 
+You need to validate the Azure AD request in the app code. What should you validate? <b>ID token header</b>
+
+117. You need to register the app with an active Azure Active Directory tenant.
+* In App Registrations select New registration
+* select the Azure AD instance
+* create a new application and provide the name, account type and redirect URL
+
+118. You need to implement code that creates the object which is used to create indexes in the Azure Search service.
+you should use <b>SearchIndexClient</b> and <b>SearchServiceClient</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
