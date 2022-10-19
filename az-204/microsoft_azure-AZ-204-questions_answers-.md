@@ -568,10 +568,10 @@ You need to validate the Azure AD request in the app code. What should you valid
 118. You need to implement code that creates the object which is used to create indexes in the Azure Search service.
 you should use <b>SearchIndexClient</b> and <b>SearchServiceClient</b>
 
-119. You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000stores located throughout the world. A single device can produce 2megabytes (MB) of data every 24hours. Each store location has one to five devices that send data.
+119. You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world. A single device can produce 2megabytes (MB) of data every 24hours. Each store location has one to five devices that send data.
 You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future.
 You need to implement a solution to receive the device data.
-Solution: Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.
+Solution: <b>Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.</b>
 Does the solution meet the goal? YES
 
 
