@@ -20,3 +20,15 @@ Password Spraying is a variant of what is known as a brute force attack. In a tr
 
 # Coin miners (cryptojacking)
 affected computer mines for Cryptocurrency for the hacker, affected computers only notice a decrease in performance
+
+# Zero trust methodology
+Zero Trust is a security framework requiring all users, whether in or outside the organization’s network, to be authenticated, authorized, and continuously validated for security configuration and posture before being granted or keeping access to applications and data. Zero Trust assumes that there is no traditional network edge; networks can be local, in the cloud, or a combination or hybrid with resources anywhere as well as workers in any location.
+
+The main concept behind the zero trust security model is <b>"never trust, always verify,”</b> which means that devices should not be trusted by default, even if they are connected to a permissioned network such as a corporate LAN and even if they were previously verified. ZTNA is implemented by establishing <b>strong identity verification, validating device compliance prior to granting access, and ensuring least privilege access to only explicitly authorized resources.</b>
+
+# Defence in depth
+in army:
+Defence in depth (also known as deep defence or elastic defence) is a military strategy that seeks to delay rather than prevent the advance of an attacker, buying time and causing additional casualties by yielding space. Rather than defeating an attacker with a single, strong defensive line, defence in depth relies on the tendency of an attack to lose momentum over time or as it covers a larger area. 
+
+but similar in IT:
+The idea behind the defense in depth approach is to defend a system against any particular attack using several independent methods. <b>It is a layering tactic (eg. physical control, compute control, network control etc.),</b> conceived by the National Security Agency (NSA) as a comprehensive approach to information and electronic security. The term defense in depth in computing is inspired by a military strategy of the same name, but is quite different in concept. The military strategy revolves around having a weaker perimeter defense and intentionally yielding space to buy time, envelop, and ultimately counter-attack an opponent, whereas the information security strategy simply involves multiple layers of controls, but not intentionally ceding ground (cf. honeypot.)
