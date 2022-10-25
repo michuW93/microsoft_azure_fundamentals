@@ -39,7 +39,7 @@ The idea behind the defense in depth approach is to defend a system against any 
 # Modern authentication
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/sc-900/images/modern_authentication.png?raw=true)
 
-a modern Identity Provider offers Single Sign On(SSO)
+a modern Identity Provider offers Single Sign On(<b>SSO</b>)
 
 # Six Key privacy principles
 * control - we will put you in control of your privacy with easy-to-use tools and clear choices
