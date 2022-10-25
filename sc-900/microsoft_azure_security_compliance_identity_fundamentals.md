@@ -3,6 +3,9 @@ microsoft_azure_security_compliance_identity_fundamentals SC-900
 # SC-900
 Tutorial based on Vlad Catrinescu tutorial
 
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/sc-900/images/security_cloud.png?raw=true)
+
+
 Some responsibilities are always retained by the customer!
 * information and data,
 * devices
@@ -30,5 +33,21 @@ The main concept behind the zero trust security model is <b>"never trust, always
 in army:
 Defence in depth (also known as deep defence or elastic defence) is a military strategy that seeks to delay rather than prevent the advance of an attacker, buying time and causing additional casualties by yielding space. Rather than defeating an attacker with a single, strong defensive line, defence in depth relies on the tendency of an attack to lose momentum over time or as it covers a larger area. 
 
-but similar in IT:
+but quite similar in IT:
 The idea behind the defense in depth approach is to defend a system against any particular attack using several independent methods. <b>It is a layering tactic (eg. physical control, compute control, network control etc.),</b> conceived by the National Security Agency (NSA) as a comprehensive approach to information and electronic security. The term defense in depth in computing is inspired by a military strategy of the same name, but is quite different in concept. The military strategy revolves around having a weaker perimeter defense and intentionally yielding space to buy time, envelop, and ultimately counter-attack an opponent, whereas the information security strategy simply involves multiple layers of controls, but not intentionally ceding ground (cf. honeypot.)
+
+# Modern authentication
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/sc-900/images/modern_authentication.png?raw=true)
+
+a modern Identity Provider offers Single Sign On(SSO)
+
+# Six Key privacy principles
+* control - we will put you in control of your privacy with easy-to-use tools and clear choices
+* transparency - we will be transparent about data collection and use
+* security - string security and encryption
+* strong legal protections - we will respect your local privacy laws
+* no content-based targeting - we will not use your email, chat, files, etc to target ads to you
+* benefits to you - when we do collect data, we will use it to benefit you and to make your experiences better
+
+In <b>Service Trust Portal</b> you can find Audit Reports, Security Assessments, Pen test results etc and more informations on how 
+Microsoft manages security, privacy and compliance
