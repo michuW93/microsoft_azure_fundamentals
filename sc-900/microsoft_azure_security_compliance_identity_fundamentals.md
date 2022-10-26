@@ -51,3 +51,23 @@ a modern Identity Provider offers Single Sign On(<b>SSO</b>)
 
 In <b>Service Trust Portal</b> you can find Audit Reports, Security Assessments, Pen test results etc and more informations on how 
 Microsoft manages security, privacy and compliance
+
+# Azure AD B2B
+Azure Active Directory (Azure AD) B2B collaboration is a feature within External Identities that lets you invite guest users to collaborate with your organization.
+With B2B collaboration, you can securely share your company's applications and services with external users, while maintaining control over your own corporate data.
+Work safely and securely with external partners, large or small, even if they don't have Azure AD or an IT department.
+
+# Azure AD B2C
+Azure Active Directory B2C provides business-to-customer identity as a service. 
+Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
+It's for custom apps when you let customer to log into your app via google, facebook etc.
+
+# Multi-Factor Authentication (MFA)
+MFA requires more than one form of verification sth you know or sth you have or biometrics.
+Passwords, SMS and Voice calls are considered the least secure MFA methods but still better then no MFA!
+
+# Azure AD Password Protection
+It automatically blocks global banned password list (e.g P@$$w0rd) and custom banned password list so you are not allow to set password from lists because they are weak
+
+# Azure AD Self service password reset (SSPR)
+you can reset password without any contact with helpdesk etc.
