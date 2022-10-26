@@ -71,3 +71,6 @@ It automatically blocks <b>global banned password list (e.g P@$$w0rd)</b> and <b
 
 # Azure AD Self service password reset (SSPR)
 you can reset password without any contact with helpdesk etc.
+
+# Azure AD has role based system control
+role is pre-packaged permissions for one or multiple apps
