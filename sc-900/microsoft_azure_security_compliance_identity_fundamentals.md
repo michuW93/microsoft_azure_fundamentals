@@ -67,7 +67,7 @@ MFA requires more than one form of verification sth you know or sth you have or 
 Passwords, SMS and Voice calls are considered the least secure MFA methods but still better then no MFA!
 
 # Azure AD Password Protection
-It automatically blocks global banned password list (e.g P@$$w0rd) and custom banned password list so you are not allow to set password from lists because they are weak
+It automatically blocks <b>global banned password list (e.g P@$$w0rd)</b> and <b>custom banned password list</b> so you are not allow to set password from lists because they are weak
 
 # Azure AD Self service password reset (SSPR)
 you can reset password without any contact with helpdesk etc.
