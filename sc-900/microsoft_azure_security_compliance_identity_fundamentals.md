@@ -159,4 +159,19 @@ Standardization (ISO)?  Microsoft Service Trust Portal
 7. In the shared responsibility model for an Azure deployment, what is Microsoft solely responsible for managing? the management of the physical hardware
 8. <b>Control and Transparency</b> are the keys privacy principles of Microsoft
 9. In the Microsoft Cloud Adoption Framework for Azure, which two phases are addressed before the Ready phase? Plan and Define Strategy
-
+10. <b>Security baselines for Azure</b> provides benchmark recomendations and guidenance for protecting Azure services.
+11. Which three statements accurately describe the guiding principles of Zero Trust? Use identity as the primary security boundary, Always verify the permissions of a user explicitly and Always assume that the user system can be breached. 
+12. What can you use to provide a user with a two-hour window to complete an administrative task in Azure? conditional access policies
+13. Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization.
+With Azure AD Password Protection, default global banned password lists are automatically applied to all users in an Azure AD tenant. To support your own business and security needs, you can define entries in a custom banned password list.
+14. Azure Active Directory (Azure AD) access reviews enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments.
+15. Conditional Access policies are enforced after first-factor authentication is completed.
+16. Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+17. Which Azure Active Directory (Azure AD) feature can you use to provide just-in-time (JIT) access to manage Azure resources? Azure AD Privileged Identity Management (PIM) 
+18. Which Microsoft 365 feature can you use to restrict communication and the sharing of information between members of two departments at your organization?
+ information barriers
+19. When you register an application through the Azure portal, an application object and service principal are automatically created in your home directory or tenant.
+20. MFA is enabled in security defaults in Azure Active Directory
+21. You have an Azure subscription.
+You need to implement approval-based, time-bound role activation.
+What should you use? Azure Active Directory (Azure AD) Privileged Identity Management (PIM)
