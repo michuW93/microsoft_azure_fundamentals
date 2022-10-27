@@ -145,3 +145,18 @@ XDR takes a holistic approach to threat detection and response that streamlines 
 across an organization’s entire security stack. 
 With a single console to view and act on threat data, XDR enables security teams to effortlessly uncover hidden and advanced threats, 
 and automate even complex, multi-step responses across their security technology stacks. XDR is often categorized into two types, open XDR and native XDR.
+
+
+
+# Q&A
+1. <b>The Microsoft Cloud Adoption Framework for Azure</b> provides best practices from Microsoft employees, partners, and customers, including tools and guidanace to assist in an Azure deployment.
+2. <b>Customer Lockbox</b> is used to identify, hold, and export electronic information that might be used in an investigation.
+3. You can manage Microsoft Intune by using the <b>Microsoft Endpoint Manager admin center</b>
+4. Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards? Compliance score
+5. What do you use to provide real-time integration between Azure Sentinel and another security source? a connector
+6. Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for
+Standardization (ISO)?  Microsoft Service Trust Portal 
+7. In the shared responsibility model for an Azure deployment, what is Microsoft solely responsible for managing? the management of the physical hardware
+8. <b>Control and Transparency</b> are the keys privacy principles of Microsoft
+9. In the Microsoft Cloud Adoption Framework for Azure, which two phases are addressed before the Ready phase? Plan and Define Strategy
+
