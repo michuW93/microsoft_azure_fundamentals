@@ -175,3 +175,16 @@ With Azure AD Password Protection, default global banned password lists are auto
 21. You have an Azure subscription.
 You need to implement approval-based, time-bound role activation.
 What should you use? Azure Active Directory (Azure AD) Privileged Identity Management (PIM)
+22. When security defaults are enabled for an Azure Active Directory (Azure AD) tenant, which two requirements are enforced? Each correct answer presents a complete solution.
+    Administrators must always use Azure Multi-Factor Authentication (MFA) and Azure Multi-Factor Authentication (MFA) registration is required for all users.
+23. Which three tasks can be performed by using Azure Active Directory (Azure AD) Identity Protection?
+    Automate the detection and remediation of identity based-risks, Investigate risks that relate to user authentication, Create and automatically assign sensitivity labels to data.
+24. What are two capabilities of Microsoft Defender for Endpoint? automated investigation and remediation and attack surface reduction
+25. Security defaults make it easy to protect your organization with the following preconfigured security settings:
+    *Requiring all users to register for Azure AD Multi-Factor Authentication.
+    * Requiring administrators to do multi-factor authentication.
+    * Blocking legacy authentication protocols.
+    * Requiring users to do multi-factor authentication when necessary.
+    * Protecting privileged activities like access to the Azure portal.
+26. Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for
+    Standardization (ISO)? Microsoft Service Trust Portal
