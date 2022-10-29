@@ -187,4 +187,4 @@ What should you use? Azure Active Directory (Azure AD) Privileged Identity Manag
     * Requiring users to do multi-factor authentication when necessary.
     * Protecting privileged activities like access to the Azure portal.
 26. Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for
-    Standardization (ISO)? Microsoft Service Trust Portal
+    Standardization (ISO)? <b>Microsoft Service Trust Portal</b>
