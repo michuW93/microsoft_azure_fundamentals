@@ -125,6 +125,11 @@ No public IP or special tool needed on your virtual machines. It guarantees prot
 Could service for securely storing and accessing secrets.
 All secrets are encrypted, so when you put sth inside it's encrypted, when you take it out it's decrypted. Key is generated per Key Vault
 
+# Microsoft Intune
+Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints.
+
+You can protect access and data on organization-owned and users personal devices. And, Intune has compliance and reporting features that support a Zero Trust security model.
+
 # Cloud Security Posture Management (CSPM)
 Cloud Security Posture Management (CSPM) is a market segment for IT security tools that are designed to identify misconfiguration issues and compliance risks
 in the cloud. An important purpose of CSPM programming is to continuously monitor cloud infrastructure for gaps in security policy enforcement.
