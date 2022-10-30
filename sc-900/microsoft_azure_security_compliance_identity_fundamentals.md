@@ -152,7 +152,7 @@ and automate even complex, multi-step responses across their security technology
 1. <b>The Microsoft Cloud Adoption Framework for Azure</b> provides best practices from Microsoft employees, partners, and customers, including tools and guidanace to assist in an Azure deployment.
 2. <b>Customer Lockbox</b> is used to identify, hold, and export electronic information that might be used in an investigation.
 3. You can manage Microsoft Intune by using the <b>Microsoft Endpoint Manager admin center</b>
-4. Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards? Compliance score
+4. Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards? <b>Compliance score</b>
 5. What do you use to provide real-time integration between Azure Sentinel and another security source? <b>a connector</b>
 6. Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for
 Standardization (ISO)?  Microsoft Service Trust Portal 
