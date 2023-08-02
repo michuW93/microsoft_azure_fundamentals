@@ -8,3 +8,8 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
 
 ![image](https://github.com/michuW93/microsoft_azure_fundamentals/assets/16575035/43e1ca69-3779-440d-9849-9fd4c1430ba8)
+
+Anomaly detection:
+1. Sensors in the car collect telemetry, such as engine revolutions, brake temperature, and so on.
+2. An anomaly detection model is trained to understand expected fluctuations in the telemetry measurements over time.
+3. If a measurement occurs outside of the normal expected range, the model reports an anomaly that can be used to alert the race engineer to call the driver in for a pit stop to fix the issue before it forces retirement from the race.
