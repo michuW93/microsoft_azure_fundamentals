@@ -15,3 +15,10 @@ Anomaly detection:
 3. If a measurement occurs outside of the normal expected range, the model reports an anomaly that can be used to alert the race engineer to call the driver in for a pit stop to fix the issue before it forces retirement from the race.
 
 Computer vision - is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. Type of computer vision: face detection, optical character recognation etc.
+
+Natural language processing (NLP) is the area of AI that deals with creating software that understands written and spoken language. <br>
+NLP enables you to create software that can:
+Analyze and interpret text in documents, email messages, and other sources.
+Interpret spoken language, and synthesize speech responses.
+Automatically translate spoken or written phrases between languages.
+Interpret commands and determine appropriate actions.
