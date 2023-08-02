@@ -1,4 +1,4 @@
-What is AI?
+# What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
 
 * Machine learning - This is often the foundation for an AI system, and is the way we "teach" a computer model to make predictions and draw conclusions from data.
@@ -30,5 +30,7 @@ Knowledge mining is the term used to describe solutions that involve extracting 
 
 # Machine learning
 Machine Learning is the foundation for most artificial intelligence solutions. Creating an intelligent solution often begins with the use of machine learning to train predictive models using historic data that you have collected.
+
+Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values.
 
 Azure Machine Learning is a cloud service that you can use to train and manage machine learning models.
