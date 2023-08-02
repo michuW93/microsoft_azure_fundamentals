@@ -27,3 +27,8 @@ Interpret commands and determine appropriate actions.
 
 # Knowledge mining
 Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. In azure there is Azure Cognitive Search
+
+# Machine learning
+Machine Learning is the foundation for most artificial intelligence solutions. Creating an intelligent solution often begins with the use of machine learning to train predictive models using historic data that you have collected.
+
+Azure Machine Learning is a cloud service that you can use to train and manage machine learning models.
