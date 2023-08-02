@@ -30,7 +30,19 @@ Knowledge mining is the term used to describe solutions that involve extracting 
 
 # Machine learning
 Machine Learning is the foundation for most artificial intelligence solutions. Creating an intelligent solution often begins with the use of machine learning to train predictive models using historic data that you have collected.
+Azure Machine Learning is a cloud service that you can use to train and manage machine learning models.
+
+
+Types of machine learning
+There are two general approaches to machine learning, **supervised** and **unsupervised** machine learning. In both approaches, you train a model to make predictions.
+
+The supervised machine learning approach requires you to start with a dataset with known label values. Two types of supervised machine learning tasks include regression and classification.
+
+**Regression**: used to predict a continuous value; like a price, a sales total, or some other measure.
+**Classification**: used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+
+The unsupervised machine learning approach starts with a dataset without known label values. One type of unsupervised machine learning task is clustering.
+**Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
 
 Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values.
 
-Azure Machine Learning is a cloud service that you can use to train and manage machine learning models.
