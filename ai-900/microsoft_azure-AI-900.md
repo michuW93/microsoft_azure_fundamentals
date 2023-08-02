@@ -24,3 +24,6 @@ Analyze and interpret text in documents, email messages, and other sources.
 Interpret spoken language, and synthesize speech responses.
 Automatically translate spoken or written phrases between languages.
 Interpret commands and determine appropriate actions.
+
+# Knowledge mining
+Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. In azure there is Azure Cognitive Search
