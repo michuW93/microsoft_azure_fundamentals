@@ -37,8 +37,10 @@ Types of machine learning
 There are two general approaches to machine learning, **supervised** and **unsupervised** machine learning. In both approaches, you train a model to make predictions.
 
 The supervised machine learning approach requires you to start with a dataset with known label values. Two types of supervised machine learning tasks include regression and classification:
-* **Regression**: used to predict a continuous value; like a price, a sales total, or some other measure.
-* **Classification**: used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+* **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure.
+* **Classification** (predicting categories or classes): used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+* **Time series forecasting** (predicting numeric values at a future point in time)
+
 
 The unsupervised machine learning approach starts with a dataset without known label values. One type of unsupervised machine learning task is clustering.
 * **Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
@@ -50,3 +52,5 @@ Machine learning process:
 * Train model: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set.
 * Evaluate performance: Compare how close the model's predictions are to the known labels.
 * Deploy a predictive service: After you train a machine learning model, you can deploy the model as an application on a server or device so that others can use it.
+
+The difference between the predicted and actual value, known as the **residuals**, indicates the amount of error in the model.
