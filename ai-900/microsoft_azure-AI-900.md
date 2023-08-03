@@ -45,3 +45,8 @@ The unsupervised machine learning approach starts with a dataset without known l
 
 Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values.
 
+Machine learning process:
+* Prepare data: Identify the features and label in a dataset. Pre-process, or clean and transform, the data as needed.
+* Train model: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set.
+* Evaluate performance: Compare how close the model's predictions are to the known labels.
+* Deploy a predictive service: After you train a machine learning model, you can deploy the model as an application on a server or device so that others can use it.
