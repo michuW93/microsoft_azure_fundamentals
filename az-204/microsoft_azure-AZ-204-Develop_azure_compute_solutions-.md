@@ -210,6 +210,8 @@ We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, A
 Example with Azure CLI:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
 
+https://stackoverflow.com/questions/77541707/failed-to-deploy-to-azure-web-appmy-app-with-resource-creation-or-updating-un
+
 # Secure a Domain with SSL/TLS Binding
 You must at least use Basic plan type to be able to use HTTPS. You can then enforce HTTPS and TLS versions.
 
