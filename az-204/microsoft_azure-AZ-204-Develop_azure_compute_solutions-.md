@@ -203,6 +203,7 @@ Isolation with App Service Environments(ASE):
 * isolation and secure network access
 * fine-grainded control over network traffic
 * apps can connect over VPN to on-premises resources
+* with ASE on premises applications can communicate with Azure Virtual Network via VPN or Express Route.
 
 We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. There are 3 steps: first create resource group, then create app service plan and then finally create web app
 
