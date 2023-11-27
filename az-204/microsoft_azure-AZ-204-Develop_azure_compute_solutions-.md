@@ -191,7 +191,7 @@ Isolated: This Isolated and IsolatedV2 tiers run dedicated Azure VMs on dedicate
 
 
 Non-isolated App Service Plans:
-* free and shared (F1, D1) = not for prod
+* free and shared (F1, D1) = not for prod, can't even add certificate for SSL/HTTPS
 * basic (b1, b2, b3) = not for prod, more for testing, doesn't require scalable
 * standard (s1, s2, s3) for prod, cost depends on how many instances you run
 * premium v2 
@@ -225,7 +225,7 @@ First you need to add custom domain and then add binding TLS/SSL because there w
 # Configuring a Database Connection String
 App Service Web App -----> Connection string e.g SQLServerDB -------> Azure SQL Database
 
-we don't want to hardcode connection string
+we don't want to hardcode connection string in Azure Web App so first we need to create SQL Database, then check connections string for it and then go to Azure Web App configurations and add this connection string as variable.
 
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/connection_string.png?raw=true)
 
