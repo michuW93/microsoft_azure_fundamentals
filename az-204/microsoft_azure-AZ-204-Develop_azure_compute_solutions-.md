@@ -251,9 +251,10 @@ Scaling up Vertically vs Scaling up horizontally <br/>
 Vertically - you have 1vCore and 2GB RAM but app is getting bigger and bigger then you switch machine for 8vCore and 64 GB RAM <br/>
 Horizontally - adding new machines e.g add azure load balancer and second virtual machine, then add third machine
 
-<b>Auto scale is available for standard, premium and isolated pricing tiers</b>, not e.g for basic. Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70% for 3 minutes)
+<b>Auto scale is available for standard, premium and isolated pricing tiers</b>, not e.g for basic. 
+Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70% for 3 minutes)
 
-# Azure functions
+# 5. Azure functions
 What are Azure Functions? A serverless application platform, a simple way to run small piece of code ("functions") in the cloud, FaaS - function as a service.
 Serverless - delegate server management responsibility to the cloud provider, supports automatic scaling to meet demand, billed only when it's running
 Azure function app - one or more related Azure Functions, that are developed, deployed and hosted as a group
