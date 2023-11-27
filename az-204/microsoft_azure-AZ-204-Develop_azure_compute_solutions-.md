@@ -209,7 +209,11 @@ We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, A
 There are 3 steps: first create resource group, then create app service plan and then finally create web app
 
 Example with Azure CLI:
+
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
+
+Example with Azure Powershell:
+
 
 https://stackoverflow.com/questions/77541707/failed-to-deploy-to-azure-web-appmy-app-with-resource-creation-or-updating-un
 
