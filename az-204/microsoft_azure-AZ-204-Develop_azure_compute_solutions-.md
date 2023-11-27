@@ -213,6 +213,7 @@ Example with Azure CLI:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
 
 Example with Azure Powershell:
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/createWebAppPowershell.png?raw=true)
 
 
 https://stackoverflow.com/questions/77541707/failed-to-deploy-to-azure-web-appmy-app-with-resource-creation-or-updating-un
