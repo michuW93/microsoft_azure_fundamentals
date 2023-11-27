@@ -205,7 +205,8 @@ Isolation with App Service Environments(ASE):
 * apps can connect over VPN to on-premises resources
 * with ASE on premises applications can communicate with Azure Virtual Network via VPN or Express Route.
 
-We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. There are 3 steps: first create resource group, then create app service plan and then finally create web app
+We can create Web app via Azure Portal (Web App), Azure CLI, Azure PowerShell, ARM Template. <br>
+There are 3 steps: first create resource group, then create app service plan and then finally create web app
 
 Example with Azure CLI:
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/create_app_service_via_azure_cli.png?raw=true)
