@@ -36,25 +36,26 @@ then `new SecretClient(new Uri(kvUri), new <b>DefaultAzureCredential()</b>)`
 12. find and replace in `<outbound>` because it's changing response body
 
 13. You have two Hyper-V hosts named Host1 and Host2. Host1 has an Azure virtual machine named VM1 that was deployed by using a custom Azure Resource
-Manager template. You need to move VM1 to Host2. What should you do? When you redeploy a VM, it moves the VM to a new node within 
-the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources.
+Manager template. You need to move VM1 to Host2. What should you do? <br> 
+When you redeploy a VM, it moves the VM to a new node within the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources.
+<b>From the Redeploy blade, click Redeploy.</b>
 
-14. You want to deploy an ARM template using C#. The template deploys a single virtual machine in a new virtual network with single subnet. 
+15. You want to deploy an ARM template using C#. The template deploys a single virtual machine in a new virtual network with single subnet. 
 Which template files are necessary?
 `createVMTemplate.json` as the template file (it must be .json because ARM template!), 
 `parameters.json` as the parameters file(it also must be .json!), 
 `azureauth.properties` as the authorization file
 
-15. Standard tier plan and above supports Kafka messages in Event Hub. The Basic tier does not.
+16. Standard tier plan and above supports Kafka messages in Event Hub. The Basic tier does not.
 
-16. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. 
+17. `set AZCOPY_CONCURENCY_VALUE` on windows = `export AZCOPY_CONCURENCY_VALUE` on linux and MacOs. 
 This environment variable can increase the throughput when transferring small files and specifies the number of concurrent requests that can occur.
 
-17. <b>Blob permission</b> allow an anonymous user to read all the blobs in the container but not enumerate them.
+18. <b>Blob permission</b> allow an anonymous user to read all the blobs in the container but not enumerate them.
 
-18. <b>Timespan can be used only if the function app is running on a dedicated app service plan</b>, not available for consumption and premium plan.
+19. <b>Timespan can be used only if the function app is running on a dedicated app service plan</b>, not available for consumption and premium plan.
 
-19. To set up exception reporting, you will need the following:
+20. To set up exception reporting, you will need the following:
 * ensure application insights extension site extension is updated
 * add application monitoring extension
 * install application insights SDK in your app code

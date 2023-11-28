@@ -255,35 +255,53 @@ Horizontally - adding new machines e.g add azure load balancer and second virtua
 Scaling can be done manually or on schedule e.g take out 1 machine after 5 p.m or it can autoscale using rules (base on resource metrics e.g add virtual machine if CPU is above 70% for 3 minutes)
 
 # 5. Azure functions
-What are Azure Functions? A serverless application platform, a simple way to run small piece of code ("functions") in the cloud, FaaS - function as a service.
-Serverless - delegate server management responsibility to the cloud provider, supports automatic scaling to meet demand, billed only when it's running
+What are Azure Functions? A serverless application platform, a simple way to run small piece of code ("functions") in the cloud, FaaS - function as a service. <br>
+Serverless - delegate server management responsibility to the cloud provider, supports automatic scaling to meet demand, billed only when it's running <br>
 Azure function app - one or more related Azure Functions, that are developed, deployed and hosted as a group
 
 You can create Azure Functions in C#, Java, JS, Python and many others
-Azure Functions usually run in a `Service plan` on Azure App Service. You can choose Consumption plan - it's serverless, automatic scale, 5 min limit and you pay if use or App Service plan in which is traditional pricing model - paying X per month, or Premium Plan which offers better speed, security and reserved instances. Or you can run Azure functions in Docker Container or Locally for development and testing. 
+Azure Functions usually run in a `Service plan` on Azure App Service. <br>
+You can choose:
+* <b>Consumption plan</b> - it's serverless, automatic scale, 5 min limit <br> 
+* you pay if use or <b>App Service plan</b> in which is traditional pricing model - paying X per month<br>
+* <b>Functions Premium Plan</b> which offers better speed, security and reserved instances 
+* Or you can run Azure functions in <b>Docker Container</b> 
+* <b>Locally</b> for development and testing. 
 
-You can develop azure functions in Azure Portal or Visual Studio or Azure Functions Core Tools
+You can develop azure functions in Azure Portal (great for learning and experiments) or Visual Studio or Azure Functions Core Tools
 
-Azure function trigger - when trigger is trigerred then Azure Function is executed. It can be implemented using data operations(BLOB Storage Trigger), timers(scheduled task) and webhooks(HTTP Request Trigger). Every Azure function has exactly one trigger. For timer trigger you need to provide CRON expression.
+Azure function trigger (trigger is the event that causes the function to run) - when trigger is triggered then Azure Function is executed. <br>
+Azure functions Trigger Types:
+* HTTP Request Trigger - use for APIs and webhooks
+* Timer Trigger - use for scheduled tasks
+* Queue Trigger - run in response to a message on a queue
+* Cosmos DB trigger - run when a document is created or updated
+* Blob Trigger - run when a new file is uploaded to Blob Storage
 
-Azure Function Binding is a connection to data. Input binding provide read-access to data. Output bindings let us write to an external system. Functions can have multiple input and output bindings. Input/Output bindings are defined in .json file.
+Every Azure function has exactly one trigger. For timer trigger you need to provide CRON expression.
 
-Azure <b>Durable Function</b> is an extension to Azure Functions which enables to create stateful, serverless workflows. It consist of 3 types of function:
+Azure Function Binding is a connection to data. 
+Input binding provide read-access to data e.g Blob Storage binding - read contents of a file in Blob Storage.
+Output bindings let us write to an external system e.g Queue storage binding - post a message to a queue. 
+Functions can have multiple input and output bindings. Input/Output bindings are defined in .json file.
+
+Azure <b>Durable Function</b> is an extension to Azure Functions which enables to create stateful, serverless workflows. It consists of 3 types of function:
 * Client(Started) Function - initiate a new orchestration, can use any trigger
 * orchestrator function - defines the steps in the workflow, handle errors
 * activity function - implements a step in the workflow, use any bindings
 
 Orchestration patterns: 
-* Function chaining = do activities in defined order Activity1 -> Activity2 -> Activity3
-* Fan-out Fan-in
+* Function chaining = do activities in defined, specified order Activity1 -> Activity2 -> Activity3
+* Fan-out Fan-in - runs couple of activity functions in parallel and waits for all activities to finish
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/fan_out_fan_in.png?raw=true)
 
 * Async HTTP API's
 * Monitoring
-* Human Interaction
+* Human Interaction - flow is paused and waiting for human approval
 * Aggregator(Stateful Entities)
 
-What if you would like to create Azure Function in Rust or Go which are not supported? You need to use Custom Handler. Custom Handler can be implemented using your language or runtime of choice.
+What if you would like to create Azure Function in Rust or Go which are not supported? You need to use Custom Handler. 
+Custom Handler can be implemented using your language or runtime of choice.
 
 # Review
 Managed Identities - how to login into VM, how to allow user do sth etc. Get credentials in PowerShell <br/>

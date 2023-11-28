@@ -12,6 +12,8 @@ Azure API Management Components:
 
 API gateway example:
 Web App calling many Web API services. We can add proxy (API gateway between web app and web API services) so client will always call API Gateway which decide to which API service call should go.
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/APIGateway.png?raw=true)
+
 
 API Management Pricing Tiers:
 * consumption - you will pay for request, not for hour/day/month etc. You pay for what you use
@@ -27,14 +29,14 @@ API Management cache types:
 API Gateway Capabilities:
 * accepts API calls and routes them to your backends
 * verifies API keys, JWT tokens, certificates, and other credentials
-* enforces usage quotas and rate limits
+* enforces usage quotas and rate limits e.g you can limit number of requests send to specific service
 * caches backend responses
 
 Azure Portal Capabilities:
 * define or import API schema
 * set up policies like quotas or transformations on the APIs
 * package APIs into products
-* manage users
+* manage users that have access to API
 
 Developer portal capabilities:
 * read API documentation
@@ -50,9 +52,8 @@ https://api-car.com/car/all/v2
 <b>Revisions</b> allow you to make changes to the APIs in a controlled and safe way, without disturbing your API consumers
 https://api-car.com/car/all;rev=3
 
-Each versions can have multiple revisions, just like a non-versioned API. You can use revisions without using versions, or the other way around
-
-Typically versions are used to separate API versions with breaking changes, while revisions can be used for minor and non-breaking changes to an API
+Each versions can have multiple revisions, just like a non-versioned API. You can use revisions without using versions, or the other way around <br>
+Typically, versions are used to separate API versions with breaking changes, while revisions can be used for minor and non-breaking changes to an API
 
 APIs are the foundation of the Azure API Management service
 
@@ -65,8 +66,8 @@ When a product is ready for use by developers, it can be published for developer
 Subscription approval is configured at the product level. Developers need this subscription to access products
 
 <b>Azure API Management Groups</b>
-Administrators - manage API Management service instancesm creating the APIs, operations, and products </br>
-Developers (can be created or invited to join by administrators or they can sign up from the Developer portal) - are granted access to the developer portal and build applications that call the operations of an API. Each developer is a member of one or more groups </br>
+Administrators - manage API Management service instances creating the APIs, operations, and products </br>
+Developers (can be created or invited to join by administrators or they can sign up from the Developer portal, each developer is a member of one or more groups) - are granted access to the developer portal and build applications that call the operations of an API. Each developer is a member of one or more groups </br>
 Guests - unauthenticated developer portal users with certain read-only access, such as the ability to view APIs but not call them </br>
 Custom groups - Administrators can also create custom groups or leverage external groups in associated Azure Active Directory tenants
 
