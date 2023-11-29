@@ -620,7 +620,22 @@ Does the solution meet the goal? YES
      You must ensure that the website remains available and responsive while minimizing cost.
      You need to deploy the website.
      Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
-
+131. You are authoring a set of nested Azure Resource Manager templates to deploy multiple Azure resources.
+     The templates must be tested before deployment and must follow recommended practices.
+     You need to validate and test the templates before deployment.
+     Which tools should you use?
+     Determine whether the templates follow recommended practices: Azure Resource Manager test toolkit
+     Test and validate changes that templates will make to the environment: What-if operation
+132. You develop Azure Web Apps for a commercial diving company. Regulations require that all divers fill out a health questionnaire every 15 days after each diving job starts.
+You need to configure the Azure Web Apps so that the instance count scales up when divers are filling out the questionnaire and scales down after they are complete.
+You need to configure autoscaling.
+What are two possible auto scaling configurations to achieve this goal?
+<b>fixed date profile</b> and <b>Predictive autoscaling</b>
+133. You need to implement the bindings for the CheckUserContent function. How should you complete the code segment?
+public static class CheckUserContent<br>
+{ [FunctionName("CheckUserContent")]<br>
+public static void Run(<b>BlobTrigger(userContent/{name}")]</b>) string content, <br>
+[<b>Blob("userContent/{name}", FileAccess.Write)</b>]
 
 
 
