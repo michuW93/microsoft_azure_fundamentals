@@ -215,9 +215,9 @@ No change required - For Native Applications you need to provide a Redirect URI,
 You want to implement multi-factor authentication by making use of a conditional access policy. The conditional access policy must be applied to all users when they access the Azure portal.
 Which three settings should you configure?
 users and groups, cloud apps, grant
-The conditional access policy must be applied or assigned to Users and Groups.
-The conditional access policy must be applied when users access the Azure portal, which is a cloud app. That is: Microsoft Azure Management
-Access control must require multi-factor authentication when granting access.
+The conditional access policy must be applied or assigned to <b>Users and Groups</b>.
+The conditional access policy must be applied when users access the Azure portal, which is a <b>cloud app</b>. That is: Microsoft Azure Management
+Access control must require multi-factor authentication when <b>granting</b> access.
 
 67. You manage an Azure SQL database that allows for Azure AD authentication.
 You need to make sure that database developers can connect to the SQL database via Microsoft SQL Server Management Studio (SSMS). You also need to make sure the developers use their on-premises Active Directory account for authentication. Your strategy should allow for authentication prompts to be kept to a minimum.
@@ -576,9 +576,50 @@ You need to implement a solution to receive the device data.
 Solution: <b>Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.</b>
 Does the solution meet the goal? YES
 
+120. Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group.
+     Developers have created an application named MyApp. MyApp was packaged into a container image.
+     You need to deploy the YAML manifest file for the application.
+     Solution: You install the Azure CLI on the device and run the kubectl apply `"f myapp.yaml command.
+     Does this meet the goal? <b>Yes</b> - kubectl apply -f myapp.yaml applies a configuration change to a resource from a file or stdin.
 
+121. ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/questionAzureFunctionApp.png?raw=true)
+![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/answerAzureFunctionApp.png?raw=true)
+122. You are developing a solution for a hospital to support the following use cases:
+     ✑ The most recent patient status details must be retrieved even if multiple users in different locations have updated the patient record.
+     ✑ Patient health monitoring data retrieved must be the current version or the prior version.
+     ✑ After a patient is discharged and all charges have been assessed, the patient billing record contains the final charges.
+     You provision a Cosmos DB NoSQL database and set the default consistency level for the database account to Strong. You set the value for Indexing Mode to
+     Consistent.
+     You need to minimize latency and any impact to the availability of the solution. You must override the default consistency level at the query level to meet the required consistency guarantees for the scenarios.
+     Which consistency levels should you implement? To answer, drag the appropriate consistency levels to the correct requirements. Each consistency level may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.
 
-
+     Return the most recent patient status: Strong
+     Return health monitoring data that is no less than one version behind: Bounded Staleness
+     After patient is discharged and all charges are assessed, retrieve the correct billing data with the final charges: Eventual
+123. ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/questionAnswerManagedIdentity.png?raw=true)
+124. The AzScheduledQueryRuleSource is Heartbeat, not CPU!
+125. You are developing an ASP.NET Core web application. You plan to deploy the application to Azure Web App for Containers.
+     The application needs to store runtime diagnostic data that must be persisted across application restarts. You need to configure the application settings so that diagnostic data is stored as required.
+     How should you configure the web app's settings?
+     If <b>WEBSITES_ENABLE_APP_SERVICE_STORAGE</b> setting is unspecified or set to true, the <b>/home/</b> directory will be shared across scale instances, and files written will persist across restarts
+126. You are creating an Azure key vault using PowerShell. Objects deleted from the key vault must be kept for a set period of 90 days.
+     Which two of the following parameters must be used in conjunction to meet the requirement?
+     EnablePurgeProtection and EnableSoftDelete
+127. You are developing an application to transfer data between on-premises file servers and Azure Blob storage. The application stores keys, secrets, and certificates in Azure Key Vault and makes use of the Azure Key Vault APIs.
+     You want to configure the application to allow recovery of an accidental deletion of the key vault or key vault objects for 90 days after deletion.
+     What should you do?
+     Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.
+128. You are configuring a web app that delivers streaming video to users. The application makes use of continuous integration and deployment.
+     You need to ensure that the application is highly available and that the users' streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.
+     Solution: You include the use of an <b>Azure Content Delivery Network (CDN)</b> in your design.
+129. You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
+     You need to ensure that scripts run and resources are available before a swap operation occurs.
+     Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot
+     Solution: Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.
+130. You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published.
+     You must ensure that the website remains available and responsive while minimizing cost.
+     You need to deploy the website.
+     Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
 
 
 

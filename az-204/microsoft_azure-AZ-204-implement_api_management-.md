@@ -163,33 +163,46 @@ then `az eventhubs eventhub create --name`
 <b>Azure Notification Hubs</b>:
 * send push notifications - app to user e.g phone buzzez to let you know that you got email or when someone link you on facebook
 
+# Message-based Solutions
+
 <b>Message-based Solutions</b> - it enables fault tolerance between modules. Even if service which consumes something go down, we still have all info in queue.
 Once service will be back we can proceed all messages from queue
 
 Azure Queue Storage: fully-managed service that is a part of the Azure Storage suite that enables you to create durable 
-and configurable message queues to enable application modularity and fault tolerance
+and configurable message queues to enable application modularity and fault tolerance.
 
 How to interact with Azure Queue Storage:
 * first you need an Azure Storage Account (general-purpose v2)
 * queues are created within a single storage account
-* it can supports messages up to 64KiB in size
+* it can support messages up to 64KiB in size
 * messages exist withing a single queue
 * number of messages limited only by size of the storage account
-* it supports a configurable time to live per message (withing the default 7 days)
+* it supports a configurable time to live per message (withing the default 7 days) - when something came to message queue and something pick it up then it's done,
+however there can be a situation that noone pick this message from queue then it will be auto removed after time to live expire. You set it for second, month or even no expire
+
+Queue URL structure: https://<b>storageaccount</b>.queue.core.windows.net/<b>queuename</b>  
 
 Queue security
 * data in queues is encrypted by default
 * azure storage stored access policies can work with queues
 * can interact with queue date via HTTP or HTTPS
+* supports the following authorization approaches: Shared key, Shared access signature (SAS) or Azure AD
 
-Visibility timeout - message are delivered to consumers but are not immediatelly deleted from the queue.
-However messages will not be visible in the queue again until a period of time has passed from the initial delivery.
-This period of time is the visibility timeout and it enables fault tolerance for your apps
+Visibility timeout - message are delivered to consumers but are not immediately deleted from the queue (Can happen that consumer pick up message from the queue but are working on this for some time and then error occurs - message stays in queue)
+However, messages will not be visible in the queue again until a period of time has passed from the initial delivery.
+This period of time is the visibility timeout, and it enables fault tolerance for your apps.
 
-create a queue: `az storage queue create --name` </br>
-delete a queue: `az storage queue delete --name` </br>
-view messages in queue without affecting visibility `az storage message peek --queue-name` </br>
-delete all messaged in a queue: `az storage message clear --queue-name` </br>
+Scalability limits for Queues:
+* a single queue cannot exceed 500TiB
+* a single message cannot exceed 64 KiB
+* a queue supports no more than 5 stored access policies
+* a store account can support 20000 messages per second (1KiB message)
+* a single queue can support 2000 messages per second (1 KiB message)
+
+create a queue: `az storage queue create --name mysamplequeue` </br>
+delete a queue: `az storage queue delete --name mysamplequeue` </br>
+view messages in queue without affecting visibility `az storage message peek --queue-name mysamplequeue` </br>
+delete all messaged in a queue: `az storage message clear --queue-name mysamplequeue` </br>
 
 you can also play with queue via Azure Portal
 
@@ -198,7 +211,7 @@ you can also play with queue via Azure Portal
 Azure service bus consist of Namespace in which there is a queue or topic. Queue is filled with producer and messages are taken by consumer while in topic there is publisher who publish sth into topic and then we can have many subscribers which can work on these data.
 
 Azure service bus:
-* supports both HTTP and HTTPS like Azure Queue Storage  but also AMQP protocols
+* supports both HTTP and HTTPS like Azure Queue Storage but also AMQP protocols
 * includes messaging for both queues and topics
 * supports advanced configurability: ordering, batching, DLQ and Duplicate detection
 
