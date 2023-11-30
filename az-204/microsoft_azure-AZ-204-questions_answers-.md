@@ -459,7 +459,7 @@ Which two partition keys can you use? </br>
 
 100. You develop and deploy a web application to Azure App Service. The application accesses data stored in an Azure Storage account. The account contains several containers with several blobs with large amounts of data. You deploy all Azure resources to a single region.
 You need to move the Azure Storage account to the new region. You must copy all data to the new region.
-What should you do first?
+What should you do first?<br>
 <b>Export the Azure Storage account Azure Resource Manager template</b>
 
 101. An organization deploys Azure Cosmos DB.
