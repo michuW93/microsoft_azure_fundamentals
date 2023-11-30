@@ -585,18 +585,17 @@ Does the solution meet the goal? YES
 
 121. ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/questionAzureFunctionApp.png?raw=true)
 ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/answerAzureFunctionApp.png?raw=true)
-122. You are developing a solution for a hospital to support the following use cases:
-     ✑ The most recent patient status details must be retrieved even if multiple users in different locations have updated the patient record.
-     ✑ Patient health monitoring data retrieved must be the current version or the prior version.
-     ✑ After a patient is discharged and all charges have been assessed, the patient billing record contains the final charges.
+122. You are developing a solution for a hospital to support the following use cases:<br>
+     ✑ The most recent patient status details must be retrieved even if multiple users in different locations have updated the patient record.<br>
+     ✑ Patient health monitoring data retrieved must be the current version or the prior version.<br>
+     ✑ After a patient is discharged and all charges have been assessed, the patient billing record contains the final charges. <br>
      You provision a Cosmos DB NoSQL database and set the default consistency level for the database account to Strong. You set the value for Indexing Mode to
      Consistent.
      You need to minimize latency and any impact to the availability of the solution. You must override the default consistency level at the query level to meet the required consistency guarantees for the scenarios.
-     Which consistency levels should you implement? To answer, drag the appropriate consistency levels to the correct requirements. Each consistency level may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.
-
-     Return the most recent patient status: Strong
-     Return health monitoring data that is no less than one version behind: Bounded Staleness
-     After patient is discharged and all charges are assessed, retrieve the correct billing data with the final charges: Eventual
+     Which consistency levels should you implement? To answer, drag the appropriate consistency levels to the correct requirements. Each consistency level may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. <br>
+     Return the most recent patient status: <b>Strong</b> <br>
+     Return health monitoring data that is no less than one version behind: Bounded Staleness <br>
+     After patient is discharged and all charges are assessed, retrieve the correct billing data with the final charges: Eventual <br>
 123. ![alt text](https://github.com/michuW93/microsoft_azure_fundamentals/blob/master/az-204/images/questionAnswerManagedIdentity.png?raw=true)
 124. The AzScheduledQueryRuleSource is Heartbeat, not CPU!
 125. You are developing an ASP.NET Core web application. You plan to deploy the application to Azure Web App for Containers.
