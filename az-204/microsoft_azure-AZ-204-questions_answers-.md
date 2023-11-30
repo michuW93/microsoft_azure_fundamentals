@@ -614,8 +614,8 @@ Does the solution meet the goal? YES
      Solution: You include the use of an <b>Azure Content Delivery Network (CDN)</b> in your design.
 129. You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot.
      You need to ensure that scripts run and resources are available before a swap operation occurs.
-     Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot
-     Solution: Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.
+     Solution: <b>Enable auto swap for the Testing slot. Deploy the app to the Testing slot</b>
+     Solution: <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
 130. You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published.
      You must ensure that the website remains available and responsive while minimizing cost.
      You need to deploy the website.
