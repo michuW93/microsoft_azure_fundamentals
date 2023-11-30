@@ -102,9 +102,9 @@ A user delegation SAS is only supported for the Blob service.
 35. You have RBAC application. Role is sales but there are some people in this role which shouldn't have access to create customers. 
 How to do it without adding new role? Build and register a policy.
 
-36. <b>Helm</b> helps you manage Kubernetes application - Helm charts help you define, install, and upgrade even the most complex Kubernetes applications. 
-<b>kubectl</b> - Kubernetes command line tool which allows to run commands against Kubernetes clusters. 
-<b>ingress controller</b> is a piece of software that provides reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services.
+36. <b>Helm</b> helps you manage Kubernetes application - Helm charts help you define, install, and upgrade even the most complex Kubernetes applications. <br>
+<b>kubectl</b> - Kubernetes command line tool which allows to run commands against Kubernetes clusters. <br>
+<b>ingress controller</b> is a piece of software that provides reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. <br>
 
 37. You have developed an event-based solution that uses Azure Service Bus. Because of reaching subscription spending limits, 
 the system has suspended entities, and you want to reactivate system-disabled entities. Answer: <b>Restore the system-disabled entity</b> 
