@@ -603,8 +603,8 @@ Does the solution meet the goal? YES
      How should you configure the web app's settings?
      If <b>WEBSITES_ENABLE_APP_SERVICE_STORAGE</b> setting is unspecified or set to true, the <b>/home/</b> directory will be shared across scale instances, and files written will persist across restarts
 126. You are creating an Azure key vault using PowerShell. Objects deleted from the key vault must be kept for a set period of 90 days.
-     Which two of the following parameters must be used in conjunction to meet the requirement?
-     EnablePurgeProtection and EnableSoftDelete
+     Which two of the following parameters must be used in conjunction to meet the requirement?<br>
+     <b>EnablePurgeProtection</b> and <b>EnableSoftDelete</b>
 127. You are developing an application to transfer data between on-premises file servers and Azure Blob storage. The application stores keys, secrets, and certificates in Azure Key Vault and makes use of the Azure Key Vault APIs.
      You want to configure the application to allow recovery of an accidental deletion of the key vault or key vault objects for 90 days after deletion.
      What should you do?
