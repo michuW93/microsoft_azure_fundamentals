@@ -338,12 +338,12 @@ You need to ensure that scripts run and resources are available before a swap op
 * <b>Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot.</b>
 
 83. You are developing a serverless Java application on Azure. You create a new Azure Key Vault to work with secrets from a new Azure Functions application.
-The application must meet the following requirements:
-✑ Reference the Azure Key Vault without requiring any changes to the Java code.
-✑ Dynamically add and remove instances of the Azure Functions host based on the number of incoming application events.
-✑ Ensure that instances are perpetually warm to avoid any cold starts.
-✑ Connect to a VNet.
-✑ Authentication to the Azure Key Vault instance must be removed if the Azure Function application is deleted.
+The application must meet the following requirements:<br>
+✑ Reference the Azure Key Vault without requiring any changes to the Java code.<br>
+✑ Dynamically add and remove instances of the Azure Functions host based on the number of incoming application events.<br>
+✑ Ensure that instances are perpetually warm to avoid any cold starts.<br>
+✑ Connect to a VNet.<br>
+✑ Authentication to the Azure Key Vault instance must be removed if the Azure Function application is deleted.<br>
 You need to grant the Azure Functions application access to the Azure Key Vault.
 Which three actions should you perform in sequence?
 * create the Azure Functions app with a Consumption plan type
@@ -416,7 +416,8 @@ Supporting services script - <b>Hybrid Runbook Worker</b>
 
 93. You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure
 Storage Blob storage. The storage account type is General-purpose V2.
-When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute.
+When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. 
+The process to produce a mobile-friendly version of the image must start in less than one minute.
 You need to design the process that starts the photo processing.
 Solution: <b>Create an Azure Function app that uses the Consumption hosting model and that is triggered from the blob upload.</b> YES - In the Consumption hosting plan, resources are added dynamically as required by your functions.
 
@@ -636,6 +637,24 @@ public static class CheckUserContent<br>
 { [FunctionName("CheckUserContent")]<br>
 public static void Run(<b>BlobTrigger(userContent/{name}")]</b>) string content, <br>
 [<b>Blob("userContent/{name}", FileAccess.Write)</b>]
+134. You configure TLS mutual authentication for the web app.
+You need to validate the client certificate in the web app.
+Client certificate location: <b>HTTP request header</b>
+Encoding type: <b>Base64</b>
+
+135. You are building a website that uses Azure Blob storage for data storage.
+You configure Azure Blob storage lifecycle to move all blobs to the archive tier after 30 days.
+Customers have requested a service-level agreement (SLA) for viewing data older than 30 days.
+You need to document the minimum SLA for data recovery.
+Which SLA should you use? <b>B. between one and 15 hours</b>
+136. You need to update the metadata of the blobs.
+Which three methods should you use to develop the solution? 
+<b>Metadata.Add, SetMetadataAsync, SetPropertiesAsync</b>
+137. You develop Azure solutions.
+A .NET application needs to receive a message each time an Azure virtual machine finishes processing data.
+The messages must NOT persist after being processed by the receiving application.
+You need to implement the .NET object that will receive the messages.
+Which object should you use? <b>CloudQueueClient</b>
 
 
 
