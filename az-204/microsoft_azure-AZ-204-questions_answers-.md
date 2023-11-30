@@ -214,7 +214,7 @@ No change required - For Native Applications you need to provide a Redirect URI,
 66. You have an Azure Active Directory (Azure AD) tenant.
 You want to implement multi-factor authentication by making use of a conditional access policy. The conditional access policy must be applied to all users when they access the Azure portal.
 Which three settings should you configure?
-users and groups, cloud apps, grant
+<b>users and groups, cloud apps, grant</b>
 The conditional access policy must be applied or assigned to <b>Users and Groups</b>.
 The conditional access policy must be applied when users access the Azure portal, which is a <b>cloud app</b>. That is: Microsoft Azure Management
 Access control must require multi-factor authentication when <b>granting</b> access.
