@@ -410,7 +410,7 @@ You need to create a copy of the storage account in another region and copy the 
 The VMs that run the application have the following requirements:
 ✑ When a VM is provisioned the firewall must be automatically configured before it can access Azure resources.
 ✑ Supporting services must be installed by using an Azure PowerShell script that is stored in Azure Storage.
-You need to ensure that the requirements are met.
+You need to ensure that the requirements are met. <br>
 Firewall configuration - <b>Run command</b></br> 
 Supporting services script - <b>Hybrid Runbook Worker</b>
 
