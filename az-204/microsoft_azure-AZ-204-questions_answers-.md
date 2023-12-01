@@ -524,9 +524,9 @@ Microsoft Graph: User.Read <b>delegated</b>
      If the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised.
      You need to store the intake forms according to the requirements.
      Solution:
-* Create an Azure Key Vault key named skey.
+* <b>Create an Azure Key Vault key named skey.
 * Encrypt the intake forms using the public key portion of skey.
-* Store the encrypted data in Azure Blob storage.
+* Store the encrypted data in Azure Blob storage.</b>
    Does the solution meet the goal? YES
 
 111. You develop Azure solutions.
@@ -575,7 +575,6 @@ you should use <b>SearchIndexClient</b> and <b>SearchServiceClient</b>
 You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future.
 You need to implement a solution to receive the device data.
 Solution: <b>Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.</b>
-Does the solution meet the goal? YES
 
 120. Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group.
      Developers have created an application named MyApp. MyApp was packaged into a container image.
@@ -654,13 +653,268 @@ A .NET application needs to receive a message each time an Azure virtual machine
 The messages must NOT persist after being processed by the receiving application.
 You need to implement the .NET object that will receive the messages.
 Which object should you use? <b>CloudQueueClient</b>
+138. You are building a traffic monitoring system that monitors traffic along six highways.
+The system produces time series analysis-based reports for each highway.
+Data from traffic sensors are stored in Azure Event Hub.
+Traffic data is consumed by four departments.
+Each department has an Azure Web App that displays the time series-based reports and contains a WebJob that processes the incoming data from Event Hub.
+All Web Apps run on App Service Plans with three instances.
+Data throughput must be maximized.
+Latency must be minimized.
+You need to implement the Azure Event Hub.
+Which settings should you use?<br>
+Number of partitions: <b>6</b><br> - The number of partitions is specified at creation and must be between 2 and 32. There are 6 highways.
+Partition key: <b>Highway</b>
+139. You are developing a microservices solution.
+You plan to deploy the solution to a multinode Azure Kubernetes Service (AKS) cluster.
+You need to deploy a solution that includes the following features: -> reverse proxy capabilities -> configurable traffic routing -> TLS termination with a custom certificate Which components should you use? To answer, drag the appropriate components to the correct requirements. <br>
+Deploy solution: <b>Helm</b><br>
+View cluster and external IP addressing: <b>KubeCtl</b><br>
+Implement a single, public IP endpoint that is routed to multiple microservices: <b>Ingress Controller</b>
+140. Your company has several websites that use a company logo image.
+You use Azure Content Delivery Network (CDN) to store the static image.
+You need to determine the correct process of how the CDN and the Point of Presence (POP) server will distribute the image and list the items in the correct order.
+In which order do the actions occur? To answer, move all actions from the list of actions to the answer area and arrange them in the correct order.<br>
+a) A user requests the image from the CDN URL. Then DNS routes the request to the best performing POP location <br>
+b) If no edge servers in the POP have the image in cache, the POP requests the file from the origin server <br>
+c) the origin server returns the logo image to an edge server in the POP. An edge server in the POP caches the logo image and returns the image to the client. <br>
+d) Subsequent requests for the file may be directed to the same POP using the CDN logo image URL. The POP edge server returns the file from cache if the TTL has not expired.
+141. The application stores keys, secrets, and certificates in Azure Key Vault.
+The application uses the Azure Key Vault APIs.
+The application must allow recovery of an accidental deletion of the key vault or key vault objects.
+Key vault objects must be retained for 90 days after deletion.
+You need to protect the key vault and key vault objects.
+Which Azure Key Vault feature should you use?<br>
+Enable retention period and accidental deletion: <b>Soft delete</b><br>
+Enforce retention period and accidental deletion: <b>Purge protection</b><br>
 
+Soft delete - When soft-delete is enabled, resources marked as deleted resources are retained for a specified period (90 days by default)<br>
+Purge protection - Purge protection is an optional Key Vault behavior and is not enabled by default.
+Purge protection can only be enabled once soft-delete is enabled.
+When purge protection is on, a vault or an object in the deleted state cannot be purged until the retention period has passed.
 
-
-
-
-
-
+142. You are developing an ASP.NET Core website that uses Azure FrontDoor.
+The website is used to build custom weather data sets for researchers.
+Data sets are downloaded by users as Comma Separated Value (CSV) files.
+The data is refreshed every 10 hours.
+Specific files must be purged from the FrontDoor cache based upon Response Header values.
+You need to purge individual assets from the Front Door cache.
+Which type of cache purge should you use?
+<b>single path</b> - purges a specific URL or path from the cache.
+143. You are developing an ASP.NET Core Web API web service.
+The web service uses Azure Application Insights for all telemetry and dependency tracking.
+The web service reads and writes data to a database other than Microsoft SQL Server.
+You need to ensure that dependency tracking works for calls to the third-party database.
+Which two dependency telemetry properties should you use?
+<b>Telemetry.Id</b> and <b>Telemetry.Context.Operation.Id</b>
+144. You are developing an Azure App Service hosted ASP.NET Core web app to deliver video-on-demand streaming media.
+You enable an Azure Content Delivery Network (CDN) Standard for the web endpoint.
+Customer videos are downloaded from the web app by using the following example URL: http://www.contoso.com/ content.mp4?quality=1 All media content must expire from the cache after one hour.
+Customer videos with varying quality must be delivered to the closest regional point of presence (POP) node.
+You need to configure Azure CDN caching rules.
+Which options should you use?<br>
+Caching behavior: <b>Override</b><br>
+Cache expiration duration: <b>1 hour</b><br>
+Query string caching behavior:<b>Cache every unique URL</b>
+145. You develop a web app that uses tier D1 app service plan by using the Web Apps feature of Microsoft Azure App Service.
+Spikes in traffic have caused increases in page load times.
+You need to ensure that the web app automatically scales when CPU load is about 85 percent and minimize costs.
+Which four actions should you perform in sequence?
+a) configure the web app to the Standard App Service tier
+b) Enable autoscaling on the web app
+c) Add a Scale rule
+d) Configure a Scale condition
+146. A company has multiple warehouses.
+Each warehouse contains IoT temperature devices which deliver temperature data to an Azure Service Bus queue.
+You need to send email alerts to facility supervisors immediately if the temperature at a warehouse goes above or below specified threshold temperatures.
+Which five actions should you perform in sequence?
+a) Create a blank Logic app
+b) Add a logic app action that fires when one or more messages arrive in the queue
+c) Add an action that reads IoT temperature data from the Service Bus queue
+d) add a condition that compares the temperature against the upper and lower thresholds
+e) add an action that sends an email to specified personnel if the temperature is outside of those thresholds
+147. ou develop a gateway solution for a public facing news API.
+The news API back end is implemented as a RESTful service and uses an OpenAPI specification.
+You need to ensure that you can access the news API by using an Azure API Management service instance.
+Which Azure PowerShell command should you run?
+<b>New-AzureRmApiManagementBackendProxy -Url $ApiUrl</b> - creates a new Backend Proxy Object which can be piped when creating a new Backend entity
+148. You are creating a hazard notification system that has a single signaling server which triggers audio and visual alarms to start and stop.
+You implement Azure Service Bus to publish alarms.
+Each alarm controller uses Azure Service Bus to receive alarm signals as part of a transaction.
+Alarm events must be recorded for audit purposes.
+Each transaction record must include information about the alarm type that was activated.
+You need to implement a reply trail auditing solution.
+Which two actions should you perform?
+<b>Assign the value of the hazard message SessionID property to the ReplyToSessionId property.</b> and <b>Assign the value of the hazard message MessageId property to the CorrelationId property.</b>
+149. You are developing an Azure function that connects to an Azure SQL Database instance.
+The function is triggered by an Azure Storage queue.
+You receive reports of numerous System.InvalidOperationExceptions with the following message: 'Timeout expired.
+The timeout period elapsed prior to obtaining a connection from the pool.
+This may have occurred because all pooled connections were in use and max pool size was reached.' You need to prevent the exception.
+What should you do?
+<b>Convert the Azure Function to the Premium plan</b>
+150. You are developing and deploying several ASP.NET web applications to Azure App Service.
+You plan to save session state information and HTML output.
+You must use a storage mechanism with the following requirements: -> Share session state across all ASP.NET web applications.
+-> Support controlled, concurrent access to the same session state data for multiple readers and a single writer.
+-> Save full HTTP responses for concurrent requests.
+You need to store the information.
+Proposed Solution: <b>Deploy and configure Azure Cache for Redis. Update the web applications.</b>
+151. You develop and deploy an ASP.NET web app to Azure App Service.
+You use Application Insights telemetry to monitor the app.
+You must test the app to ensure that the app is available and responsive from various points around the world and at regular intervals.
+If the app is not responding, you must send an alert to support staff.
+You need to configure a test for the web app.
+Which two test types can you use?<br>
+<b>multi-step web</b> and <b>URL ping</b>
+152. You are developing applications for a company.
+You plan to host the applications on Azure App Services.
+The company has the following requirements: 
+-> Every five minutes verify that the websites are responsive.
+-> Verify that the websites respond within a specified time threshold.
+Dependent requests such as images and JavaScript files must load properly.
+-> Generate alerts if a website is experiencing issues.
+-> If a website fails to load, the system must attempt to reload the site three more times.
+You need to implement this process with the least amount of effort.
+What should you do?<br>
+<b>Create a multi-step web test to query the home page.</b>
+153. You develop and add several functions to an Azure Function app that uses the latest runtime host.
+The functions contain several REST API endpoints secured by using SSL.
+The Azure Function app runs in a Consumption plan.
+You must send an alert when any of the function endpoints are unavailable or responding too slowly.
+You need to monitor the availability and responsiveness of the functions.
+What should you do?<br>
+<b>Create a timer triggered function that calls TrackAvailability() and send the results to Application Insights.</b>
+154. You are developing an application to retrieve user profile information.
+The application will use the Microsoft Graph SDK.
+The app must retrieve user profile information by using a Microsoft Graph API call.
+You need to call the Microsoft Graph API from the application.
+In which order should you perform the actions?<br>
+a) Register the application with the Microsoft identity platform
+b) Build a client by using the client app ID
+c) Create an authentication provider
+d) Create a new instance of the GraphServiceClient
+e) invoke the request to the Microsoft Graph API
+155. The Azure Function App includes an OpenAPI (Swagger) definition and uses an Azure Blob storage account.
+All resources are secured by using Azure Active Directory (Azure AD)
+The Logic App must use Azure Monitor logs to record and store information about runtime data and events.
+The logs must be stored in the Azure Blob storage account.
+You need to set up Azure Monitor logs and collect diagnostics data for the Azure Logic App.
+Which three actions should you perform in sequence?<br>
+a) <b>Create a Log Analytics workspace</b>
+b) Install the Logic Apps Management solution
+c) Add a diagnostic setting to the Azure Logic App
+156. You develop an application.
+You plan to host the application on a set of virtual machines (VMs) in Azure.
+You need to configure Azure Monitor to collect logs from the application.
+Which four actions should you perform in sequence?<br>
+a) Create a Log Analytics workspace
+b) Add a VMInsights solutions
+c) Install agents on the VM and VM scale set to be monitored
+d) Create an Application Insights resource
+157. You have an application that provides weather forecasting data to external partners.
+You use Azure API Management to publish APIs.
+You must change the behavior of the API to meet the following requirements: -> Support alternative input parameters -> Remove formatting text from responses -> Provide additional context to back-end services Which types of policies should you implement? To answer, drag the policy types to the correct scenarios.<br>
+Rewrite the request URL to match to the format expected by the web service: <b>Inbound</b>
+Remove formatting text from responses: <b>Outbound</b>
+Forward the user ID that is associated with the subscription key for the original request to the back-end service: <b>Inbound</b>
+158. You are developing an e-commerce solution that uses a microservice architecture.
+You need to design a communication backplane for communicating transactional messages between various parts of the solution.
+Messages must be communicated in first-in-first-out (FIFO) order.
+What should you use? <br>
+<b>Azure Storage Queue<b>
+159. You are developing an Azure Service application that processes queue data when it receives a message from a mobile application.
+Messages may not be sent to the service consistently.
+You have the following requirements: -> Queue size must not grow larger than 80 gigabytes (GB)
+-> Use first-in-first-out (FIFO) ordering of messages.
+-> Minimize Azure costs.
+You need to implement the messaging solution.
+Solution: <b>Use the .Net API to add a message to an Azure Service Bus Queue from the mobile application.
+Create an Azure Function App that uses an Azure Service Bus Queue trigger.</b>
+160. You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world.
+A single device can produce 2 megabytes (MB) of data every 24 hours.
+Each store location has one to five devices that send data.
+You must store the device data in Azure Blob storage.
+Device data must be correlated based on a device identifier.
+Additional stores are expected to open in the future.
+You need to implement a solution to receive the device data.
+Solution: <b>Provision an Azure Service Bus.
+Configure a topic to receive the device data by using a correlation filter.</b>
+161. You need to change definitions, add new logic, and optimize these apps on a regular basis.
+What should you use?<br>
+Edit B2B workflows: <b>Enterprise Integration Pack</b>
+Edit definitions in JSON: Code View Editor
+Visually add functionality: Logic Apps Designer
+162. A company is developing a solution that allows smart refrigerators to send temperature information to a central location.
+The solution must receive and store messages until they can be processed.
+You create an Azure Service Bus instance by providing a name, pricing tier, subscription, resource group, and location.
+You need to complete the configuration.
+Which Azure CLI or PowerShell command should you run?<br>
+<b>az servicebus queue create <br>
+--resource-group fridge-rg <br>
+--namespace-name fridge-ns <br>
+--name fridge-q </b>
+163. You are developing a mobile app that users can use to order from a restaurant in their area.
+The app uses the following workflow: 1
+A driver selects the restaurants for which they will deliver orders.
+2
+Orders are sent to all available drivers in an area.
+3
+Only orders for the selected restaurants will appear for the driver.
+4
+The first driver to accept an order removes it from the list of available orders.
+You need to implement an Azure Service Bus solution.
+Which three actions should you perform in sequence?<br>
+a) Create a single Service Bus Namespace
+b) Create a Service Bus topic for each restaurant for which a driver can receive messages
+c) Create a Service Bus subscription for each restaurant for which a driver can receive orders
+164. You are developing an Azure messaging solution.
+You need to ensure that the solution meets the following requirements: -> Provide transactional support.
+-> Provide duplicate detection.
+-> Store the messages for an unlimited period of time.
+Which two technologies will meet the requirements? <br>
+<b>Azure Service Bus Topic</b> and <b>Azure Service Bus Queue</b>
+165. You develop a gateway solution for a public facing news API.
+The news API back end is implemented as a RESTful service and hosted in an Azure App Service instance.
+You need to configure back-end authentication for the API Management service instance.
+Which target and gateway credential type should you use?<br>
+Target: <b>Azure Resource</b><br>
+Gateway credentials: <b>Client cert</b>
+166. You are developing a solution that will use Azure messaging services.
+You need to ensure that the solution uses a publish-subscribe model and eliminates the need for constant polling.
+What are two possible ways to achieve the goal?<br>
+<b>Service Bus</b> and <b>Event Grid</b>
+167. A company is implementing a publish-subscribe (Pub/Sub) messaging component by using Azure Service Bus.
+You are developing the first subscription application.
+In the Azure portal you see that messages are being sent to the subscription for each topic.
+You create and initialize a subscription client object by supplying the correct details, but the subscription application is still not consuming the messages.
+You need to ensure that the subscription client processes all messages.
+Which code segment should you use?<br>
+<b>subscriptionClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);</b>
+168. Your company has an azure subscription that includes a storage account, a resource group, a blob container and a file share.
+A fellow administrator named Jon Ross used an Azure Resource Manager template to deploy a virtual machine and an Azure Storage account.
+You need to identify the Azure Resource Manager template the Jon Ross used.
+Solution: <b>You access the Resource Group blade.</b>
+169. You are developing a web app named mywebapp1
+Mywebapp1 uses the address myapp1.azurewebsites.net.
+You protect mywebapp1 by implementing an Azure Web Application Firewall (WAF)
+The traffic to mywebapp1 is routed through an Azure Application Gateway instance that is also used by other web apps.
+You want to secure all traffic to mywebapp1 by using SSL.<br>
+Solution: You open the Azure Application Gateway's HTTP setting and set the Override backend path option to mywebapp1.azurewebsites.net.
+You then enable the Use for App service option.
+170. You are developing a mobile app that uses an Azure SQL Database named Weyland.
+The database contains a table names Customers that has a field named email_address.
+You want to implement dynamic data masking to hide the data in the email_address field. <br>
+Solution: You run the follows transact-SQL statement: ALTER TABLE [dbo].[Weyland].[Customers] ALTER COLUMN [email_address] ADD MASKED WITH (FUNCTION = 'email()') <br>
+     Solution: You run the Set-AzSqlDatabaseDataMaskingRule -DatabaseName "Weyland" -SchemaName "dbo" -TableName"Customers" -ColumnName "email_address" -MaskingFunction "email" Powershell cmdlet
+171. You are developing a web app that uses Azure Active Directory (Azure AD) for authentication.
+You want to configure the web app to use multifactor authentication.
+What should you do?
+<b>In Azure AD, create a conditional access policy.</b>
+172. Your company has an Azure Active Directory (Azure AD) environment.
+Users occasionally connect to Azure AD via the Internet.
+You need to ensure that users who connect to Azure AD via the internet using an unidentified IP address, are automatically instructed to change their passwords.
+Solution: <b>You configure the use of Azure AD Identity Protection.</b>
 
 
 
