@@ -822,7 +822,7 @@ Forward the user ID that is associated with the subscription key for the origina
 You need to design a communication backplane for communicating transactional messages between various parts of the solution.
 Messages must be communicated in first-in-first-out (FIFO) order.
 What should you use? <br>
-<b>Azure Storage Queue<b>
+<b>Azure Storage Queue</b>
 159. You are developing an Azure Service application that processes queue data when it receives a message from a mobile application.
 Messages may not be sent to the service consistently.
 You have the following requirements: -> Queue size must not grow larger than 80 gigabytes (GB)
