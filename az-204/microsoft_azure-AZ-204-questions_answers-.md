@@ -447,7 +447,7 @@ You need to implement the Azure Durable Function. </br>
 
 98. You develop Azure solutions.
 You must connect to a No-SQL globally-distributed database by using the .NET API.
-You need to create an object to configure and execute requests in the database.
+You need to create an object to configure and execute requests in the database.<br>
 <b>new CosmosClient(EndpointUri, PrimaryKey);</b>
 
 99. You are developing an Azure Cosmos DB solution by using the Azure Cosmos DB SQL API. The data includes millions of documents. Each document may contain hundreds of properties.
@@ -646,7 +646,7 @@ Customers have requested a service-level agreement (SLA) for viewing data older 
 You need to document the minimum SLA for data recovery.
 Which SLA should you use? <b>B. between one and 15 hours</b>
 136. You need to update the metadata of the blobs.
-Which three methods should you use to develop the solution? 
+Which three methods should you use to develop the solution? <br>
 <b>Metadata.Add, SetMetadataAsync, SetPropertiesAsync</b>
 137. You develop Azure solutions.
 A .NET application needs to receive a message each time an Azure virtual machine finishes processing data.
@@ -667,7 +667,10 @@ Number of partitions: <b>6</b><br> - The number of partitions is specified at cr
 Partition key: <b>Highway</b>
 139. You are developing a microservices solution.
 You plan to deploy the solution to a multinode Azure Kubernetes Service (AKS) cluster.
-You need to deploy a solution that includes the following features: -> reverse proxy capabilities -> configurable traffic routing -> TLS termination with a custom certificate Which components should you use? To answer, drag the appropriate components to the correct requirements. <br>
+You need to deploy a solution that includes the following features: 
+-> reverse proxy capabilities <br>
+-> configurable traffic routing <br>
+-> TLS termination with a custom certificate Which components should you use? <br>
 Deploy solution: <b>Helm</b><br>
 View cluster and external IP addressing: <b>KubeCtl</b><br>
 Implement a single, public IP endpoint that is routed to multiple microservices: <b>Ingress Controller</b>
@@ -915,6 +918,17 @@ What should you do?
 Users occasionally connect to Azure AD via the Internet.
 You need to ensure that users who connect to Azure AD via the internet using an unidentified IP address, are automatically instructed to change their passwords.
 Solution: <b>You configure the use of Azure AD Identity Protection.</b>
+173. You are developing an Azure Function app.
+The app must meet the following requirements: 
+-> Enable developers to write the functions by using the Rust language.<br>
+-> Declaratively connect to an Azure Blob Storage account.<br>
+You need to implement the app.
+Which Azure Function app features should you use? <br>
+Enable developers to write the functions by using the Rust language: <b>Custom Handler</b><br>
+Declaratively connect to an Azure Blob Storage acoount: <b>Trigger</b>
+174. You need to investigate the http server log output to resolve the issue with the ContentUploadService.
+Which command should you use first?<br>
+<b>az monitor activity-log</b>
 
 
 
