@@ -16,7 +16,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 3. If a measurement occurs outside of the normal expected range, the model reports an anomaly that can be used to alert the race engineer to call the driver in for a pit stop to fix the issue before it forces retirement from the race.
 
 # Computer vision
-is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. Type of computer vision: face detection (e.g for unblocking phone), optical character recognation etc.
+is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. Type of computer vision: face detection (e.g for unblocking phone), optical character recognation - recognize text in images etc.
 
 # Natural language processing (NLP)
 is the area of AI that deals with creating software that understands written and spoken language. <br>
