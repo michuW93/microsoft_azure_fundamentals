@@ -6,6 +6,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Computer vision - The capability of software to interpret the world visually through cameras, video, and images.
 * Natural language processing - The capability for a computer to interpret written or spoken language, and respond in kind.
 * Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+* generative AI - AI that can create original content such as text, images and code.
 
 ![image](https://github.com/michuW93/microsoft_azure_fundamentals/assets/16575035/43e1ca69-3779-440d-9849-9fd4c1430ba8)
 
