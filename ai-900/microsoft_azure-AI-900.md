@@ -47,8 +47,6 @@ The supervised machine learning approach requires you to start with a dataset(hi
 The unsupervised machine learning approach starts with a dataset without known label values. One type of unsupervised machine learning task is clustering.
 * **Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
 
-Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values.
-
 Machine learning process:
 * Prepare data: Identify the features (values which we know from past) and label(value which we want to predict) in a dataset. Pre-process, or clean and transform, the data as needed.
 * Train model: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set.
@@ -56,3 +54,7 @@ Machine learning process:
 * Deploy a predictive service: After you train a machine learning model, you can deploy the model as an application on a server or device so that others can use it.
 
 The difference between the predicted and actual value, known as the **residuals**, indicates the amount of error in the model.
+
+R2 score (from 0 to 1, the higher the better) - R-squared, also known as the coefficient of determination, is a statistical measure used in machine learning to evaluate the quality of a regression model. It measures how well the model fits the data by assessing the proportion of variance in the dependent variable explained by the independent variables
+
+The Root Mean Squared Error (RMSE) is one of the two main performance indicators for a regression model (lower is better). It measures the average difference between values predicted by a model and the actual values. It provides an estimation of how well the model is able to predict the target value (accuracy). A 0 value indicates that the expected and actual values match precisely. Low RMSE values show that the model makes more accurate predictions and fits the data well. Higher levels, on the other hand, imply more significant mistakes and fewer accurate forecasts
