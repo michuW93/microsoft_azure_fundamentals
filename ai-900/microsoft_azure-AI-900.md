@@ -48,8 +48,8 @@ The unsupervised machine learning approach starts with a dataset without known l
 * **Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
 
 Machine learning process:
-* Prepare data: Identify the features (values which we know from past) and label(value which we want to predict) in a dataset. Pre-process, or clean and transform, the data as needed.
-* Train model: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set.
+* Prepare data: Identify the features (values which we know from past) and label(value which we want to predict) in a dataset. Pre-process, or clean (e.g some rows can be empty) and transform, the data as needed. We can even normalize data - convert values to be on the same scale from 0-1.
+* Train model: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set. This will enable us to compare actual values to predicted values.
 * Evaluate performance: Compare how close the model's predictions are to the known labels.
 * Deploy a predictive service: After you train a machine learning model, you can deploy the model as an application on a server or device so that others can use it.
 
