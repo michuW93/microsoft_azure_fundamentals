@@ -11,6 +11,10 @@ Key workloads include:
 
 ![image](https://github.com/michuW93/microsoft_azure_fundamentals/assets/16575035/43e1ca69-3779-440d-9849-9fd4c1430ba8)
 
+Important terminology:
+* features - historical data on which model will be trained
+* label - what we want to predict
+
 # Anomaly detection - anything that deviates from the standard pattern:
 1. Sensors in the car collect telemetry, such as engine revolutions, brake temperature, and so on.
 2. An anomaly detection model is trained to understand expected fluctuations in the telemetry measurements over time.
