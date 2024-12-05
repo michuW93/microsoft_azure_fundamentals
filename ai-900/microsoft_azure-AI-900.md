@@ -40,7 +40,7 @@ There are two general approaches to machine learning, **supervised** and **unsup
 
 The supervised machine learning approach requires you to start with a dataset(historical data) with known label values. Two types of supervised machine learning tasks include regression and classification:
 * **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure.
-* **Classification** (predicting categories or classes): used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+* **Classification** (predicting categories or classes using historical data with features): used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
 * **Time series forecasting** (predicting numeric values at a future point in time)
 
 
