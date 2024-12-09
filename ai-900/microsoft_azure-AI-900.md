@@ -77,4 +77,4 @@ The Root Mean Squared Error (RMSE) is one of the two main performance indicators
 
   Azure services for Computer vision:
   * Azure AI vision - interact using API (application programming interface) endpoint and key
-  * 
+  
