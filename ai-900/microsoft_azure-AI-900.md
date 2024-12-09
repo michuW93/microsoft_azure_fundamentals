@@ -62,3 +62,19 @@ The difference between the predicted and actual value, known as the **residuals*
 R2 score (from 0 to 1, the higher the better) - R-squared, also known as the coefficient of determination, is a statistical measure used in machine learning to evaluate the quality of a regression model. It measures how well the model fits the data by assessing the proportion of variance in the dependent variable explained by the independent variables
 
 The Root Mean Squared Error (RMSE) is one of the two main performance indicators for a regression model (lower is better). It measures the average difference between values predicted by a model and the actual values. It provides an estimation of how well the model is able to predict the target value (accuracy). A 0 value indicates that the expected and actual values match precisely. Low RMSE values show that the model makes more accurate predictions and fits the data well. Higher levels, on the other hand, imply more significant mistakes and fewer accurate forecasts
+
+# Computer vision (Analyze image and return information about them)
+
+* Image Captions - short pharses or sentences that describe what is in the image. Running image analysis returns description and confidence. Confidence is from rango 0-1, 0 means it's totally inconfident and 1 means that it's confident about it's description.
+![image](https://github.com/user-attachments/assets/415d69be-bb84-4768-a3d9-d04fc319a6b1)
+
+* Tagging - return tags for an image with confidence e.g christmas(0.95), winter(0.9), gifts(0.75)
+  ![image](https://github.com/user-attachments/assets/c27bbb0e-809f-4532-a8f1-870a94dda83a)
+
+* Object detection - christmas tree (0.95), snowman(0.9). Bounding box is the location of the object on the picture.
+* Facial detection - it's not facial recogination! It's just determines if there is a face on the photo.
+* Optical character recogination (OCR) - read text from the image.
+
+  Azure services for Computer vision:
+  * Azure AI vision - interact using API (application programming interface) endpoint and key
+  * 
