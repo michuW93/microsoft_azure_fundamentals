@@ -87,3 +87,15 @@ To analyze face from photos but also from videos we can use Azure AI Face - can 
 We can train model by adding some photos of person X and then service would be able to find face of person X on different photos, even when person X would have sunglasses, photos woudl be done from high angle etc. so it's not a problem to find face of person X on group photos. Azure AI Face also can find similar faces and group them together.<br>
 Azure AI Face can also easily recognize if person is waering mask.<br>
 For face details Azure AI Face is much better than Azure AI Vision. Azure AI Vision can detect face on photo but it's not providing all informations which we can see in Azure AI Service.<br>
+
+<b>Reading text from images</b>
+Optical character recognition (OCR) - model that is trained to recoginze text in an image. OCR can be used to read handwritted text or printed documents and it uses Read OCR Engine.
+
+There are two Read OCR Engine Edition:
+* images - optimised for non-document images e.g handwriting
+* documents - optimized for text-heavy documents
+
+Extracting text from an image. It's broke down to:
+* pages
+* lines - all words in all lines
+* words - separately even if in the same line
