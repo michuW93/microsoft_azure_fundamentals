@@ -82,7 +82,7 @@ Image classification is the process of applying a label to the images and then s
 Object detection is  labeling the objects in our images and return bound boxes with probability.
 Both image classification and object detection can be done on Custom Vision Portal.
 
-To analyze face from photos but also from videos we can use Azure AI Face - can be used to detect, analyze and recognize faces.
-We can train model by adding some photos of person X and then service would be able to find face of person X on different photos, even when person X would have sunglasses, photos woudl be done from high angle etc. so it's not a problem to find face of person X on group photos. Azure AI Face also can find similar faces and group them together.
-Azure AI Face can also easily recognize if person is waering mask.
-For face details Azure AI Face is much better than Azure AI Vision. Azure AI Vision can detect face on photo but it's not providing all informations which we can see in Azure AI Service.
+To analyze face from photos but also from videos we can use Azure AI Face - can be used to detect, analyze and recognize faces.<br>
+We can train model by adding some photos of person X and then service would be able to find face of person X on different photos, even when person X would have sunglasses, photos woudl be done from high angle etc. so it's not a problem to find face of person X on group photos. Azure AI Face also can find similar faces and group them together.<br>
+Azure AI Face can also easily recognize if person is waering mask.<br>
+For face details Azure AI Face is much better than Azure AI Vision. Azure AI Vision can detect face on photo but it's not providing all informations which we can see in Azure AI Service.<br>
