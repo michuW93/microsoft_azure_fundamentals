@@ -79,4 +79,5 @@ The Root Mean Squared Error (RMSE) is one of the two main performance indicators
   * Azure AI vision - interact using API (application programming interface) endpoint and key
   
 Image classification is the process of applying a label to the images and then service once trained will be able to classify and predict new images e.g cars.
-Object detection is is labeling the objects in our images and return bound boxes with probability.
+Object detection is  labeling the objects in our images and return bound boxes with probability.
+Both image classification and object detection can be done on Custom Vision Portal.
