@@ -104,3 +104,22 @@ Extracting text from an image. It's broke down to:
 Azure offers Document Intelligence - automates the process of extracting text from a document. It uses models that can interpret different fields.<br>
 There are prebuilt models in Document Inteligence to read text from: Recepts, invoices, ID Documents, Contracts, Health Insureance Cards, US Tax Forms. But you can also create custom models or use general analysis<br>
 
+<b>Analyzing video</b> - Azure AI Video Indexer which extract insights (e.g optical character recognition, labeling, etc.) from videos using video and audio models.
+Video Features:
+* Face detection - who appeard on the screen, how long he was on video
+* OCR
+* Content Moderation - e.g adult content
+* scene changes
+* people tracking - e.g when they appear or disappear on frame
+* labeling
+
+Audio features:
+* transcription
+* emotion detection - if someone is happy, sad etc.
+* translation
+* automatic language detecion
+* keyword and named entity extraction
+
+
+
+Document base on Clint Bonnett videos on Plurarsight.
