@@ -101,6 +101,6 @@ Extracting text from an image. It's broke down to:
 * words - separately even if in the same line
 
 <b>Analyzing Documents and Photos</b> - read text from the images of receipts, invoices and forms. It also uses OCR.<br>
-Azure offers Document Intelligence - automates the process of extracting text from a document.<br>
-There are prebuilt models in Azure to read text from: Recepts, invoices, ID Documents, Contracts, Health Insureance Cards, US Tax Forms. But you can also create custom models.<br>
+Azure offers Document Intelligence - automates the process of extracting text from a document. It uses models that can interpret different fields.<br>
+There are prebuilt models in Document Inteligence to read text from: Recepts, invoices, ID Documents, Contracts, Health Insureance Cards, US Tax Forms. But you can also create custom models or use general analysis<br>
 
