@@ -121,5 +121,54 @@ Audio features:
 * keyword and named entity extraction
 
 
+<b>Natural Language Processing</b> - text analytics, speech and translation, language understanding.
+* Interpret spoken language and synthesize speech e.g Sentiment determination, extract key phrases or summarize meeting
+* speech to text or text to speech
+* translate - natural language processing can translate spoken or written text between languages. You can talk in english and it will be translated to Polish.
+* interpret commands and take proper actions (voice assistance e.g turn on light in kitchen)
+
+Azure services: Azure AI Language Service (has it's own endpoint and key), Azure AI translator service, Azure AI speech. All of them are included into Azure AI Services
+
+Text analytics - best used to examine and evaluate text for content, keywords, and more e.g what it is about. It can be used to determine if a review is in a different language, focused on the predominant language (when you have mixed 2 langauges it can tell which one is dominating). If the language can't be determined, it will return with unknown language and NaN.
+
+Sentiment Analysis - determinate if the text is positive, neutral or negative. Each category is rated from 0 to 1. It also extract keywords from text.
+
+Entity recognition - returns a list of entities in the text and the category they're assigned to. So when we provide text it will categorize e.g Marek is person, 1 p.m is DateTime, Ostrow Wielkopolski is location.
+
+PII (Personally identifiable information) detection - identify, categorize and redact PII (phone numbers, email addresses etc.)
+
+How AI is doing text analytics?
+1. Text normalization - removes punctuation and changes words to lower case.
+2. Stop word removal - is the process of excluding words e.g it, the, a
+3. N-grams are multi-term phrases e.g 'I have'
+4. Stemming allows you to cosolidate similar words e.g benefactor, beneficial could be the same token
+
+
+
+Speech recognition - taking spoken language and convert it into data or text. The spoken language can be either live audio or an audio file. It can be automated note-taking or creating a transcript from discussion, phone call etc. Speech to text API
+
+Speech synthesis - like Speech recognition but other side - we take text and convert it into speech e.g GPS. Text to speech API.
+
+Text translation - translate text or documens to another language. Azure AI translator is only focused on text-to-text translation, it supports over 90 langauges. Also we cna translate documents to another language, extension doesn't matter e.g pdf, excel, word. You can also create custom translation.
+
+Additional features:
+* Automatic language detection,
+* dictionaries,
+* profanity filters
+
+  Translation of spoken language: Translate directly (speech to speech), automatic translation during a presentation, translate spoken language into text (speech to text)
+
+
+Language understanding - example is home assistance.
+3 concepts of language understanding:
+* Utterances - A phrase we say to the AI - turn on the living room lights
+* Entities - An item the phrase refers to - turn on the living room `lights`
+* Intent - purspose or goal of the phrase - `turn on` the living room lights
+
+Metrics to evaluate model:
+* Precision - percentage of correct positive predeictions out of all the positive predictions made
+* Recall - percentage of actual positives that your model correctly identified
+* F1 score - single metric that combines precision and recall
+
 
 Document base on Clint Bonnett videos on Plurarsight.
