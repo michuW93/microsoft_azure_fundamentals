@@ -170,5 +170,6 @@ Metrics to evaluate model:
 * Recall - percentage of actual positives that your model correctly identified
 * F1 score - single metric that combines precision and recall
 
+Accountability(odpowiedzialność) e.g implementing processess to ensure that decision made by AI systems can be overriden by humans.
 
 Document base on Clint Bonnett videos on Plurarsight.
