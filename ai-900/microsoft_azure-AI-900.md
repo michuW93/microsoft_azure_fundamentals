@@ -205,6 +205,7 @@ Automated machine learning is the process of automating the time consuming, iter
 Labelling is the process of tagging training data with known values.<br>
 Form recognizer to extract text, key/value pairs and table data automatically from scanned documents.<br>
 Conversational AI - It can be an automated chatbot to answer questions about refunds and exchanges.
+The QnA Maker can't determine the intent of user utterance.
 
 
 Document base on Clint Bonnett videos on Plurarsight.
