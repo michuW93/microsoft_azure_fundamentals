@@ -149,7 +149,7 @@ Speech recognition - taking spoken language and convert it into data or text. Th
 
 Speech synthesis - like Speech recognition but other side - we take text and convert it into speech e.g GPS. Text to speech API.
 
-Text translation - translate text or documens to another language. Azure AI translator is only focused on text-to-text translation, it supports over 90 langauges. Also we cna translate documents to another language, extension doesn't matter e.g pdf, excel, word. You can also create custom translation.
+Text translation - translate text or documens to another language. Azure AI translator is ONLY focused on text-to-text translation, it supports over 90 langauges. Also we cna translate documents to another language, extension doesn't matter e.g pdf, excel, word. You can also create custom translation.
 
 Additional features:
 * Automatic language detection,
