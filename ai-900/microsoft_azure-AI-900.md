@@ -185,7 +185,7 @@ To teach chat bot you need to build knowledge base. You can do it by:
 * import them from a chit-chat data source
 * input the questions and answers manually
 
-<b>Generative AI</b> - write a receipe, create code in a wide variety of languages, create a function, troubleshooting, creating images. It's different from traditional AI, it's creating something new.
+# Generative AI - write a receipe, create code in a wide variety of languages, create a function, troubleshooting, creating images. It's different from traditional AI, it's creating something new.
 How it works? It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model is trained off of data.
 ![image](https://github.com/user-attachments/assets/03708503-d49f-4b7e-b635-2eee42d24782)
 When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 43, 2341.
