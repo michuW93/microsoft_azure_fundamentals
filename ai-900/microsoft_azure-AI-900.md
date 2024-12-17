@@ -21,7 +21,11 @@ Important terminology:
 3. If a measurement occurs outside of the normal expected range, the model reports an anomaly that can be used to alert the race engineer to call the driver in for a pit stop to fix the issue before it forces retirement from the race.
 
 # Computer vision
-is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. Type of computer vision: face detection (e.g for unblocking phone), optical character recognation - recognize text in images etc.
+is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. 
+Types of computer vision: 
+* face detection (e.g for unblocking phone),
+* optical character recognation - recognize text in images etc.
+* identify handwritten letters
 
 # Natural language processing (NLP)
 is the area of AI that deals with creating software that understands written and spoken language. <br>
@@ -32,7 +36,7 @@ Automatically translate spoken or written phrases between languages.
 Interpret commands and determine appropriate actions.
 
 # Knowledge mining
-Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. In azure there is Azure Cognitive Search
+Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. In azure there is Azure Cognitive Search.
 
 # Machine learning (technique that uses mathematics and statistics to create model that can predict unknown values)
 Machine Learning is the foundation for most artificial intelligence solutions. Creating an intelligent solution often begins with the use of machine learning to train predictive models using historic data(dataset) that you have collected.
@@ -44,12 +48,12 @@ There are two general approaches to machine learning, **supervised** and **unsup
 
 The supervised machine learning approach requires you to start with a dataset(historical data) with known label values. Two types of supervised machine learning tasks include regression and classification:
 * **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure.
-* **Classification** (predicting categories or classes using historical data with features): used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+* **Classification** (predicting categories or classes using historical data with features): used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral. Metric to evaluate classification model is true positive rate. Example: predict wheather a student will complete an university course.
 * **Time series forecasting** (predicting numeric values at a future point in time)
 
 
 The unsupervised machine learning approach starts with a dataset without known label values. One type of unsupervised machine learning task is clustering.
-* **Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
+* **Clustering**: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species or identify groups of people who have similar purchasing habits or segment customers into different groups to support a marketing department.
 
 Machine learning process:
 * Prepare data: Identify the features (values which we know from past) and label(value which we want to predict) in a dataset. Pre-process, or clean (e.g some rows can be empty) and transform, the data as needed. We can even normalize data - convert values to be on the same scale from 0-1.
@@ -78,7 +82,7 @@ The Root Mean Squared Error (RMSE) is one of the two main performance indicators
   Azure services for Computer vision:
   * Azure AI vision - interact using API (application programming interface) endpoint and key
   
-<b>Image classification</b> is the process of applying a label to the images and then service once trained will be able to classify and predict new images e.g cars.
+<b>Image classification</b> is the process of applying a label to the images and then service once trained will be able to classify and predict new images e.g cars. Accuracy is the calculated probability of a correct image classification.
 Object detection is  labeling the objects in our images and return bound boxes with probability.
 Both image classification and object detection can be done on Custom Vision Portal.
 
@@ -177,6 +181,26 @@ To teach chat bot you need to build knowledge base. You can do it by:
 * import them from a chit-chat data source
 * input the questions and answers manually
 
-Accountability(odpowiedzialność) e.g implementing processess to ensure that decision made by AI systems can be overriden by humans.
+<b>Generative AI</b> - write a receipe, create code in a wide variety of languages, create a function, troubleshooting, creating images. It's different from traditional AI, it's creating something new.
+How it works? It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model is trained off of data.
+![image](https://github.com/user-attachments/assets/03708503-d49f-4b7e-b635-2eee42d24782)
+When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 43, 2341.
+
+
+
+
+
+
+
+
+
+Accountability(odpowiedzialność) e.g implementing processess to ensure that decision made by AI systems can be overriden by humans.<br>
+Fairness(uczciwość) - AI systems should not reflect biases from the data sets that are used to train the systems.<br>
+Feature engineering - Splitting a date into month, day and year fields<br>
+Automated machine learning is the process of automating the time consuming, iterative tasks of machine learning model development. It works by running multiple training iterations that are scored and ranked by the metrics you specify.<br>
+Labelling is the process of tagging training data with known values.<br>
+Form recognizer to extract text, key/value pairs and table data automatically from scanned documents.<br>
+Conversational AI - It can be an automated chatbot to answer questions about refunds and exchanges.
+
 
 Document base on Clint Bonnett videos on Plurarsight.
