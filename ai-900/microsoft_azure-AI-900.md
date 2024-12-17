@@ -204,8 +204,8 @@ Feature engineering - Splitting a date into month, day and year fields<br>
 Automated machine learning is the process of automating the time consuming, iterative tasks of machine learning model development. It works by running multiple training iterations that are scored and ranked by the metrics you specify.<br>
 Labelling is the process of tagging training data with known values.<br>
 Form recognizer to extract text, key/value pairs and table data automatically from scanned documents.<br>
-Conversational AI - It can be an automated chatbot to answer questions about refunds and exchanges.
-The QnA Maker can't determine the intent of user utterance.
+Conversational AI - It can be an automated chatbot to answer questions about refunds and exchanges.<br>
+The QnA Maker can't determine the intent of user utterance.<br>
 
 
 Document base on Clint Bonnett videos on Plurarsight.
