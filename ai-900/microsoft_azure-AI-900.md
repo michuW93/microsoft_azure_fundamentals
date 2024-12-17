@@ -129,7 +129,7 @@ Audio features:
 * keyword and named entity extraction
 
 
-<b>Natural Language Processing</b> - text analytics, speech and translation, language understanding.
+# Natural Language Processing - text analytics, speech and translation, language understanding.
 * Interpret spoken language and synthesize speech e.g Sentiment determination, extract key phrases or summarize meeting
 * speech to text or text to speech
 * translate - natural language processing can translate spoken or written text between languages. You can talk in english and it will be translated to Polish.
