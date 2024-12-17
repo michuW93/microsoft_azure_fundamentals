@@ -170,6 +170,13 @@ Metrics to evaluate model:
 * Recall - percentage of actual positives that your model correctly identified
 * F1 score - single metric that combines precision and recall
 
+Asking questions and getting answers - chat bots.
+To teach chat bot you need to build knowledge base. You can do it by:
+* Azure AI Language can create our knowledge base
+* generate Q&A pairs from FAQ documents
+* import them from a chit-chat data source
+* input the questions and answers manually
+
 Accountability(odpowiedzialność) e.g implementing processess to ensure that decision made by AI systems can be overriden by humans.
 
 Document base on Clint Bonnett videos on Plurarsight.
