@@ -81,7 +81,7 @@ The Root Mean Squared Error (RMSE) is one of the two main performance indicators
 
 * Object detection - christmas tree (0.95), snowman(0.9). Bounding box is the location of the object on the picture.
 * Facial detection - it's not facial recogination! It's just determines if there is a face on the photo.
-* Optical character recogination (OCR) - read text from the image.
+* Optical character recogination (OCR) - read text from the image e.g read runner's number from runners shirt. 
 
   Azure services for Computer vision:
   * Azure AI vision - interact using API (application programming interface) endpoint and key
