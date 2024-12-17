@@ -186,7 +186,7 @@ How it works? It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large la
 ![image](https://github.com/user-attachments/assets/03708503-d49f-4b7e-b635-2eee42d24782)
 When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 43, 2341.
 
-
+Copilots - generative AI assistants
 
 
 
