@@ -48,7 +48,7 @@ Types of machine learning
 There are two general approaches to machine learning, **supervised** and **unsupervised** machine learning. In both approaches, you train a model to make predictions.
 
 The supervised machine learning approach requires you to start with a dataset(historical data) with known label values. Two types of supervised machine learning tasks include regression and classification:
-* **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure.
+* **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure e.g predicting how many vehicles will travel across a bridge on a given day.
 * **Classification** (predicting categories or classes using historical data with features): used to determine a class label; <br>
 an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral. <br>
 Metric to evaluate classification model is true positive rate. <br>
@@ -92,7 +92,7 @@ Both image classification and object detection can be done on Custom Vision Port
 
 <b>Face analyze</b><br>
 To analyze face from photos but also from videos we can use Azure AI Face - can be used to detect, analyze and recognize faces.<br>
-We can train model by adding some photos of person X and then service would be able to find face of person X on different photos, even when person X would have sunglasses, photos woudl be done from high angle etc. so it's not a problem to find face of person X on group photos. Azure AI Face also can find similar faces and group them together.<br>
+We can train model by adding some photos of person X and then service would be able to find face of person X on different photos, even when person X would have sunglasses, photos would be done from high angle (but extreme angles may impair facial detection) etc. so it's not a problem to find face of person X on group photos. Azure AI Face also can find similar faces and group them together.<br>
 Azure AI Face can also easily recognize if person is waering mask.<br>
 For face details Azure AI Face is much better than Azure AI Vision. Azure AI Vision can detect face on photo but it's not providing all informations which we can see in Azure AI Service.<br>
 
