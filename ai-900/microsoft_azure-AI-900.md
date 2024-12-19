@@ -207,6 +207,7 @@ Labelling is the process of tagging training data with known values.<br>
 Form recognizer to extract text, key/value pairs and table data automatically from scanned documents.<br>
 Conversational AI - It can be an automated chatbot to answer questions about refunds and exchanges.<br>
 The QnA Maker can't determine the intent of user utterance and you can't use QnA Maker to query an Azure SQL database.<br>
+The Custom Vision service can't be used to analyze videos. <br>
 
 
 Document base on Clint Bonnett videos on Plurarsight.
