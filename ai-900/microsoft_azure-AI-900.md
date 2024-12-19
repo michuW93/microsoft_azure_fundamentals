@@ -74,7 +74,7 @@ The Root Mean Squared Error (RMSE) is one of the two main performance indicators
 
 # Computer vision (Analyze image and return information about them)
 
-* Image Captions - short pharses or sentences that describe what is in the image. Running image analysis returns description and confidence. Confidence is from rango 0-1, 0 means it's totally inconfident and 1 means that it's confident about it's description.
+* Image Captions - short pharses or sentences that describe what is in the image. Running image analysis returns description and confidence. Confidence is from range 0-1, 0 means it's totally inconfident and 1 means that it's confident about it's description.
 ![image](https://github.com/user-attachments/assets/415d69be-bb84-4768-a3d9-d04fc319a6b1)
 
 * Tagging - return tags for an image with confidence e.g christmas(0.95), winter(0.9), gifts(0.75)
