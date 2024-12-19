@@ -44,8 +44,9 @@ Machine Learning is the foundation for most artificial intelligence solutions. C
 Azure Machine Learning is a cloud service that you can use to train and manage machine learning models.
 
 
-Types of machine learning
-There are two general approaches to machine learning, **supervised** and **unsupervised** machine learning. In both approaches, you train a model to make predictions.
+Types of machine learning:<br>
+There are two general approaches to machine learning, **supervised** and **unsupervised** machine learning. <br>
+In both approaches, you train a model to make predictions.
 
 The supervised machine learning approach requires you to start with a dataset(historical data) with known label values. Two types of supervised machine learning tasks include regression and classification:
 * **Regression** (predicting numeric values): used to predict a continuous value; like a price, a sales total, or some other measure e.g predicting how many vehicles will travel across a bridge on a given day.
