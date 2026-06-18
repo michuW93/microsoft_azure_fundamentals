@@ -187,14 +187,33 @@ To teach chat bot you need to build knowledge base. You can do it by:
 * input the questions and answers manually
 
 # Generative AI - write a receipe, create code in a wide variety of languages, create a function, troubleshooting, creating images. It's different from traditional AI, it's creating something new.
-How it works? It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model is trained off of data.
+
+
+
+How it works?
+There are large language models (LLMs) and small language models (SLMs) - the difference is based on the volume of data and the number of variables in the model. LLMs are powerful and generalize well, but can be more costly to train and use. SLMs tend to work well in scenarios that are more focused on specific topic areas or that require easily deployed small models for local applications and agents on devices.
+
+It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model is trained off of data.
 ![image](https://github.com/user-attachments/assets/03708503-d49f-4b7e-b635-2eee42d24782)
 When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 43, 2341.
 
-Copilots - generative AI assistants
+What are agents?
+Agents are software applications built on generative AI that can reason over and generate natural language, automate tasks by using tools, and respond to contextual conditions to take appropriate action.
+AI agents have three key elements:
+- A large language model: This is the agent's brain; using generative AI for language understanding and reasoning.
+- Instructions: A system prompt that defines the agent’s role and behavior. Think of it as the agent’s job description.
+- Tools: These are what the agent uses to interact with the world. Tools can include:
 
+Knowledge tools that provide access to information, like search engines or databases.
+Action tools that enable the agent to perform tasks, such as sending emails, updating calendars, or controlling devices.
+With these capabilities, AI agents can take on the role of digital assistants that intelligently automate tasks and collaborate with you to work smarter and more efficiently.
 
-
+Where is generative AI used?
+- Creating chat bots that answer user questions or engage in conversation.
+- Implementing AI assistants that assist human users by automating tasks.
+- Creating new documents or other content (often as a starting point for further iterative development)
+- Automated translation of text between languages.
+- Summarizing or explaining complex documents.
 
 
 
