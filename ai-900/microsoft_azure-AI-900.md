@@ -36,6 +36,13 @@ Interpret spoken language, and synthesize speech responses.
 Automatically translate spoken or written phrases between languages.
 Interpret commands and determine appropriate actions.
 
+Text analysis scenarios:<br>
+Common uses of NLP technologies for text analysis include:
+- Analyzing document or transcripts of calls and meetings to determine key subjects and identify specific mentions of people, places, organizations, products, or other entities.
+- Analyzing social media posts, product reviews, or articles to evaluate sentiment and opinion.
+- Implementing chatbots that can answer frequently asked questions or orchestrate predictable conversational dialogs that don't require the complexity of generative AI.
+- Redacting PII before sharing or analyzing data to comply with privacy policies and legislation.
+
 # Knowledge mining
 Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. In azure there is Azure Cognitive Search.
 
