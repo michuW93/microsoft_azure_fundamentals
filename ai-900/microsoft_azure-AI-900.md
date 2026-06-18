@@ -188,9 +188,7 @@ To teach chat bot you need to build knowledge base. You can do it by:
 
 # Generative AI - write a receipe, create code in a wide variety of languages, create a function, troubleshooting, creating images. It's different from traditional AI, it's creating something new.
 
-
-
-How it works?
+How it works?<br>
 There are large language models (LLMs) and small language models (SLMs) - the difference is based on the volume of data and the number of variables in the model. LLMs are powerful and generalize well, but can be more costly to train and use. SLMs tend to work well in scenarios that are more focused on specific topic areas or that require easily deployed small models for local applications and agents on devices.
 
 It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model is trained off of data.
