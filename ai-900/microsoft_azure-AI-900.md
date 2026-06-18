@@ -200,9 +200,9 @@ When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 4
 What are agents?
 Agents are software applications built on generative AI that can reason over and generate natural language, automate tasks by using tools, and respond to contextual conditions to take appropriate action.
 AI agents have three key elements:
-- A large language model: This is the agent's brain; using generative AI for language understanding and reasoning.
-- Instructions: A system prompt that defines the agent’s role and behavior. Think of it as the agent’s job description.
-- Tools: These are what the agent uses to interact with the world. Tools can include:
+- **A large language model**: This is the agent's brain; using generative AI for language understanding and reasoning.
+- **Instructions**: A system prompt that defines the agent’s role and behavior. Think of it as the agent’s job description.
+- **Tools**: These are what the agent uses to interact with the world. Tools can include:
 
 Knowledge tools that provide access to information, like search engines or databases.
 Action tools that enable the agent to perform tasks, such as sending emails, updating calendars, or controlling devices.
