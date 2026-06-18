@@ -22,11 +22,13 @@ Important terminology:
 4. Identify a fraudulent credit card payment.
 
 # Computer vision
-is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. 
+is a field of computer science that focuses on enabling computers to identify and understand objects and people in **images and videos**. Like other types of AI, computer vision seeks to perform and automate tasks that replicate human capabilities. <br>
 Types of computer vision: 
+* Monitoring stock levels or identifying items for checkout in retail scenarios.
 * face detection (e.g for unblocking phone),
 * optical character recognation - recognize text in images etc.
 * identify handwritten letters
+* Robotics and self-driving vehicles.
 
 # Natural language processing (NLP)
 is the area of AI that deals with creating software that understands written and spoken language. <br>
