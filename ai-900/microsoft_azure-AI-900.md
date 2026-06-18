@@ -202,10 +202,8 @@ Agents are software applications built on generative AI that can reason over and
 AI agents have three key elements:
 - **A large language model**: This is the agent's brain; using generative AI for language understanding and reasoning.
 - **Instructions**: A system prompt that defines the agent’s role and behavior. Think of it as the agent’s job description.
-- **Tools**: These are what the agent uses to interact with the world. Tools can include:
+- **Tools**: These are what the agent uses to interact with the world. There are knowledge tools: that provide access to information, like search engines or databases and action tools: that enable the agent to perform tasks, such as sending emails, updating calendars, or controlling devices.
 
-Knowledge tools that provide access to information, like search engines or databases.
-Action tools that enable the agent to perform tasks, such as sending emails, updating calendars, or controlling devices.
 With these capabilities, AI agents can take on the role of digital assistants that intelligently automate tasks and collaborate with you to work smarter and more efficiently.
 
 Where is generative AI used?
