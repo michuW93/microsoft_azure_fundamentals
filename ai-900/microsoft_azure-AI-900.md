@@ -204,7 +204,7 @@ It uses LLM (Large Language Models e.g GPT, Llama, Bard). Large language model i
 ![image](https://github.com/user-attachments/assets/03708503-d49f-4b7e-b635-2eee42d24782)
 When we write prompt e.g `go to the zoo`, it's translated into tokens 112, 31, 43, 2341.
 
-What are agents?
+What are AI agents?
 Agents are software applications built on generative AI that can reason over and generate natural language, automate tasks by using tools, and respond to contextual conditions to take appropriate action.
 AI agents have three key elements:
 - **A large language model**: This is the agent's brain; using generative AI for language understanding and reasoning.
